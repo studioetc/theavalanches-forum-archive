@@ -1,3 +1,16 @@
 run_local.sh: harvest pid 16161, delay 2.0s, log /Users/onesteppplusgmai.com/Dev/theavalanches-forum-archive/logs/harvest_local.log
 2026-06-09T08:42:01Z [shard 0] 29/8134 got=25 skip=4 miss=0 fail=0
 2026-06-09T08:43:32Z [shard 0] 58/8134 got=50 skip=8 miss=0 fail=0
+2026-06-09T08:45:11Z [shard 0] 86/8134 got=75 skip=11 miss=0 fail=0
+2026-06-09T08:46:44Z [shard 0] 115/8134 got=100 skip=15 miss=0 fail=0
+2026-06-09T08:46:50Z   throttled (URLError [Errno 61] Connection refused) try 1/4, sleep 6s
+2026-06-09T08:46:56Z   throttled (URLError [Errno 61] Connection refused) try 2/4, sleep 9s
+2026-06-09T08:47:19Z   throttled (URLError [Errno 61] Connection refused) try 1/4, sleep 6s
+2026-06-09T08:47:32Z   throttled (URLError [Errno 61] Connection refused) try 1/4, sleep 4s
+2026-06-09T08:47:36Z   throttled (URLError [Errno 61] Connection refused) try 2/4, sleep 9s
+2026-06-09T08:48:05Z   throttled (URLError [Errno 61] Connection refused) try 1/4, sleep 6s
+2026-06-09T08:48:15Z   throttled (URLError [Errno 61] Connection refused) try 1/4, sleep 5s
+2026-06-09T08:48:28Z   throttled (URLError [Errno 61] Connection refused) try 1/4, sleep 6s
+2026-06-09T08:48:34Z   throttled (URLError [Errno 61] Connection refused) try 2/4, sleep 8s
+2026-06-09T08:49:08Z   throttled (URLError [Errno 61] Connection refused) try 1/4, sleep 6s
+2026-06-09T08:49:27Z [shard 0] 143/8134 got=125 skip=18 miss=0 fail=0
