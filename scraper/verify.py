@@ -2,77 +2,78 @@
 """Coverage + health report over the harvested archive. Stdlib only.
 
 Writes manifests/coverage_report.md:
-  - fetched vs expected per board/pagetype
-  - distinct threads recovered (t=/p= slugs)
-  - flags likely-empty/stub pages (small size or phpBB 'no forums' / error markers)
+  - files fetched vs targets, total size
+  - distinct threads/pages (slugs) recovered per board, fetched-vs-expected
+  - flags likely-empty/stub pages (small size AND phpBB-specific empty markers)
 """
-import os, re, collections
+import os, collections
 
 HERE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TARGETS = os.path.join(HERE, "manifests", "fetch_targets.tsv")
 ARCHIVE = os.path.join(HERE, "archive")
 REPORT = os.path.join(HERE, "manifests", "coverage_report.md")
 
-STUB_MARKERS = (b"This board has no forums", b"The requested topic does not exist",
-                b"Not Found", b"no posts", b"Information")
+# phpBB-specific empty/error markers only (avoid false positives on real pages)
+STUB_MARKERS = (b"This board has no forums",
+                b"The topic or post you requested does not exist",
+                b"The requested topic does not exist",
+                b"No posts exist for this topic")
 
-def expected():
-    c = collections.Counter()
-    slugs = collections.defaultdict(set)
+def load_targets():
+    exp_files = 0
+    exp_slugs = collections.defaultdict(set)      # board -> {slug}
     with open(TARGETS) as f:
         next(f)
         for line in f:
-            board, pagetype, slug, ts, length, url = line.rstrip("\n").split("\t")
-            c[(board, pagetype)] += 1
-            slugs[board].add(slug)
-    return c, slugs
+            board, slug, ts, digest, relpath, url = line.rstrip("\n").split("\t")
+            exp_files += 1
+            exp_slugs[board].add(slug)
+    return exp_files, exp_slugs
 
 def main():
-    exp, exp_slugs = expected()
-    got = collections.Counter()
+    exp_files, exp_slugs = load_targets()
+    got_files = 0
+    got_bytes = 0
     got_slugs = collections.defaultdict(set)
     stubs = 0
-    total_bytes = 0
-    files = 0
-    for board in sorted(os.listdir(ARCHIVE)) if os.path.isdir(ARCHIVE) else []:
-        bdir = os.path.join(ARCHIVE, board)
-        if not os.path.isdir(bdir):
-            continue
-        for slug in os.listdir(bdir):
-            sdir = os.path.join(bdir, slug)
-            if not os.path.isdir(sdir):
-                continue
-            for fn in os.listdir(sdir):
-                if not fn.endswith(".html"):
-                    continue
-                p = os.path.join(sdir, fn)
-                sz = os.path.getsize(p)
-                total_bytes += sz; files += 1
-                got_slugs[board].add(slug)
-                pt = "viewtopic.php" if re.match(r'[tp]\d', slug) else "other"
-                got[(board, pt)] += 1
-                if sz < 3000:
-                    with open(p, "rb") as fh:
-                        head = fh.read(4000)
-                    if any(m in head for m in STUB_MARKERS):
-                        stubs += 1
 
-    lines = ["# Coverage report", ""]
-    lines.append(f"- Files harvested: **{files}**  (~{total_bytes/1e6:.1f} MB)")
-    lines.append(f"- Likely stub/empty pages flagged: **{stubs}**")
-    lines.append("")
-    lines.append("## Distinct threads/pages recovered (by board)")
+    if os.path.isdir(ARCHIVE):
+        for board in sorted(os.listdir(ARCHIVE)):
+            bdir = os.path.join(ARCHIVE, board)
+            if not os.path.isdir(bdir):
+                continue
+            for slug in os.listdir(bdir):
+                sdir = os.path.join(bdir, slug)
+                if not os.path.isdir(sdir):
+                    continue
+                for fn in os.listdir(sdir):
+                    if not fn.endswith(".html"):
+                        continue
+                    p = os.path.join(sdir, fn)
+                    sz = os.path.getsize(p)
+                    got_files += 1
+                    got_bytes += sz
+                    got_slugs[board].add(slug)
+                    if sz < 3500:
+                        with open(p, "rb") as fh:
+                            head = fh.read(5000)
+                        if any(m in head for m in STUB_MARKERS):
+                            stubs += 1
+
+    L = ["# Coverage report", ""]
+    L.append(f"- Files fetched: **{got_files} / {exp_files}** targets  (~{got_bytes/1e6:.1f} MB)")
+    L.append(f"- Likely empty/stub pages flagged: **{stubs}**")
+    L.append("")
+    L.append("## Distinct threads/pages recovered (slugs) by board")
     for board in sorted(exp_slugs):
         e = len(exp_slugs[board]); g = len(got_slugs.get(board, set()))
-        pct = (100*g/e) if e else 0
-        lines.append(f"- **{board}**: {g}/{e} slugs ({pct:.0f}%)")
-    lines.append("")
-    lines.append("## Captures fetched vs expected")
-    for k in sorted(exp):
-        lines.append(f"- {k[0]} {k[1]}: target {exp[k]}")
+        pct = (100 * g / e) if e else 0
+        L.append(f"- **{board}**: {g} / {e} slugs ({pct:.0f}%)")
+    L.append("")
+    L.append("_Generated by verify.py_")
     with open(REPORT, "w") as f:
-        f.write("\n".join(lines) + "\n")
-    print("\n".join(lines))
+        f.write("\n".join(L) + "\n")
+    print("\n".join(L))
 
 if __name__ == "__main__":
     main()
