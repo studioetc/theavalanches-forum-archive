@@ -2,3 +2,6 @@ __pycache__/
 *.pyc
 _shards/
 .DS_Store
+
+# keep harvest observability logs tracked (override global core.excludesfile *.log)
+!logs/*.log
