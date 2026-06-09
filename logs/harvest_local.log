@@ -21,3 +21,6 @@
 2026-06-09T08:53:38Z   throttled (URLError [Errno 61] Connection refused) try 1/4, sleep 6s
 2026-06-09T08:54:03Z   throttled (URLError [Errno 61] Connection refused) try 1/4, sleep 6s
 2026-06-09T08:54:40Z [shard 0] 229/8134 got=200 skip=29 miss=0 fail=0
+2026-06-09T08:56:08Z [shard 0] 258/8134 got=225 skip=33 miss=0 fail=0
+2026-06-09T08:57:38Z [shard 0] 286/8134 got=250 skip=36 miss=0 fail=0
+2026-06-09T08:59:05Z [shard 0] 315/8134 got=275 skip=40 miss=0 fail=0
