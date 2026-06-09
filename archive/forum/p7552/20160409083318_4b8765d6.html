@@ -1,0 +1,1852 @@
+<b>[phpBB Debug] PHP Notice</b>: in file <b>/viewtopic.php</b> on line <b>988</b>: <b>date(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone.</b><br />
+<b>[phpBB Debug] PHP Notice</b>: in file <b>/viewtopic.php</b> on line <b>988</b>: <b>getdate(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone.</b><br />
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-gb" xml:lang="en-gb">
+<head>
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta http-equiv="content-language" content="en-gb" />
+<meta http-equiv="content-style-type" content="text/css" />
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta name="copyright" content="The Avalanches" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+
+<title>www.theavalanches.com &bull; View topic - mix download page question</title>
+
+
+
+<link rel="stylesheet" href="./styles/subsilver2/theme/stylesheet.css" type="text/css" />
+<!--[if lte IE 6]>
+<link rel="stylesheet" type="text/css" href="/styles/theavalanches/theme/ie6.css" />
+<![endif]-->
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+
+<script type="text/javascript">
+// <![CDATA[
+
+
+function popup(url, width, height, name)
+{
+	if (!name)
+	{
+		name = '_popup';
+	}
+
+	window.open(url.replace(/&amp;/g, '&'), name, 'height=' + height + ',resizable=yes,scrollbars=yes,width=' + width);
+	return false;
+}
+
+function jumpto()
+{
+	var page = prompt('Enter the page number you wish to go to:', '2');
+	var per_page = '20';
+	var base_url = './viewtopic.php?f=1&amp;t=1088&amp;sid=661a1f781954ab7fe128b6996540e240';
+
+	if (page !== null && !isNaN(page) && page == Math.floor(page) && page > 0)
+	{
+		if (base_url.indexOf('?') == -1)
+		{
+			document.location.href = base_url + '?start=' + ((page - 1) * per_page);
+		}
+		else
+		{
+			document.location.href = base_url.replace(/&amp;/g, '&') + '&start=' + ((page - 1) * per_page);
+		}
+	}
+}
+
+/**
+* Find a member
+*/
+function find_username(url)
+{
+	popup(url, 760, 570, '_usersearch');
+	return false;
+}
+
+/**
+* Mark/unmark checklist
+* id = ID of parent container, name = name prefix, state = state [true/false]
+*/
+function marklist(id, name, state)
+{
+	var parent = document.getElementById(id);
+	if (!parent)
+	{
+		eval('parent = document.' + id);
+	}
+
+	if (!parent)
+	{
+		return;
+	}
+
+	var rb = parent.getElementsByTagName('input');
+	
+	for (var r = 0; r < rb.length; r++)
+	{
+		if (rb[r].name.substr(0, name.length) == name)
+		{
+			rb[r].checked = state;
+		}
+	}
+}
+
+
+
+// ]]>
+</script>
+</head>
+<body class="ltr">
+
+<a name="top"></a>
+
+<div id="wrapheader">
+
+	<div id="logodesc">
+		<table width="100%" cellspacing="0">
+		<tr>
+			<td width="100%" align="center">
+<a href="./index.php?sid=661a1f781954ab7fe128b6996540e240"><img src="http://www.theavalanches.com/images/logo-theavalanches.gif" alt="The Avalanches" /></a>
+        <div id="external-links">
+          <a class="facebook" href="http://www.facebook.com/theavalanches" title="Facebook" target="_blank">Facebook</a>
+          <a class="twitter" href="http://twitter.com/theavalanches" title="Twitter" target="_blank">Twitter</a>
+          <a class="youtube" href="http://www.youtube.com/user/avalanchesofficial" title="YouTube" target="_blank">YouTube</a>
+          <a class="myspace" href="http://www.myspace.com/theavalanches" title="MySpace" target="_blank">MySpace</a>
+          <a class="ilike" href="http://www.ilike.com/artist/The+Avalanches" title="iLike" target="_blank">iLike</a>
+          <a class="lastfm" href="http://www.last.fm/music/The+Avalanches" title="Last.fm" target="_blank">Last.fm</a>
+        </div>
+
+	<div class="hr-01" />&nbsp;</div>
+  <br /><br />
+  <div id="links">
+  	<a href="http://www.theavalanches.com/" title="TheAvalanches.com">TheAvalanches.com</a>&nbsp;&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+	  <a href="http://www.theavalanches.com/mixes.php" title="Avalanches DJ Sets">Avalanches DJ Sets</a>
+  </div>
+
+</td>
+		</tr>
+		</table>
+	</div>
+
+	<div id="menubar">
+		<table width="100%" cellspacing="0">
+		<tr>
+			<td class="genmed">
+				<a href="./ucp.php?mode=login&amp;sid=661a1f781954ab7fe128b6996540e240"Login</a>&nbsp;
+			</td>
+			<td class="genmed" align="right">
+				<a href="./faq.php?sid=661a1f781954ab7fe128b6996540e240">FAQ</a>
+				&nbsp;&nbsp;&bull;&nbsp;&nbsp;&nbsp;<a href="./search.php?sid=661a1f781954ab7fe128b6996540e240">Search</a>
+			</td>
+		</tr>
+		</table>
+	</div>
+
+	<div id="datebar">
+		<table width="100%" cellspacing="0">
+		<tr>
+			<td class="gensmall"></td>
+			<td class="gensmall" align="right">It is currently Sat Apr 09, 2016 6:33 pm<br /></td>
+		</tr>
+		</table>
+	</div>
+
+</div>
+
+<div id="wrapcentre">
+
+	
+	<p class="searchbar">
+		<span style="float: left;"><a href="./search.php?search_id=unanswered&amp;sid=661a1f781954ab7fe128b6996540e240">View unanswered posts</a>&nbsp;&nbsp;&nbsp;&bull;&nbsp;&nbsp;&nbsp;<a href="./search.php?search_id=active_topics&amp;sid=661a1f781954ab7fe128b6996540e240">View active topics</a></span>
+		
+	</p>
+	
+
+	<br style="clear: both;" />
+
+	<table class="tablebg" width="100%" cellspacing="1" cellpadding="0" style="margin-top: 5px; border:0;">
+	<tr>
+		<td class="row1" style="border:0;">
+			<p class="breadcrumbs"><a href="./index.php?sid=661a1f781954ab7fe128b6996540e240">Board index</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="./viewforum.php?f=3&amp;sid=661a1f781954ab7fe128b6996540e240">Forums</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="./viewforum.php?f=1&amp;sid=661a1f781954ab7fe128b6996540e240">Music</a></p>
+			<p class="datetime">All times are UTC + 10 hours </p>
+		</td>
+	</tr>
+	</table>
+
+	<br />
+
+<div id="pageheader">
+	<h2><a class="titles" href="./viewtopic.php?f=1&amp;t=1088&amp;start=20&amp;sid=661a1f781954ab7fe128b6996540e240">mix download page question</a></h2>
+
+</div>
+
+<br clear="all" /><br />
+
+<div id="pagecontent">
+
+	<table width="100%" cellspacing="1" style="margin:-5px 0 15px 0;">
+	<tr>
+		<td width="14%" valign="top" nowrap="nowrap">
+		<a class="newtopic" href="./posting.php?mode=post&amp;f=1&amp;sid=661a1f781954ab7fe128b6996540e240">New Topic</a>&nbsp;<a class="postreply" href="./posting.php?mode=reply&amp;f=1&amp;t=1088&amp;sid=661a1f781954ab7fe128b6996540e240">Post Reply</a>
+		</td>
+		
+			<td class="nav" valign="middle" nowrap="nowrap">&nbsp;Page <strong>2</strong> of <strong>4</strong><br /></td>
+			<td class="gensmall" nowrap="nowrap">&nbsp;[ 61 posts ]&nbsp;</td>
+			<td class="gensmall" width="100%" align="right" nowrap="nowrap"><b><a href="#" onclick="jumpto(); return false;" title="Click to jump to page…">Go to page</a> <a href="./viewtopic.php?f=1&amp;t=1088&amp;sid=661a1f781954ab7fe128b6996540e240&amp;start=0">Previous</a>&nbsp;&nbsp;<a href="./viewtopic.php?f=1&amp;t=1088&amp;sid=661a1f781954ab7fe128b6996540e240">1</a><span class="page-sep">, </span><strong>2</strong><span class="page-sep">, </span><a href="./viewtopic.php?f=1&amp;t=1088&amp;sid=661a1f781954ab7fe128b6996540e240&amp;start=40">3</a><span class="page-sep">, </span><a href="./viewtopic.php?f=1&amp;t=1088&amp;sid=661a1f781954ab7fe128b6996540e240&amp;start=60">4</a> &nbsp;<a href="./viewtopic.php?f=1&amp;t=1088&amp;sid=661a1f781954ab7fe128b6996540e240&amp;start=40">Next</a></b></td>
+		
+	</tr>
+	</table>
+
+	<table class="tablebg" width="100%" cellspacing="1">
+	<tr>
+		<td class="cat catnav">
+			<table width="100%" cellspacing="0">
+			<tr>
+				<td class="nav" nowrap="nowrap">&nbsp;
+				
+				</td>
+				<td class="nav" align="right" nowrap="nowrap"><a href="./viewtopic.php?f=1&amp;t=1088&amp;view=previous&amp;sid=661a1f781954ab7fe128b6996540e240">Previous topic</a>&nbsp;&nbsp;&nbsp;&bull;&nbsp;&nbsp;&nbsp;<a href="./viewtopic.php?f=1&amp;t=1088&amp;view=next&amp;sid=661a1f781954ab7fe128b6996540e240">Next topic</a>&nbsp;</td>
+			</tr>
+			</table>
+		</td>
+	</tr>
+
+	</table>
+
+
+	<table class="tablebg" width="100%" cellspacing="1">
+	
+		<tr>
+			<th>Author</th>
+			<th>Message</th>
+		</tr>
+	<tr class="row1">
+
+			<td valign="middle">
+				<a name="p7546"></a>
+				<span class="postauthor">cozmo78</span>
+			</td>
+			<td width="100%" height="25">
+				<table width="100%" cellspacing="0">
+				<tr>
+				
+					<td class="gensmall" width="100%"><div style="float: left;">&nbsp;Post subject: </div><div style="float: right;"><a href="./viewtopic.php?p=7546&amp;sid=661a1f781954ab7fe128b6996540e240#p7546"><img src="./styles/subsilver2/imageset/icon_post_target.gif" width="12" height="9" alt="Post" title="Post" /></a>Posted: Fri May 04, 2007 8:29 am&nbsp;</div></td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row1">
+
+			<td valign="top" class="profile">
+				<table cellspacing="0" align="center" width="150">
+			
+				<tr>
+					<td><img src="./styles/subsilver2/imageset/en/icon_user_offline.gif" alt="Offline" title="Offline" /></td>
+				</tr>
+			
+				</table>
+
+				<span class="postdetails">
+					<br /><b>Joined:</b> Wed Nov 09, 2005 3:38 am<br /><b>Posts:</b> 214<br /><b>Location:</b> Memphis, TN
+				</span>
+
+			</td>
+			<td valign="top">
+				<table width="100%" cellspacing="5">
+				<tr>
+					<td>
+					
+
+						<div class="postbody">Wow - kudos you guys! Things that are old are now new again....i know some people think posting as such is redundant, but justspeaking for myself, you just hooked it up! There is no way i would put a file sharer on my comp at work, but i easily and quickly grabbed these....I'll post up a few on ZShare...anybody looking for anything in particular?</div>
+
+					<br clear="all" /><br />
+
+						<table width="100%" cellspacing="0">
+						<tr valign="middle">
+							<td class="gensmall" align="right">
+							
+							</td>
+						</tr>
+						</table>
+					</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row1">
+
+			<td class="profile"><a href="#wrapheader">Top</a></td>
+			<td style="padding: 7px 0 0 0;"><div class="gensmall icons" style="float: left;">&nbsp;<a href="./memberlist.php?mode=viewprofile&amp;u=183&amp;sid=661a1f781954ab7fe128b6996540e240"><img src="./styles/subsilver2/imageset/en/icon_user_profile.gif" alt="Profile" title="Profile" /></a> &nbsp;</div> <div class="gensmall" style="float: right;">&nbsp;</div></td>
+	
+		</tr>
+
+	<tr>
+		<td class="spacer" colspan="2" height="1"><img src="images/spacer.gif" alt="" width="1" height="1" /></td>
+	</tr>
+	</table>
+
+	<table class="tablebg" width="100%" cellspacing="1">
+	<tr class="row2">
+
+			<td valign="middle">
+				<a name="p7547"></a>
+				<span class="postauthor">TIME_IS_IN_LOVE</span>
+			</td>
+			<td width="100%" height="25">
+				<table width="100%" cellspacing="0">
+				<tr>
+				
+					<td class="gensmall" width="100%"><div style="float: left;">&nbsp;Post subject: </div><div style="float: right;"><a href="./viewtopic.php?p=7547&amp;sid=661a1f781954ab7fe128b6996540e240#p7547"><img src="./styles/subsilver2/imageset/icon_post_target.gif" width="12" height="9" alt="Post" title="Post" /></a>Posted: Fri May 04, 2007 9:24 am&nbsp;</div></td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row2">
+
+			<td valign="top" class="profile">
+				<table cellspacing="0" align="center" width="150">
+			
+				<tr>
+					<td><img src="./styles/subsilver2/imageset/en/icon_user_offline.gif" alt="Offline" title="Offline" /></td>
+				</tr>
+			
+				</table>
+
+				<span class="postdetails">
+					<br /><b>Joined:</b> Thu Mar 08, 2007 7:06 am<br /><b>Posts:</b> 61
+				</span>
+
+			</td>
+			<td valign="top">
+				<table width="100%" cellspacing="5">
+				<tr>
+					<td>
+					
+
+						<div class="postbody">[   ]</div>
+
+					
+							<br /><br />
+							<span class="gensmall">Last edited by <a href="./memberlist.php?mode=viewprofile&amp;u=1874&amp;sid=661a1f781954ab7fe128b6996540e240">TIME_IS_IN_LOVE</a> on Tue Sep 04, 2007 12:26 pm, edited 1 time in total.</span>
+						<br clear="all" /><br />
+
+						<table width="100%" cellspacing="0">
+						<tr valign="middle">
+							<td class="gensmall" align="right">
+							
+							</td>
+						</tr>
+						</table>
+					</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row2">
+
+			<td class="profile"><a href="#wrapheader">Top</a></td>
+			<td style="padding: 7px 0 0 0;"><div class="gensmall icons" style="float: left;">&nbsp;<a href="./memberlist.php?mode=viewprofile&amp;u=1874&amp;sid=661a1f781954ab7fe128b6996540e240"><img src="./styles/subsilver2/imageset/en/icon_user_profile.gif" alt="Profile" title="Profile" /></a> &nbsp;</div> <div class="gensmall" style="float: right;">&nbsp;</div></td>
+	
+		</tr>
+
+	<tr>
+		<td class="spacer" colspan="2" height="1"><img src="images/spacer.gif" alt="" width="1" height="1" /></td>
+	</tr>
+	</table>
+
+	<table class="tablebg" width="100%" cellspacing="1">
+	<tr class="row1">
+
+			<td valign="middle">
+				<a name="p7548"></a>
+				<span class="postauthor">TIME_IS_IN_LOVE</span>
+			</td>
+			<td width="100%" height="25">
+				<table width="100%" cellspacing="0">
+				<tr>
+				
+					<td class="gensmall" width="100%"><div style="float: left;">&nbsp;Post subject: </div><div style="float: right;"><a href="./viewtopic.php?p=7548&amp;sid=661a1f781954ab7fe128b6996540e240#p7548"><img src="./styles/subsilver2/imageset/icon_post_target.gif" width="12" height="9" alt="Post" title="Post" /></a>Posted: Fri May 04, 2007 9:25 am&nbsp;</div></td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row1">
+
+			<td valign="top" class="profile">
+				<table cellspacing="0" align="center" width="150">
+			
+				<tr>
+					<td><img src="./styles/subsilver2/imageset/en/icon_user_offline.gif" alt="Offline" title="Offline" /></td>
+				</tr>
+			
+				</table>
+
+				<span class="postdetails">
+					<br /><b>Joined:</b> Thu Mar 08, 2007 7:06 am<br /><b>Posts:</b> 61
+				</span>
+
+			</td>
+			<td valign="top">
+				<table width="100%" cellspacing="5">
+				<tr>
+					<td>
+					
+
+						<div class="postbody">[   ]</div>
+
+					
+							<br /><br />
+							<span class="gensmall">Last edited by <a href="./memberlist.php?mode=viewprofile&amp;u=1874&amp;sid=661a1f781954ab7fe128b6996540e240">TIME_IS_IN_LOVE</a> on Tue Sep 04, 2007 12:25 pm, edited 1 time in total.</span>
+						<br clear="all" /><br />
+
+						<table width="100%" cellspacing="0">
+						<tr valign="middle">
+							<td class="gensmall" align="right">
+							
+							</td>
+						</tr>
+						</table>
+					</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row1">
+
+			<td class="profile"><a href="#wrapheader">Top</a></td>
+			<td style="padding: 7px 0 0 0;"><div class="gensmall icons" style="float: left;">&nbsp;<a href="./memberlist.php?mode=viewprofile&amp;u=1874&amp;sid=661a1f781954ab7fe128b6996540e240"><img src="./styles/subsilver2/imageset/en/icon_user_profile.gif" alt="Profile" title="Profile" /></a> &nbsp;</div> <div class="gensmall" style="float: right;">&nbsp;</div></td>
+	
+		</tr>
+
+	<tr>
+		<td class="spacer" colspan="2" height="1"><img src="images/spacer.gif" alt="" width="1" height="1" /></td>
+	</tr>
+	</table>
+
+	<table class="tablebg" width="100%" cellspacing="1">
+	<tr class="row2">
+
+			<td valign="middle">
+				<a name="p7549"></a>
+				<span class="postauthor">swamp</span>
+			</td>
+			<td width="100%" height="25">
+				<table width="100%" cellspacing="0">
+				<tr>
+				
+					<td class="gensmall" width="100%"><div style="float: left;">&nbsp;Post subject: </div><div style="float: right;"><a href="./viewtopic.php?p=7549&amp;sid=661a1f781954ab7fe128b6996540e240#p7549"><img src="./styles/subsilver2/imageset/icon_post_target.gif" width="12" height="9" alt="Post" title="Post" /></a>Posted: Fri May 04, 2007 9:57 am&nbsp;</div></td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row2">
+
+			<td valign="top" class="profile">
+				<table cellspacing="0" align="center" width="150">
+			
+				<tr>
+					<td><img src="./styles/subsilver2/imageset/en/icon_user_offline.gif" alt="Offline" title="Offline" /></td>
+				</tr>
+			
+				</table>
+
+				<span class="postdetails">
+					<br /><b>Joined:</b> Sat May 14, 2005 2:08 am<br /><b>Posts:</b> 272<br /><b>Location:</b> Swamp Towers, Liverpool
+				</span>
+
+			</td>
+			<td valign="top">
+				<table width="100%" cellspacing="5">
+				<tr>
+					<td>
+					
+
+						<div class="postbody">very nice ov u 2 offer tiil, but i think itz yrself who needs to beef up on yr avs stuff, hehe. check the <a href="http://www.theavalanches.com/forum/viewtopic.php?t=3" class="postlink">slsk names</a> thred <img src="./images/smilies/icon_wink.gif" alt=":wink:" title="Wink" /></div>
+
+					
+						<span class="postbody"><br />_________________<br />&quot;life is just a party and parties weren't meant to last&quot;<br />http://swamptowers.blogspot.com/</span>
+					
+							<br /><br />
+							<span class="gensmall">Last edited by <a href="./memberlist.php?mode=viewprofile&amp;u=10&amp;sid=661a1f781954ab7fe128b6996540e240">swamp</a> on Mon May 07, 2007 8:15 pm, edited 1 time in total.</span>
+						<br clear="all" /><br />
+
+						<table width="100%" cellspacing="0">
+						<tr valign="middle">
+							<td class="gensmall" align="right">
+							
+							</td>
+						</tr>
+						</table>
+					</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row2">
+
+			<td class="profile"><a href="#wrapheader">Top</a></td>
+			<td style="padding: 7px 0 0 0;"><div class="gensmall icons" style="float: left;">&nbsp;<a href="./memberlist.php?mode=viewprofile&amp;u=10&amp;sid=661a1f781954ab7fe128b6996540e240"><img src="./styles/subsilver2/imageset/en/icon_user_profile.gif" alt="Profile" title="Profile" /></a> &nbsp;</div> <div class="gensmall" style="float: right;">&nbsp;</div></td>
+	
+		</tr>
+
+	<tr>
+		<td class="spacer" colspan="2" height="1"><img src="images/spacer.gif" alt="" width="1" height="1" /></td>
+	</tr>
+	</table>
+
+	<table class="tablebg" width="100%" cellspacing="1">
+	<tr class="row1">
+
+			<td valign="middle">
+				<a name="p7550"></a>
+				<span class="postauthor">TIME_IS_IN_LOVE</span>
+			</td>
+			<td width="100%" height="25">
+				<table width="100%" cellspacing="0">
+				<tr>
+				
+					<td class="gensmall" width="100%"><div style="float: left;">&nbsp;Post subject: </div><div style="float: right;"><a href="./viewtopic.php?p=7550&amp;sid=661a1f781954ab7fe128b6996540e240#p7550"><img src="./styles/subsilver2/imageset/icon_post_target.gif" width="12" height="9" alt="Post" title="Post" /></a>Posted: Fri May 04, 2007 10:03 am&nbsp;</div></td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row1">
+
+			<td valign="top" class="profile">
+				<table cellspacing="0" align="center" width="150">
+			
+				<tr>
+					<td><img src="./styles/subsilver2/imageset/en/icon_user_offline.gif" alt="Offline" title="Offline" /></td>
+				</tr>
+			
+				</table>
+
+				<span class="postdetails">
+					<br /><b>Joined:</b> Thu Mar 08, 2007 7:06 am<br /><b>Posts:</b> 61
+				</span>
+
+			</td>
+			<td valign="top">
+				<table width="100%" cellspacing="5">
+				<tr>
+					<td>
+					
+
+						<div class="postbody">[   ]</div>
+
+					
+							<br /><br />
+							<span class="gensmall">Last edited by <a href="./memberlist.php?mode=viewprofile&amp;u=1874&amp;sid=661a1f781954ab7fe128b6996540e240">TIME_IS_IN_LOVE</a> on Tue Sep 04, 2007 12:25 pm, edited 1 time in total.</span>
+						<br clear="all" /><br />
+
+						<table width="100%" cellspacing="0">
+						<tr valign="middle">
+							<td class="gensmall" align="right">
+							
+							</td>
+						</tr>
+						</table>
+					</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row1">
+
+			<td class="profile"><a href="#wrapheader">Top</a></td>
+			<td style="padding: 7px 0 0 0;"><div class="gensmall icons" style="float: left;">&nbsp;<a href="./memberlist.php?mode=viewprofile&amp;u=1874&amp;sid=661a1f781954ab7fe128b6996540e240"><img src="./styles/subsilver2/imageset/en/icon_user_profile.gif" alt="Profile" title="Profile" /></a> &nbsp;</div> <div class="gensmall" style="float: right;">&nbsp;</div></td>
+	
+		</tr>
+
+	<tr>
+		<td class="spacer" colspan="2" height="1"><img src="images/spacer.gif" alt="" width="1" height="1" /></td>
+	</tr>
+	</table>
+
+	<table class="tablebg" width="100%" cellspacing="1">
+	<tr class="row2">
+
+			<td valign="middle">
+				<a name="p7551"></a>
+				<span class="postauthor">lossless</span>
+			</td>
+			<td width="100%" height="25">
+				<table width="100%" cellspacing="0">
+				<tr>
+				
+					<td class="gensmall" width="100%"><div style="float: left;">&nbsp;Post subject: </div><div style="float: right;"><a href="./viewtopic.php?p=7551&amp;sid=661a1f781954ab7fe128b6996540e240#p7551"><img src="./styles/subsilver2/imageset/icon_post_target.gif" width="12" height="9" alt="Post" title="Post" /></a>Posted: Fri May 04, 2007 12:11 pm&nbsp;</div></td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row2">
+
+			<td valign="top" class="profile">
+				<table cellspacing="0" align="center" width="150">
+			
+				<tr>
+					<td><img src="./styles/subsilver2/imageset/en/icon_user_offline.gif" alt="Offline" title="Offline" /></td>
+				</tr>
+			
+				</table>
+
+				<span class="postdetails">
+					<br /><b>Joined:</b> Tue May 17, 2005 11:54 am<br /><b>Posts:</b> 151<br /><b>Location:</b> Boston, MA, USA
+				</span>
+
+			</td>
+			<td valign="top">
+				<table width="100%" cellspacing="5">
+				<tr>
+					<td>
+					
+
+						<div class="postbody">here's my avs mix collection so far:
+<br />
+<br /><img src="http://www.lossless.net/images/music/lossless-avalanches-mixes.jpg" alt="Image" />
+<br />
+<br />swamp - is there anything else? (aside from brains teazer and some people.) i should check against your avs page.
+<br />
+<br />i'm rarely on soulseek these days. if someone needs something badly, i can try to host a mix for a time on my wee little overwhelmed server.
+<br />
+<br />oh - soulseek username: restproof</div>
+
+					<br clear="all" /><br />
+
+						<table width="100%" cellspacing="0">
+						<tr valign="middle">
+							<td class="gensmall" align="right">
+							
+							</td>
+						</tr>
+						</table>
+					</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row2">
+
+			<td class="profile"><a href="#wrapheader">Top</a></td>
+			<td style="padding: 7px 0 0 0;"><div class="gensmall icons" style="float: left;">&nbsp;<a href="./memberlist.php?mode=viewprofile&amp;u=25&amp;sid=661a1f781954ab7fe128b6996540e240"><img src="./styles/subsilver2/imageset/en/icon_user_profile.gif" alt="Profile" title="Profile" /></a> &nbsp;</div> <div class="gensmall" style="float: right;">&nbsp;</div></td>
+	
+		</tr>
+
+	<tr>
+		<td class="spacer" colspan="2" height="1"><img src="images/spacer.gif" alt="" width="1" height="1" /></td>
+	</tr>
+	</table>
+
+	<table class="tablebg" width="100%" cellspacing="1">
+	<tr class="row1">
+
+			<td valign="middle">
+				<a name="p7552"></a>
+				<span class="postauthor">jerome</span>
+			</td>
+			<td width="100%" height="25">
+				<table width="100%" cellspacing="0">
+				<tr>
+				
+					<td class="gensmall" width="100%"><div style="float: left;">&nbsp;Post subject: </div><div style="float: right;"><a href="./viewtopic.php?p=7552&amp;sid=661a1f781954ab7fe128b6996540e240#p7552"><img src="./styles/subsilver2/imageset/icon_post_target.gif" width="12" height="9" alt="Post" title="Post" /></a>Posted: Fri May 04, 2007 2:39 pm&nbsp;</div></td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row1">
+
+			<td valign="top" class="profile">
+				<table cellspacing="0" align="center" width="150">
+			
+				<tr>
+					<td><img src="./styles/subsilver2/imageset/en/icon_user_offline.gif" alt="Offline" title="Offline" /></td>
+				</tr>
+			
+				</table>
+
+				<span class="postdetails">
+					<br /><b>Joined:</b> Tue Apr 24, 2007 10:01 am<br /><b>Posts:</b> 8
+				</span>
+
+			</td>
+			<td valign="top">
+				<table width="100%" cellspacing="5">
+				<tr>
+					<td>
+					
+
+						<div class="postbody">hmmm, can't seem to make the rapidshare thing work... it keeps telling me taht my download limit has been reached - even though I haven't downloaded anything yet...
+<br />
+<br />If anyone can/an or wants to host a couple of files for download these would get my vote...
+<br />  
+<br />the triple j mix up set (dexter or av's - not too fussed)
+<br />cornerstone
+<br />morning becomes eclectic
+<br />
+<br />
+<br />i could go on, but don't want to seem greedy... <img src="./images/smilies/icon_redface.gif" alt=":oops:" title="Embarassed" /></div>
+
+					<br clear="all" /><br />
+
+						<table width="100%" cellspacing="0">
+						<tr valign="middle">
+							<td class="gensmall" align="right">
+							
+							</td>
+						</tr>
+						</table>
+					</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row1">
+
+			<td class="profile"><a href="#wrapheader">Top</a></td>
+			<td style="padding: 7px 0 0 0;"><div class="gensmall icons" style="float: left;">&nbsp;<a href="./memberlist.php?mode=viewprofile&amp;u=2285&amp;sid=661a1f781954ab7fe128b6996540e240"><img src="./styles/subsilver2/imageset/en/icon_user_profile.gif" alt="Profile" title="Profile" /></a> &nbsp;</div> <div class="gensmall" style="float: right;">&nbsp;</div></td>
+	
+		</tr>
+
+	<tr>
+		<td class="spacer" colspan="2" height="1"><img src="images/spacer.gif" alt="" width="1" height="1" /></td>
+	</tr>
+	</table>
+
+	<table class="tablebg" width="100%" cellspacing="1">
+	<tr class="row2">
+
+			<td valign="middle">
+				<a name="p7553"></a>
+				<span class="postauthor">cozmo78</span>
+			</td>
+			<td width="100%" height="25">
+				<table width="100%" cellspacing="0">
+				<tr>
+				
+					<td class="gensmall" width="100%"><div style="float: left;">&nbsp;Post subject: </div><div style="float: right;"><a href="./viewtopic.php?p=7553&amp;sid=661a1f781954ab7fe128b6996540e240#p7553"><img src="./styles/subsilver2/imageset/icon_post_target.gif" width="12" height="9" alt="Post" title="Post" /></a>Posted: Fri May 04, 2007 3:03 pm&nbsp;</div></td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row2">
+
+			<td valign="top" class="profile">
+				<table cellspacing="0" align="center" width="150">
+			
+				<tr>
+					<td><img src="./styles/subsilver2/imageset/en/icon_user_offline.gif" alt="Offline" title="Offline" /></td>
+				</tr>
+			
+				</table>
+
+				<span class="postdetails">
+					<br /><b>Joined:</b> Wed Nov 09, 2005 3:38 am<br /><b>Posts:</b> 214<br /><b>Location:</b> Memphis, TN
+				</span>
+
+			</td>
+			<td valign="top">
+				<table width="100%" cellspacing="5">
+				<tr>
+					<td>
+					
+
+						<div class="postbody">My inventory:
+<br />SInce I Left You - remixes by prince Paul, Cornelius &amp; Stereolab
+<br />the single with Everyday &amp; Thank You, Carline (Andy Votel rmx)
+<br />The Concretes - Chico (Avs rmx)
+<br />DO You Know The Way To San Jose
+<br />Manic Street Preachers rmx
+<br />the various remixes and mashups that have been posted on here officially
+<br />the February 2004 preview and the March 04 Since I Left You components mix (wow)
+<br />Lets Cheer
+<br />Frontier Psychiatrist vs Crazy (the Cheekyboy mashup)
+<br />Breezeblocks 1 &amp; 2 (&amp;3?!?!)
+<br />Ibiza mix (my fave)
+<br />PBS The Breakdown interview
+<br />SUperchunk XFM mix
+<br />The Hijack XFM mix
+<br />James De La Cruz Beneath the Surface
+<br />XFM One Night Stand
+<br />and of course the Some People and Brains teaser,blah blah blah...
+<br />
+<br />I would love to see someone host this 3 hour Cornerstone mix we're talkin about and any of those Dexter showcase sets are smokin i am sure...if anyone wants any of what i got, just holla.</div>
+
+					<br clear="all" /><br />
+
+						<table width="100%" cellspacing="0">
+						<tr valign="middle">
+							<td class="gensmall" align="right">
+							
+							</td>
+						</tr>
+						</table>
+					</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row2">
+
+			<td class="profile"><a href="#wrapheader">Top</a></td>
+			<td style="padding: 7px 0 0 0;"><div class="gensmall icons" style="float: left;">&nbsp;<a href="./memberlist.php?mode=viewprofile&amp;u=183&amp;sid=661a1f781954ab7fe128b6996540e240"><img src="./styles/subsilver2/imageset/en/icon_user_profile.gif" alt="Profile" title="Profile" /></a> &nbsp;</div> <div class="gensmall" style="float: right;">&nbsp;</div></td>
+	
+		</tr>
+
+	<tr>
+		<td class="spacer" colspan="2" height="1"><img src="images/spacer.gif" alt="" width="1" height="1" /></td>
+	</tr>
+	</table>
+
+	<table class="tablebg" width="100%" cellspacing="1">
+	<tr class="row1">
+
+			<td valign="middle">
+				<a name="p7554"></a>
+				<span class="postauthor">jerome</span>
+			</td>
+			<td width="100%" height="25">
+				<table width="100%" cellspacing="0">
+				<tr>
+				
+					<td class="gensmall" width="100%"><div style="float: left;">&nbsp;Post subject: </div><div style="float: right;"><a href="./viewtopic.php?p=7554&amp;sid=661a1f781954ab7fe128b6996540e240#p7554"><img src="./styles/subsilver2/imageset/icon_post_target.gif" width="12" height="9" alt="Post" title="Post" /></a>Posted: Fri May 04, 2007 3:16 pm&nbsp;</div></td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row1">
+
+			<td valign="top" class="profile">
+				<table cellspacing="0" align="center" width="150">
+			
+				<tr>
+					<td><img src="./styles/subsilver2/imageset/en/icon_user_offline.gif" alt="Offline" title="Offline" /></td>
+				</tr>
+			
+				</table>
+
+				<span class="postdetails">
+					<br /><b>Joined:</b> Tue Apr 24, 2007 10:01 am<br /><b>Posts:</b> 8
+				</span>
+
+			</td>
+			<td valign="top">
+				<table width="100%" cellspacing="5">
+				<tr>
+					<td>
+					
+
+						<div class="postbody">Nice moves cozmo, by the way just downloading your &quot;there... and back again&quot; mixes from elsewhere on the site at this very moment and can heartilly reccomend them to anyone and everyone here - very good stuff indeed.
+<br />
+<br />Anyways, these I've not heard before Superchunk XFM mix, The Hijack XFM mix, XFM One Night Stand - but sound interesting and if you were interested in making them available that would be grand...  
+<br />
+<br />The James De La Cruz Beneath the Surface mix though would be my first choice out of those, again haven't heard it myself but have heard good things...</div>
+
+					<br clear="all" /><br />
+
+						<table width="100%" cellspacing="0">
+						<tr valign="middle">
+							<td class="gensmall" align="right">
+							
+							</td>
+						</tr>
+						</table>
+					</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row1">
+
+			<td class="profile"><a href="#wrapheader">Top</a></td>
+			<td style="padding: 7px 0 0 0;"><div class="gensmall icons" style="float: left;">&nbsp;<a href="./memberlist.php?mode=viewprofile&amp;u=2285&amp;sid=661a1f781954ab7fe128b6996540e240"><img src="./styles/subsilver2/imageset/en/icon_user_profile.gif" alt="Profile" title="Profile" /></a> &nbsp;</div> <div class="gensmall" style="float: right;">&nbsp;</div></td>
+	
+		</tr>
+
+	<tr>
+		<td class="spacer" colspan="2" height="1"><img src="images/spacer.gif" alt="" width="1" height="1" /></td>
+	</tr>
+	</table>
+
+	<table class="tablebg" width="100%" cellspacing="1">
+	<tr class="row2">
+
+			<td valign="middle">
+				<a name="p7555"></a>
+				<span class="postauthor">TIME_IS_IN_LOVE</span>
+			</td>
+			<td width="100%" height="25">
+				<table width="100%" cellspacing="0">
+				<tr>
+				
+					<td class="gensmall" width="100%"><div style="float: left;">&nbsp;Post subject: </div><div style="float: right;"><a href="./viewtopic.php?p=7555&amp;sid=661a1f781954ab7fe128b6996540e240#p7555"><img src="./styles/subsilver2/imageset/icon_post_target.gif" width="12" height="9" alt="Post" title="Post" /></a>Posted: Sat May 05, 2007 5:09 am&nbsp;</div></td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row2">
+
+			<td valign="top" class="profile">
+				<table cellspacing="0" align="center" width="150">
+			
+				<tr>
+					<td><img src="./styles/subsilver2/imageset/en/icon_user_offline.gif" alt="Offline" title="Offline" /></td>
+				</tr>
+			
+				</table>
+
+				<span class="postdetails">
+					<br /><b>Joined:</b> Thu Mar 08, 2007 7:06 am<br /><b>Posts:</b> 61
+				</span>
+
+			</td>
+			<td valign="top">
+				<table width="100%" cellspacing="5">
+				<tr>
+					<td>
+					
+
+						<div class="postbody">[   ]</div>
+
+					
+							<br /><br />
+							<span class="gensmall">Last edited by <a href="./memberlist.php?mode=viewprofile&amp;u=1874&amp;sid=661a1f781954ab7fe128b6996540e240">TIME_IS_IN_LOVE</a> on Tue Sep 04, 2007 12:24 pm, edited 1 time in total.</span>
+						<br clear="all" /><br />
+
+						<table width="100%" cellspacing="0">
+						<tr valign="middle">
+							<td class="gensmall" align="right">
+							
+							</td>
+						</tr>
+						</table>
+					</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row2">
+
+			<td class="profile"><a href="#wrapheader">Top</a></td>
+			<td style="padding: 7px 0 0 0;"><div class="gensmall icons" style="float: left;">&nbsp;<a href="./memberlist.php?mode=viewprofile&amp;u=1874&amp;sid=661a1f781954ab7fe128b6996540e240"><img src="./styles/subsilver2/imageset/en/icon_user_profile.gif" alt="Profile" title="Profile" /></a> &nbsp;</div> <div class="gensmall" style="float: right;">&nbsp;</div></td>
+	
+		</tr>
+
+	<tr>
+		<td class="spacer" colspan="2" height="1"><img src="images/spacer.gif" alt="" width="1" height="1" /></td>
+	</tr>
+	</table>
+
+	<table class="tablebg" width="100%" cellspacing="1">
+	<tr class="row1">
+
+			<td valign="middle">
+				<a name="p7559"></a>
+				<span class="postauthor">swamp</span>
+			</td>
+			<td width="100%" height="25">
+				<table width="100%" cellspacing="0">
+				<tr>
+				
+					<td class="gensmall" width="100%"><div style="float: left;">&nbsp;Post subject: </div><div style="float: right;"><a href="./viewtopic.php?p=7559&amp;sid=661a1f781954ab7fe128b6996540e240#p7559"><img src="./styles/subsilver2/imageset/icon_post_target.gif" width="12" height="9" alt="Post" title="Post" /></a>Posted: Sat May 05, 2007 11:22 pm&nbsp;</div></td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row1">
+
+			<td valign="top" class="profile">
+				<table cellspacing="0" align="center" width="150">
+			
+				<tr>
+					<td><img src="./styles/subsilver2/imageset/en/icon_user_offline.gif" alt="Offline" title="Offline" /></td>
+				</tr>
+			
+				</table>
+
+				<span class="postdetails">
+					<br /><b>Joined:</b> Sat May 14, 2005 2:08 am<br /><b>Posts:</b> 272<br /><b>Location:</b> Swamp Towers, Liverpool
+				</span>
+
+			</td>
+			<td valign="top">
+				<table width="100%" cellspacing="5">
+				<tr>
+					<td>
+					
+
+						<div class="postbody">i like lists... <img src="./images/smilies/icon_wink.gif" alt=":wink:" title="Wink" /> heres wot i got/u need:
+<br />
+<br />1. The Avalanches - A Different Feeling (Ernest St. Laurent Remix) (6:05)
+<br />2. The Avalanches - A Different Feeling (Paperclip People Remix) (10:29)
+<br />3. The Avalanches - A Different Feeling (Paperclip Remix) (4:09)
+<br />4. The Avalanches - Do You Know The Way To San Jose (4:57)
+<br />5. The Avalanches - EBTG/Royksopp (4:27)
+<br />6. The Avalanches - Elecrticity (DJ Sneak Remix) (8:54)
+<br />7. The Avalanches - Electricity (Dr. Rockit's Dirty Kiss) (6:50)
+<br />8. The Avalanches - Electricity (Harvey's Night Club Re-Edit)
+<br />9. The Avalanches - Electricity (Original 7'' Version)
+<br />10. The Avalanches - Everyday
+<br />11. The Avalanches - Frontier Psychiatrist (85% Instrumental)
+<br />12. The Avalanches - Frontier Psychiatrist (Mario Caldato's 85% Mix)
+<br />13. The Avalanches - I'm Taken
+<br />14. The Avalanches - Information
+<br />15. The Avalanches - Let's Cheer
+<br />16. The Avalanches - Radio (Radio Edit) (4:18)
+<br />17. The Avalanches - Ray Of Zdarlight
+<br />18. The Avalanches - Rock City (Live)
+<br />19. The Avalanches - Rolling High (Tweakin' Mix) (4:28)
+<br />20. The Avalanches - Since I Left You (Cornelius Remix) (5:35)
+<br />21. The Avalanches - Since I Left You (Prince Paul Remix)
+<br />22. The Avalanches - Since I Left You (Stereolab Remix)
+<br />23. The Avalanches - Slow Walking (3:44)
+<br />24. The Avalanches - Thank You Caroline (Andy Votel Remix) (4:08)
+<br />25. The Avalanches - Thank You Caroline (Original 7&quot; Version) (2:16)
+<br />26. The Avalanches - Undersea Community (Extended) (3:59)
+<br />27. The Avalanches - With My Baby (4:37)
+<br />28. The Avalanches - Yamaha Superstar (1:52)
+<br />29. The Avalanches - Together/My Bloody Valentine (3:32)
+<br />30. The Avalanches - 01 - Information (Live) (1:05)
+<br />31. The Avalanches - 02 - Thank You Caroline (Live)
+<br />32. The Avalanches - 03 - Over Now (Live)
+<br />33. The Avalanches - 04 - Rolling High (Live)
+<br />34. The Avalanches - 05 - Run DNA - Since I Left You (Live)
+<br />35. The Avalanches - 06 - Under Inspection (Live)
+<br />36. The Avalanches - 07 - Rock City (Live)
+<br />37. The Avalanches - Live JJJ Oz Music Show 1997
+<br />38. Badly Drawn Boy - The Shining (The Avalanches Good Word For The Weekend Remix)
+<br />39. Belle And Sebastian - I'm A Cuckoo (Avalanches Mix)
+<br />40. Franz Ferdinand - Fade Together (Avalanches Remix)
+<br />41. Gerling - Enter Spacecapsule (Enter The Spaceship Mix by The Avalanches)
+<br />42. Manic Street Preachers - So Why So Sad (Sean Penn Mix - Avalanches)
+<br />43. The Chemical Brothers - Dexter's International Scribble Mix
+<br />44. The Concretes - Chico (Avalanches' Wernham Hogg Remix)
+<br />45. Wolfmother - Woman (Avalanches Remix)
+<br />46. The Avalanches - 01 - Untitled (Intro)
+<br />47. The Avalanches - 02 - Rolling High
+<br />48. The Avalanches - 03 - Rap Fever
+<br />49. The Avalanches - 04 - Rock City
+<br />50. The Avalanches - 05 - Under Inspection
+<br />51. The Avalanches - 06 - Run DNA
+<br />52. The Avalanches - 07 - Untitled (Outro)
+<br />53. The Avalanches - 01 - Since I Left You-OZM
+<br />54. The Avalanches - 02 - Stay Another Season-OZM
+<br />55. The Avalanches - 03 - Radio-OZM
+<br />56. The Avalanches - 04 - Two Hearts In Three-Quarter Time-OZM
+<br />57. The Avalanches - 05 - Avalanche Rock-OZM
+<br />58. The Avalanches - 06 - Flight Tonight-OZM
+<br />59. The Avalanches - 07 - Close To You-OZM
+<br />60. The Avalanches - 08 - Diners Only-OZM
+<br />61. The Avalanches - 09 - A Different Feeling-OZM
+<br />62. The Avalanches - 10 - Electricity-OZM
+<br />63. The Avalanches - 11 - Tonight May Have To Last Me All My Life-OZM
+<br />64. The Avalanches - 12 - Pablo's Cruise-OZM
+<br />65. The Avalanches - 13 - Frontier Psychiatrist-OZM
+<br />66. The Avalanches - 14 - Etoh-OZM
+<br />67. The Avalanches - 15 - Summer Crane-OZM
+<br />68. The Avalanches - 16 - Little Journey-OZM
+<br />69. The Avalanches - 17 - Live At Dominoes-OZM
+<br />70. The Avalanches - 18 - Extra Kings-OZM
+<br />71. avalanches - jjj interview feb 2005
+<br />72. the avalanches - february2004
+<br />73. the avalanches - january2004
+<br />74. the avalanches - march2004
+<br />75. avalanches pbs the breakdown 20060526 128
+<br />76. The Avalanches - At Home 2 (07.11.01)
+<br />77. The Avalanches - At Home 13.02.01
+<br />78. The Avalanches - Beneath The Surface 23.11.04
+<br />79. The Avalanches - Brains TEAZER (23:11)
+<br />80. The Avalanches - Breezeblock Headline Set 26.02.01
+<br />81. The Avalanches - Gimix
+<br />82. The Avalanches - Ibiza 04.08.01
+<br />83. The Avalanches - Live (Cornerstone)
+<br />84. The Avalanches - Mix-Up, Triple J 26-08-00 - 1
+<br />85. The Avalanches - Mix-Up, Triple J 26-08-00 - 2
+<br />86. The Avalanches - Mix-Up, Triple J 26-08-00 - 3
+<br />87. The Avalanches - Mix-Up, Triple J 30.11.02
+<br />88. The Avalanches - Morning Becomes Eclectic KCRW 30.11.01 Mix 1
+<br />89. The Avalanches - Morning Becomes Eclectic KCRW 30.11.01 Mix 2 (17:27)
+<br />90. The Avalanches - One World Mix 30.08.01 (57:42)
+<br />91. The Avalanches - Some People (44:01)
+<br />92. The Avalanches - Superchunk XFM 01.01.02 Mix 1 (24:21)
+<br />93. The Avalanches - Superchunk, XFM 01-01-02 Mix 2 (32:41)
+<br />94. The Avalanches - The Hijack, XFM 09.12.01 (55:20)
+<br />
+<br />also coupla vids: Brains &amp; live footage with new (2004) music
+<br />
+<br />not included r live audience recs, but i do hav them as well, just dont share em. dont listen to em cos quality iz shite <img src="./images/smilies/icon_wink.gif" alt=":wink:" title="Wink" /></div>
+
+					
+						<span class="postbody"><br />_________________<br />&quot;life is just a party and parties weren't meant to last&quot;<br />http://swamptowers.blogspot.com/</span>
+					<br clear="all" /><br />
+
+						<table width="100%" cellspacing="0">
+						<tr valign="middle">
+							<td class="gensmall" align="right">
+							
+							</td>
+						</tr>
+						</table>
+					</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row1">
+
+			<td class="profile"><a href="#wrapheader">Top</a></td>
+			<td style="padding: 7px 0 0 0;"><div class="gensmall icons" style="float: left;">&nbsp;<a href="./memberlist.php?mode=viewprofile&amp;u=10&amp;sid=661a1f781954ab7fe128b6996540e240"><img src="./styles/subsilver2/imageset/en/icon_user_profile.gif" alt="Profile" title="Profile" /></a> &nbsp;</div> <div class="gensmall" style="float: right;">&nbsp;</div></td>
+	
+		</tr>
+
+	<tr>
+		<td class="spacer" colspan="2" height="1"><img src="images/spacer.gif" alt="" width="1" height="1" /></td>
+	</tr>
+	</table>
+
+	<table class="tablebg" width="100%" cellspacing="1">
+	<tr class="row2">
+
+			<td valign="middle">
+				<a name="p7580"></a>
+				<span class="postauthor">jerome</span>
+			</td>
+			<td width="100%" height="25">
+				<table width="100%" cellspacing="0">
+				<tr>
+				
+					<td class="gensmall" width="100%"><div style="float: left;">&nbsp;Post subject: </div><div style="float: right;"><a href="./viewtopic.php?p=7580&amp;sid=661a1f781954ab7fe128b6996540e240#p7580"><img src="./styles/subsilver2/imageset/icon_post_target.gif" width="12" height="9" alt="Post" title="Post" /></a>Posted: Tue May 15, 2007 3:33 pm&nbsp;</div></td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row2">
+
+			<td valign="top" class="profile">
+				<table cellspacing="0" align="center" width="150">
+			
+				<tr>
+					<td><img src="./styles/subsilver2/imageset/en/icon_user_offline.gif" alt="Offline" title="Offline" /></td>
+				</tr>
+			
+				</table>
+
+				<span class="postdetails">
+					<br /><b>Joined:</b> Tue Apr 24, 2007 10:01 am<br /><b>Posts:</b> 8
+				</span>
+
+			</td>
+			<td valign="top">
+				<table width="100%" cellspacing="5">
+				<tr>
+					<td>
+					
+
+						<div class="postbody">Hmm... this seems to have run out of puff a little - Did anyone get to the point where they were going to host a set or two for download here and there for a bit?  Or did it all kinda peter out...</div>
+
+					<br clear="all" /><br />
+
+						<table width="100%" cellspacing="0">
+						<tr valign="middle">
+							<td class="gensmall" align="right">
+							
+							</td>
+						</tr>
+						</table>
+					</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row2">
+
+			<td class="profile"><a href="#wrapheader">Top</a></td>
+			<td style="padding: 7px 0 0 0;"><div class="gensmall icons" style="float: left;">&nbsp;<a href="./memberlist.php?mode=viewprofile&amp;u=2285&amp;sid=661a1f781954ab7fe128b6996540e240"><img src="./styles/subsilver2/imageset/en/icon_user_profile.gif" alt="Profile" title="Profile" /></a> &nbsp;</div> <div class="gensmall" style="float: right;">&nbsp;</div></td>
+	
+		</tr>
+
+	<tr>
+		<td class="spacer" colspan="2" height="1"><img src="images/spacer.gif" alt="" width="1" height="1" /></td>
+	</tr>
+	</table>
+
+	<table class="tablebg" width="100%" cellspacing="1">
+	<tr class="row1">
+
+			<td valign="middle">
+				<a name="p7592"></a>
+				<span class="postauthor">littlelazylady</span>
+			</td>
+			<td width="100%" height="25">
+				<table width="100%" cellspacing="0">
+				<tr>
+				
+					<td class="gensmall" width="100%"><div style="float: left;">&nbsp;Post subject: </div><div style="float: right;"><a href="./viewtopic.php?p=7592&amp;sid=661a1f781954ab7fe128b6996540e240#p7592"><img src="./styles/subsilver2/imageset/icon_post_target.gif" width="12" height="9" alt="Post" title="Post" /></a>Posted: Sat May 19, 2007 10:28 am&nbsp;</div></td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row1">
+
+			<td valign="top" class="profile">
+				<table cellspacing="0" align="center" width="150">
+			
+				<tr>
+					<td><img src="./styles/subsilver2/imageset/en/icon_user_offline.gif" alt="Offline" title="Offline" /></td>
+				</tr>
+			
+				</table>
+
+				<span class="postdetails">
+					<br /><b>Joined:</b> Wed Mar 22, 2006 3:31 am<br /><b>Posts:</b> 100
+				</span>
+
+			</td>
+			<td valign="top">
+				<table width="100%" cellspacing="5">
+				<tr>
+					<td>
+					
+
+						<div class="postbody">as the promised &quot;new mix&quot; is not here yet, let's dig for the old ones <img src="./images/smilies/icon_smile.gif" alt=":)" title="Smile" /> 
+<br /><div class="codetitle"><b>Code:</b></div><div class="codecontent">http://rapidshare.com/files/32091857/Avalanches_-_00-08-26_-_Mix_Up__Triple_J__Part_1_.mp3</div><br /><div class="codetitle"><b>Code:</b></div><div class="codecontent">http://rapidshare.com/files/32339720/Avalanches_-_00-08-26_-_Mix_Up__Triple_J__Part_2_.mp3</div><br /><div class="codetitle"><b>Code:</b></div><div class="codecontent">http://rapidshare.com/files/32341168/Avalanches_-_00-08-26_-_Mix_Up__Triple_J__Part_3_.mp3</div><br /><div class="codetitle"><b>Code:</b></div><div class="codecontent">http://rapidshare.com/files/32523239/Avalanches_-_02-11-30_-_Mix-Up__Triple_J.mp3</div><br /><div class="codetitle"><b>Code:</b></div><div class="codecontent">http://rapidshare.com/files/32344887/Avalanches_-_01-02-13_-_At_Home.mp3</div><br /><div class="codetitle"><b>Code:</b></div><div class="codecontent">http://rapidshare.com/files/32363137/Avalanches_-_01-11-07_-_At_Home_2.mp3</div></div>
+
+					
+						<span class="postbody"><br />_________________<br />sampling the clearance</span>
+					<br clear="all" /><br />
+
+						<table width="100%" cellspacing="0">
+						<tr valign="middle">
+							<td class="gensmall" align="right">
+							
+							</td>
+						</tr>
+						</table>
+					</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row1">
+
+			<td class="profile"><a href="#wrapheader">Top</a></td>
+			<td style="padding: 7px 0 0 0;"><div class="gensmall icons" style="float: left;">&nbsp;<a href="./memberlist.php?mode=viewprofile&amp;u=290&amp;sid=661a1f781954ab7fe128b6996540e240"><img src="./styles/subsilver2/imageset/en/icon_user_profile.gif" alt="Profile" title="Profile" /></a> &nbsp;</div> <div class="gensmall" style="float: right;">&nbsp;</div></td>
+	
+		</tr>
+
+	<tr>
+		<td class="spacer" colspan="2" height="1"><img src="images/spacer.gif" alt="" width="1" height="1" /></td>
+	</tr>
+	</table>
+
+	<table class="tablebg" width="100%" cellspacing="1">
+	<tr class="row2">
+
+			<td valign="middle">
+				<a name="p7602"></a>
+				<span class="postauthor">cozmo78</span>
+			</td>
+			<td width="100%" height="25">
+				<table width="100%" cellspacing="0">
+				<tr>
+				
+					<td class="gensmall" width="100%"><div style="float: left;">&nbsp;Post subject: </div><div style="float: right;"><a href="./viewtopic.php?p=7602&amp;sid=661a1f781954ab7fe128b6996540e240#p7602"><img src="./styles/subsilver2/imageset/icon_post_target.gif" width="12" height="9" alt="Post" title="Post" /></a>Posted: Tue May 22, 2007 11:04 pm&nbsp;</div></td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row2">
+
+			<td valign="top" class="profile">
+				<table cellspacing="0" align="center" width="150">
+			
+				<tr>
+					<td><img src="./styles/subsilver2/imageset/en/icon_user_offline.gif" alt="Offline" title="Offline" /></td>
+				</tr>
+			
+				</table>
+
+				<span class="postdetails">
+					<br /><b>Joined:</b> Wed Nov 09, 2005 3:38 am<br /><b>Posts:</b> 214<br /><b>Location:</b> Memphis, TN
+				</span>
+
+			</td>
+			<td valign="top">
+				<table width="100%" cellspacing="5">
+				<tr>
+					<td>
+					
+
+						<div class="postbody">WOW. You are f'n AWESOME! Long have i wished for these mix sets in their entirety. Kudos! I promise to post some goodies up this week my damn self...</div>
+
+					<br clear="all" /><br />
+
+						<table width="100%" cellspacing="0">
+						<tr valign="middle">
+							<td class="gensmall" align="right">
+							
+							</td>
+						</tr>
+						</table>
+					</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row2">
+
+			<td class="profile"><a href="#wrapheader">Top</a></td>
+			<td style="padding: 7px 0 0 0;"><div class="gensmall icons" style="float: left;">&nbsp;<a href="./memberlist.php?mode=viewprofile&amp;u=183&amp;sid=661a1f781954ab7fe128b6996540e240"><img src="./styles/subsilver2/imageset/en/icon_user_profile.gif" alt="Profile" title="Profile" /></a> &nbsp;</div> <div class="gensmall" style="float: right;">&nbsp;</div></td>
+	
+		</tr>
+
+	<tr>
+		<td class="spacer" colspan="2" height="1"><img src="images/spacer.gif" alt="" width="1" height="1" /></td>
+	</tr>
+	</table>
+
+	<table class="tablebg" width="100%" cellspacing="1">
+	<tr class="row1">
+
+			<td valign="middle">
+				<a name="p7605"></a>
+				<span class="postauthor">goldfish</span>
+			</td>
+			<td width="100%" height="25">
+				<table width="100%" cellspacing="0">
+				<tr>
+				
+					<td class="gensmall" width="100%"><div style="float: left;">&nbsp;Post subject: </div><div style="float: right;"><a href="./viewtopic.php?p=7605&amp;sid=661a1f781954ab7fe128b6996540e240#p7605"><img src="./styles/subsilver2/imageset/icon_post_target.gif" width="12" height="9" alt="Post" title="Post" /></a>Posted: Thu May 24, 2007 9:04 am&nbsp;</div></td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row1">
+
+			<td valign="top" class="profile">
+				<table cellspacing="0" align="center" width="150">
+			
+				<tr>
+					<td><img src="./styles/subsilver2/imageset/en/icon_user_offline.gif" alt="Offline" title="Offline" /></td>
+				</tr>
+			
+				</table>
+
+				<span class="postdetails">
+					<br /><b>Joined:</b> Fri May 13, 2005 11:37 pm<br /><b>Posts:</b> 338
+				</span>
+
+			</td>
+			<td valign="top">
+				<table width="100%" cellspacing="5">
+				<tr>
+					<td>
+					
+
+						<div class="postbody"><div class="quotetitle">swamp wrote:</div><div class="quotecontent"><a href="http://www.zshare.net/audio/1990537817ff33/" class="postlink">80. The Avalanches - Breezeblock Headline Set 26.02.01</a></div></div>
+
+					<br clear="all" /><br />
+
+						<table width="100%" cellspacing="0">
+						<tr valign="middle">
+							<td class="gensmall" align="right">
+							
+							</td>
+						</tr>
+						</table>
+					</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row1">
+
+			<td class="profile"><a href="#wrapheader">Top</a></td>
+			<td style="padding: 7px 0 0 0;"><div class="gensmall icons" style="float: left;">&nbsp;<a href="./memberlist.php?mode=viewprofile&amp;u=8&amp;sid=661a1f781954ab7fe128b6996540e240"><img src="./styles/subsilver2/imageset/en/icon_user_profile.gif" alt="Profile" title="Profile" /></a> &nbsp;</div> <div class="gensmall" style="float: right;">&nbsp;</div></td>
+	
+		</tr>
+
+	<tr>
+		<td class="spacer" colspan="2" height="1"><img src="images/spacer.gif" alt="" width="1" height="1" /></td>
+	</tr>
+	</table>
+
+	<table class="tablebg" width="100%" cellspacing="1">
+	<tr class="row2">
+
+			<td valign="middle">
+				<a name="p7608"></a>
+				<span class="postauthor">littlelazylady</span>
+			</td>
+			<td width="100%" height="25">
+				<table width="100%" cellspacing="0">
+				<tr>
+				
+					<td class="gensmall" width="100%"><div style="float: left;">&nbsp;Post subject: </div><div style="float: right;"><a href="./viewtopic.php?p=7608&amp;sid=661a1f781954ab7fe128b6996540e240#p7608"><img src="./styles/subsilver2/imageset/icon_post_target.gif" width="12" height="9" alt="Post" title="Post" /></a>Posted: Thu May 24, 2007 7:02 pm&nbsp;</div></td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row2">
+
+			<td valign="top" class="profile">
+				<table cellspacing="0" align="center" width="150">
+			
+				<tr>
+					<td><img src="./styles/subsilver2/imageset/en/icon_user_offline.gif" alt="Offline" title="Offline" /></td>
+				</tr>
+			
+				</table>
+
+				<span class="postdetails">
+					<br /><b>Joined:</b> Wed Mar 22, 2006 3:31 am<br /><b>Posts:</b> 100
+				</span>
+
+			</td>
+			<td valign="top">
+				<table width="100%" cellspacing="5">
+				<tr>
+					<td>
+					
+
+						<div class="postbody"><div class="codetitle"><b>Code:</b></div><div class="codecontent">http://rapidshare.com/files/33081792/James_De_La_Cruz__The_Avalanches__-_04-11-23_-_Beneath_The_Surface.mp3</div><br /><div class="codetitle"><b>Code:</b></div><div class="codecontent">http://rapidshare.com/files/33083252/2001.07.14_The_Avalanches_-_DJ_Dexta_Live_at_Monastery_Brisbane.mp3</div><br /><div class="codetitle"><b>Code:</b></div><div class="codecontent">http://rapidshare.com/files/33083846/Avalanches_-_01-02-00_-_One_Night_Stand_XFM.mp3</div><br /><div class="codetitle"><b>Code:</b></div><div class="codecontent">http://rapidshare.com/files/33085446/2001.08.30_The_Avalanches_-_One_World_Mix.mp3</div>
+<br />cheers <img src="./images/smilies/icon_wink.gif" alt=":wink:" title="Wink" /></div>
+
+					
+						<span class="postbody"><br />_________________<br />sampling the clearance</span>
+					<br clear="all" /><br />
+
+						<table width="100%" cellspacing="0">
+						<tr valign="middle">
+							<td class="gensmall" align="right">
+							
+							</td>
+						</tr>
+						</table>
+					</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row2">
+
+			<td class="profile"><a href="#wrapheader">Top</a></td>
+			<td style="padding: 7px 0 0 0;"><div class="gensmall icons" style="float: left;">&nbsp;<a href="./memberlist.php?mode=viewprofile&amp;u=290&amp;sid=661a1f781954ab7fe128b6996540e240"><img src="./styles/subsilver2/imageset/en/icon_user_profile.gif" alt="Profile" title="Profile" /></a> &nbsp;</div> <div class="gensmall" style="float: right;">&nbsp;</div></td>
+	
+		</tr>
+
+	<tr>
+		<td class="spacer" colspan="2" height="1"><img src="images/spacer.gif" alt="" width="1" height="1" /></td>
+	</tr>
+	</table>
+
+	<table class="tablebg" width="100%" cellspacing="1">
+	<tr class="row1">
+
+			<td valign="middle">
+				<a name="p7647"></a>
+				<span class="postauthor">TheGent</span>
+			</td>
+			<td width="100%" height="25">
+				<table width="100%" cellspacing="0">
+				<tr>
+				
+					<td class="gensmall" width="100%"><div style="float: left;">&nbsp;Post subject: </div><div style="float: right;"><a href="./viewtopic.php?p=7647&amp;sid=661a1f781954ab7fe128b6996540e240#p7647"><img src="./styles/subsilver2/imageset/icon_post_target.gif" width="12" height="9" alt="Post" title="Post" /></a>Posted: Tue Jun 05, 2007 4:38 am&nbsp;</div></td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row1">
+
+			<td valign="top" class="profile">
+				<table cellspacing="0" align="center" width="150">
+			
+				<tr>
+					<td><img src="./styles/subsilver2/imageset/en/icon_user_offline.gif" alt="Offline" title="Offline" /></td>
+				</tr>
+			
+				</table>
+
+				<span class="postdetails">
+					<br /><b>Joined:</b> Mon Mar 12, 2007 3:28 am<br /><b>Posts:</b> 23
+				</span>
+
+			</td>
+			<td valign="top">
+				<table width="100%" cellspacing="5">
+				<tr>
+					<td>
+					
+
+						<div class="postbody">You did well sharing so much. Don't call me greedy, but any chance for some more?</div>
+
+					<br clear="all" /><br />
+
+						<table width="100%" cellspacing="0">
+						<tr valign="middle">
+							<td class="gensmall" align="right">
+							
+							</td>
+						</tr>
+						</table>
+					</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row1">
+
+			<td class="profile"><a href="#wrapheader">Top</a></td>
+			<td style="padding: 7px 0 0 0;"><div class="gensmall icons" style="float: left;">&nbsp;<a href="./memberlist.php?mode=viewprofile&amp;u=1911&amp;sid=661a1f781954ab7fe128b6996540e240"><img src="./styles/subsilver2/imageset/en/icon_user_profile.gif" alt="Profile" title="Profile" /></a> &nbsp;</div> <div class="gensmall" style="float: right;">&nbsp;</div></td>
+	
+		</tr>
+
+	<tr>
+		<td class="spacer" colspan="2" height="1"><img src="images/spacer.gif" alt="" width="1" height="1" /></td>
+	</tr>
+	</table>
+
+	<table class="tablebg" width="100%" cellspacing="1">
+	<tr class="row2">
+
+			<td valign="middle">
+				<a name="p7648"></a>
+				<span class="postauthor">TIME_IS_IN_LOVE</span>
+			</td>
+			<td width="100%" height="25">
+				<table width="100%" cellspacing="0">
+				<tr>
+				
+					<td class="gensmall" width="100%"><div style="float: left;">&nbsp;Post subject: </div><div style="float: right;"><a href="./viewtopic.php?p=7648&amp;sid=661a1f781954ab7fe128b6996540e240#p7648"><img src="./styles/subsilver2/imageset/icon_post_target.gif" width="12" height="9" alt="Post" title="Post" /></a>Posted: Tue Jun 05, 2007 7:55 am&nbsp;</div></td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row2">
+
+			<td valign="top" class="profile">
+				<table cellspacing="0" align="center" width="150">
+			
+				<tr>
+					<td><img src="./styles/subsilver2/imageset/en/icon_user_offline.gif" alt="Offline" title="Offline" /></td>
+				</tr>
+			
+				</table>
+
+				<span class="postdetails">
+					<br /><b>Joined:</b> Thu Mar 08, 2007 7:06 am<br /><b>Posts:</b> 61
+				</span>
+
+			</td>
+			<td valign="top">
+				<table width="100%" cellspacing="5">
+				<tr>
+					<td>
+					
+
+						<div class="postbody">[   ]</div>
+
+					
+							<br /><br />
+							<span class="gensmall">Last edited by <a href="./memberlist.php?mode=viewprofile&amp;u=1874&amp;sid=661a1f781954ab7fe128b6996540e240">TIME_IS_IN_LOVE</a> on Tue Sep 04, 2007 12:21 pm, edited 1 time in total.</span>
+						<br clear="all" /><br />
+
+						<table width="100%" cellspacing="0">
+						<tr valign="middle">
+							<td class="gensmall" align="right">
+							
+							</td>
+						</tr>
+						</table>
+					</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row2">
+
+			<td class="profile"><a href="#wrapheader">Top</a></td>
+			<td style="padding: 7px 0 0 0;"><div class="gensmall icons" style="float: left;">&nbsp;<a href="./memberlist.php?mode=viewprofile&amp;u=1874&amp;sid=661a1f781954ab7fe128b6996540e240"><img src="./styles/subsilver2/imageset/en/icon_user_profile.gif" alt="Profile" title="Profile" /></a> &nbsp;</div> <div class="gensmall" style="float: right;">&nbsp;</div></td>
+	
+		</tr>
+
+	<tr>
+		<td class="spacer" colspan="2" height="1"><img src="images/spacer.gif" alt="" width="1" height="1" /></td>
+	</tr>
+	</table>
+
+	<table class="tablebg" width="100%" cellspacing="1">
+	<tr class="row1">
+
+			<td valign="middle">
+				<a name="p7649"></a>
+				<span class="postauthor">goldfish</span>
+			</td>
+			<td width="100%" height="25">
+				<table width="100%" cellspacing="0">
+				<tr>
+				
+					<td class="gensmall" width="100%"><div style="float: left;">&nbsp;Post subject: </div><div style="float: right;"><a href="./viewtopic.php?p=7649&amp;sid=661a1f781954ab7fe128b6996540e240#p7649"><img src="./styles/subsilver2/imageset/icon_post_target.gif" width="12" height="9" alt="Post" title="Post" /></a>Posted: Tue Jun 05, 2007 8:37 am&nbsp;</div></td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row1">
+
+			<td valign="top" class="profile">
+				<table cellspacing="0" align="center" width="150">
+			
+				<tr>
+					<td><img src="./styles/subsilver2/imageset/en/icon_user_offline.gif" alt="Offline" title="Offline" /></td>
+				</tr>
+			
+				</table>
+
+				<span class="postdetails">
+					<br /><b>Joined:</b> Fri May 13, 2005 11:37 pm<br /><b>Posts:</b> 338
+				</span>
+
+			</td>
+			<td valign="top">
+				<table width="100%" cellspacing="5">
+				<tr>
+					<td>
+					
+
+						<div class="postbody"><div class="quotetitle">TIME_IS_IN_LOVE wrote:</div><div class="quotecontent">TheGent<br /><br /><br /><br />Joined: 12 Mar 2007<br />Posts: 1<br /><br />care to share first mate?</div><br />Hahaha...  c'mon, we were all new to this place once.<br /><br />What are you missing Mr Gent?<br /><br />Simon<br /><br />[edit]He only joined 5 days after you...<div class="quotetitle">TIME_IS_IN_LOVE wrote:</div><div class="quotecontent">Joined: 08 Mar 2007<br />Posts: 27</div><div class="quotetitle">goldfish wrote:</div><div class="quotecontent">Joined: 13 May 2005<br />Posts: 200</div>
+<br />
+<br /><img src="./images/smilies/icon_wink.gif" alt=";)" title="Wink" /></div>
+
+					<br clear="all" /><br />
+
+						<table width="100%" cellspacing="0">
+						<tr valign="middle">
+							<td class="gensmall" align="right">
+							
+							</td>
+						</tr>
+						</table>
+					</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row1">
+
+			<td class="profile"><a href="#wrapheader">Top</a></td>
+			<td style="padding: 7px 0 0 0;"><div class="gensmall icons" style="float: left;">&nbsp;<a href="./memberlist.php?mode=viewprofile&amp;u=8&amp;sid=661a1f781954ab7fe128b6996540e240"><img src="./styles/subsilver2/imageset/en/icon_user_profile.gif" alt="Profile" title="Profile" /></a> &nbsp;</div> <div class="gensmall" style="float: right;">&nbsp;</div></td>
+	
+		</tr>
+
+	<tr>
+		<td class="spacer" colspan="2" height="1"><img src="images/spacer.gif" alt="" width="1" height="1" /></td>
+	</tr>
+	</table>
+
+	<table class="tablebg" width="100%" cellspacing="1">
+	<tr class="row2">
+
+			<td valign="middle">
+				<a name="p7650"></a>
+				<span class="postauthor">TIME_IS_IN_LOVE</span>
+			</td>
+			<td width="100%" height="25">
+				<table width="100%" cellspacing="0">
+				<tr>
+				
+					<td class="gensmall" width="100%"><div style="float: left;">&nbsp;Post subject: </div><div style="float: right;"><a href="./viewtopic.php?p=7650&amp;sid=661a1f781954ab7fe128b6996540e240#p7650"><img src="./styles/subsilver2/imageset/icon_post_target.gif" width="12" height="9" alt="Post" title="Post" /></a>Posted: Tue Jun 05, 2007 9:27 am&nbsp;</div></td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row2">
+
+			<td valign="top" class="profile">
+				<table cellspacing="0" align="center" width="150">
+			
+				<tr>
+					<td><img src="./styles/subsilver2/imageset/en/icon_user_offline.gif" alt="Offline" title="Offline" /></td>
+				</tr>
+			
+				</table>
+
+				<span class="postdetails">
+					<br /><b>Joined:</b> Thu Mar 08, 2007 7:06 am<br /><b>Posts:</b> 61
+				</span>
+
+			</td>
+			<td valign="top">
+				<table width="100%" cellspacing="5">
+				<tr>
+					<td>
+					
+
+						<div class="postbody">[   ]</div>
+
+					
+							<br /><br />
+							<span class="gensmall">Last edited by <a href="./memberlist.php?mode=viewprofile&amp;u=1874&amp;sid=661a1f781954ab7fe128b6996540e240">TIME_IS_IN_LOVE</a> on Tue Sep 04, 2007 12:20 pm, edited 1 time in total.</span>
+						<br clear="all" /><br />
+
+						<table width="100%" cellspacing="0">
+						<tr valign="middle">
+							<td class="gensmall" align="right">
+							
+							</td>
+						</tr>
+						</table>
+					</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row2">
+
+			<td class="profile"><a href="#wrapheader">Top</a></td>
+			<td style="padding: 7px 0 0 0;"><div class="gensmall icons" style="float: left;">&nbsp;<a href="./memberlist.php?mode=viewprofile&amp;u=1874&amp;sid=661a1f781954ab7fe128b6996540e240"><img src="./styles/subsilver2/imageset/en/icon_user_profile.gif" alt="Profile" title="Profile" /></a> &nbsp;</div> <div class="gensmall" style="float: right;">&nbsp;</div></td>
+	
+		</tr>
+
+	<tr>
+		<td class="spacer" colspan="2" height="1"><img src="images/spacer.gif" alt="" width="1" height="1" /></td>
+	</tr>
+	</table>
+
+	<table width="100%" cellspacing="1" class="tablebg">
+	<tr align="center">
+		<td class="cat"><form name="viewtopic" method="post" action="./viewtopic.php?f=1&amp;t=1088&amp;start=20&amp;sid=661a1f781954ab7fe128b6996540e240"><span class="gensmall">Display posts from previous:</span> <select name="st" id="st"><option value="0" selected="selected">All posts</option><option value="1">1 day</option><option value="7">7 days</option><option value="14">2 weeks</option><option value="30">1 month</option><option value="90">3 months</option><option value="180">6 months</option><option value="365">1 year</option></select>&nbsp;<span class="gensmall">Sort by</span> <select name="sk" id="sk"><option value="a">Author</option><option value="t" selected="selected">Post time</option><option value="s">Subject</option></select> <select name="sd" id="sd"><option value="a" selected="selected">Ascending</option><option value="d">Descending</option></select>&nbsp;<input class="btnlite" type="submit" value="Go" name="sort" /></form></td>
+	</tr>
+	</table>
+	
+
+	<table width="100%" cellspacing="1" style="margin:13px 0 0 0;">
+	<tr>
+		<td width="14%" valign="middle" nowrap="nowrap">
+		<a class="newtopic" href="./posting.php?mode=post&amp;f=1&amp;sid=661a1f781954ab7fe128b6996540e240">New Topic</a>&nbsp;<a class="postreply" href="./posting.php?mode=reply&amp;f=1&amp;t=1088&amp;sid=661a1f781954ab7fe128b6996540e240">Post Reply</a>
+		</td>
+		
+			<td class="nav" valign="middle" nowrap="nowrap">&nbsp;Page <strong>2</strong> of <strong>4</strong><br /></td>
+			<td class="gensmall" nowrap="nowrap">&nbsp;[ 61 posts ]&nbsp;</td>
+			<td class="gensmall" width="100%" align="right" nowrap="nowrap"><b><a href="#" onclick="jumpto(); return false;" title="Click to jump to page…">Go to page</a> <a href="./viewtopic.php?f=1&amp;t=1088&amp;sid=661a1f781954ab7fe128b6996540e240&amp;start=0">Previous</a>&nbsp;&nbsp;<a href="./viewtopic.php?f=1&amp;t=1088&amp;sid=661a1f781954ab7fe128b6996540e240">1</a><span class="page-sep">, </span><strong>2</strong><span class="page-sep">, </span><a href="./viewtopic.php?f=1&amp;t=1088&amp;sid=661a1f781954ab7fe128b6996540e240&amp;start=40">3</a><span class="page-sep">, </span><a href="./viewtopic.php?f=1&amp;t=1088&amp;sid=661a1f781954ab7fe128b6996540e240&amp;start=60">4</a> &nbsp;<a href="./viewtopic.php?f=1&amp;t=1088&amp;sid=661a1f781954ab7fe128b6996540e240&amp;start=40">Next</a></b></td>
+		
+	</tr>
+	</table>
+
+</div>
+
+<div id="pagefooter"></div>
+
+<br clear="all" />
+<table class="tablebg" width="100%" cellspacing="1" cellpadding="0" style="margin-top: 5px; border:0;">
+	<tr>
+		<td class="row1" style="border:0;">
+			<p class="breadcrumbs"><a href="./index.php?sid=661a1f781954ab7fe128b6996540e240">Board index</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="./viewforum.php?f=3&amp;sid=661a1f781954ab7fe128b6996540e240">Forums</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="./viewforum.php?f=1&amp;sid=661a1f781954ab7fe128b6996540e240">Music</a></p>
+			<p class="datetime">All times are UTC + 10 hours </p>
+		</td>
+	</tr>
+	</table>
+	<br clear="all" />
+
+	<table class="tablebg" width="100%" cellspacing="1">
+	<tr>
+		<td class="cat"><h4>Who is online</h4></td>
+	</tr>
+	<tr>
+		<td class="row1"><p class="gensmall">Users browsing this forum: No registered users and 10 guests</p></td>
+	</tr>
+	</table>
+
+
+<br clear="all" />
+
+<table width="100%" cellspacing="1">
+<tr>
+	<td width="40%" valign="top" nowrap="nowrap" align="left"></td>
+	<td align="right" valign="top" nowrap="nowrap"><span class="gensmall">You <strong>cannot</strong> post new topics in this forum<br />You <strong>cannot</strong> reply to topics in this forum<br />You <strong>cannot</strong> edit your posts in this forum<br />You <strong>cannot</strong> delete your posts in this forum<br /></span></td>
+</tr>
+</table>
+
+<br clear="all" />
+
+<table width="100%" cellspacing="0">
+<tr>
+	<td><form method="post" name="search" action="./search.php?t=1088&amp;sid=661a1f781954ab7fe128b6996540e240"><span class="gensmall">Search for:</span> <input class="post" type="text" name="keywords" size="20" /> <input class="btnlite" type="submit" value="Go" /></form></td>
+	<td align="right">
+	<form method="post" name="jumpbox" action="./viewforum.php?sid=661a1f781954ab7fe128b6996540e240" onsubmit="if(document.jumpbox.f.value == -1){return false;}">
+
+	<table cellspacing="0" cellpadding="0" border="0">
+	<tr>
+		<td nowrap="nowrap"><span class="gensmall">Jump to:</span>&nbsp;<select name="f" onchange="if(this.options[this.selectedIndex].value != -1){ document.forms['jumpbox'].submit() }">
+
+		
+			<option value="-1">Select a forum</option>
+		<option value="-1">------------------</option>
+			<option value="3">Forums</option>
+		
+			<option value="1" selected="selected">&nbsp; &nbsp;Music</option>
+		
+			<option value="2">&nbsp; &nbsp;General</option>
+		
+
+		</select>&nbsp;<input class="btnlite" type="submit" value="Go" /></td>
+	</tr>
+	</table>
+
+	</form>
+</td>
+</tr>
+</table>
+
+<img src="./cron.php?cron_type=tidy_cache&amp;sid=661a1f781954ab7fe128b6996540e240" width="1" height="1" alt="cron" />
+</div>
+
+<div id="wrapfooter">
+	
+</div>
+
+</body>
+</html>
