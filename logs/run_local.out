@@ -1,0 +1,3 @@
+run_local.sh: harvest pid 16161, delay 2.0s, log /Users/onesteppplusgmai.com/Dev/theavalanches-forum-archive/logs/harvest_local.log
+2026-06-09T08:42:01Z [shard 0] 29/8134 got=25 skip=4 miss=0 fail=0
+2026-06-09T08:43:32Z [shard 0] 58/8134 got=50 skip=8 miss=0 fail=0
