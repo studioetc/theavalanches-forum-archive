@@ -269,3 +269,6 @@
 2026-06-09T12:49:58Z [shard 0] 3799/8134 got=3725 skip=73 miss=1 fail=0
 2026-06-09T12:51:39Z [shard 0] 3824/8134 got=3750 skip=73 miss=1 fail=0
 2026-06-09T12:53:14Z [shard 0] 3849/8134 got=3775 skip=73 miss=1 fail=0
+2026-06-09T12:54:52Z ==== run_local.sh start (delay=2.0) ====
+2026-06-09T12:56:26Z [shard 0] 25/2502 got=25 skip=0 miss=0 fail=0
+2026-06-09T12:58:29Z [shard 0] 50/2502 got=50 skip=0 miss=0 fail=0
