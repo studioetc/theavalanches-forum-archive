@@ -2,9 +2,9 @@
   "pid": 4385,
   "running": true,
   "started_at": "2026-06-09T12:54:52Z",
-  "last_update": "2026-06-09T15:13:05Z",
-  "files_on_disk": 5913,
+  "last_update": "2026-06-09T15:18:13Z",
+  "files_on_disk": 5989,
   "targets_total": 8134,
-  "last_log_line": "2026-06-09T15:13:02Z   throttled (URLError [Errno 61] Connection refused) try 1/4, sleep 5s",
+  "last_log_line": "2026-06-09T15:16:36Z [shard 0] 2100/2502 got=2100 skip=0 miss=0 fail=0",
   "state": "progressing"
 }
