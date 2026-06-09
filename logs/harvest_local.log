@@ -258,3 +258,7 @@
 2026-06-09T12:30:56Z [shard 0] 3549/8134 got=3475 skip=73 miss=1 fail=0
 2026-06-09T12:32:40Z [shard 0] 3574/8134 got=3500 skip=73 miss=1 fail=0
 2026-06-09T12:34:36Z [shard 0] 3599/8134 got=3525 skip=73 miss=1 fail=0
+2026-06-09T12:35:38Z   throttled (URLError [Errno 61] Connection refused) try 1/4, sleep 5s
+2026-06-09T12:36:27Z [shard 0] 3624/8134 got=3550 skip=73 miss=1 fail=0
+2026-06-09T12:38:13Z [shard 0] 3649/8134 got=3575 skip=73 miss=1 fail=0
+2026-06-09T12:40:13Z [shard 0] 3674/8134 got=3600 skip=73 miss=1 fail=0
