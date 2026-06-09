@@ -1,0 +1,936 @@
+<b>[phpBB Debug] PHP Notice</b>: in file <b>/viewtopic.php</b> on line <b>988</b>: <b>date(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone.</b><br />
+<b>[phpBB Debug] PHP Notice</b>: in file <b>/viewtopic.php</b> on line <b>988</b>: <b>getdate(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone.</b><br />
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-gb" xml:lang="en-gb">
+<head>
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta http-equiv="content-language" content="en-gb" />
+<meta http-equiv="content-style-type" content="text/css" />
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta name="copyright" content="The Avalanches" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+
+<title>www.theavalanches.com &bull; View topic - This may or may not be a mix tape…</title>
+
+
+
+<link rel="stylesheet" href="./styles/subsilver2/theme/stylesheet.css" type="text/css" />
+<!--[if lte IE 6]>
+<link rel="stylesheet" type="text/css" href="/styles/theavalanches/theme/ie6.css" />
+<![endif]-->
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+
+<script type="text/javascript">
+// <![CDATA[
+
+
+function popup(url, width, height, name)
+{
+	if (!name)
+	{
+		name = '_popup';
+	}
+
+	window.open(url.replace(/&amp;/g, '&'), name, 'height=' + height + ',resizable=yes,scrollbars=yes,width=' + width);
+	return false;
+}
+
+function jumpto()
+{
+	var page = prompt('Enter the page number you wish to go to:', '2');
+	var per_page = '20';
+	var base_url = './viewtopic.php?f=1&amp;t=1986&amp;sid=4055f039fb2195c091ebbe428a0eb443';
+
+	if (page !== null && !isNaN(page) && page == Math.floor(page) && page > 0)
+	{
+		if (base_url.indexOf('?') == -1)
+		{
+			document.location.href = base_url + '?start=' + ((page - 1) * per_page);
+		}
+		else
+		{
+			document.location.href = base_url.replace(/&amp;/g, '&') + '&start=' + ((page - 1) * per_page);
+		}
+	}
+}
+
+/**
+* Find a member
+*/
+function find_username(url)
+{
+	popup(url, 760, 570, '_usersearch');
+	return false;
+}
+
+/**
+* Mark/unmark checklist
+* id = ID of parent container, name = name prefix, state = state [true/false]
+*/
+function marklist(id, name, state)
+{
+	var parent = document.getElementById(id);
+	if (!parent)
+	{
+		eval('parent = document.' + id);
+	}
+
+	if (!parent)
+	{
+		return;
+	}
+
+	var rb = parent.getElementsByTagName('input');
+	
+	for (var r = 0; r < rb.length; r++)
+	{
+		if (rb[r].name.substr(0, name.length) == name)
+		{
+			rb[r].checked = state;
+		}
+	}
+}
+
+
+
+// ]]>
+</script>
+</head>
+<body class="ltr">
+
+<a name="top"></a>
+
+<div id="wrapheader">
+
+	<div id="logodesc">
+		<table width="100%" cellspacing="0">
+		<tr>
+			<td width="100%" align="center">
+<a href="./index.php?sid=4055f039fb2195c091ebbe428a0eb443"><img src="http://www.theavalanches.com/images/logo-theavalanches.gif" alt="The Avalanches" /></a>
+        <div id="external-links">
+          <a class="facebook" href="http://www.facebook.com/theavalanches" title="Facebook" target="_blank">Facebook</a>
+          <a class="twitter" href="http://twitter.com/theavalanches" title="Twitter" target="_blank">Twitter</a>
+          <a class="youtube" href="http://www.youtube.com/user/avalanchesofficial" title="YouTube" target="_blank">YouTube</a>
+          <a class="myspace" href="http://www.myspace.com/theavalanches" title="MySpace" target="_blank">MySpace</a>
+          <a class="ilike" href="http://www.ilike.com/artist/The+Avalanches" title="iLike" target="_blank">iLike</a>
+          <a class="lastfm" href="http://www.last.fm/music/The+Avalanches" title="Last.fm" target="_blank">Last.fm</a>
+        </div>
+
+	<div class="hr-01" />&nbsp;</div>
+  <br /><br />
+  <div id="links">
+  	<a href="http://www.theavalanches.com/" title="TheAvalanches.com">TheAvalanches.com</a>&nbsp;&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+	  <a href="http://www.theavalanches.com/mixes.php" title="Avalanches DJ Sets">Avalanches DJ Sets</a>
+  </div>
+
+</td>
+		</tr>
+		</table>
+	</div>
+
+	<div id="menubar">
+		<table width="100%" cellspacing="0">
+		<tr>
+			<td class="genmed">
+				<a href="./ucp.php?mode=login&amp;sid=4055f039fb2195c091ebbe428a0eb443"Login</a>&nbsp;
+			</td>
+			<td class="genmed" align="right">
+				<a href="./faq.php?sid=4055f039fb2195c091ebbe428a0eb443">FAQ</a>
+				&nbsp;&nbsp;&bull;&nbsp;&nbsp;&nbsp;<a href="./search.php?sid=4055f039fb2195c091ebbe428a0eb443">Search</a>
+			</td>
+		</tr>
+		</table>
+	</div>
+
+	<div id="datebar">
+		<table width="100%" cellspacing="0">
+		<tr>
+			<td class="gensmall"></td>
+			<td class="gensmall" align="right">It is currently Sat Apr 09, 2016 8:14 am<br /></td>
+		</tr>
+		</table>
+	</div>
+
+</div>
+
+<div id="wrapcentre">
+
+	
+	<p class="searchbar">
+		<span style="float: left;"><a href="./search.php?search_id=unanswered&amp;sid=4055f039fb2195c091ebbe428a0eb443">View unanswered posts</a>&nbsp;&nbsp;&nbsp;&bull;&nbsp;&nbsp;&nbsp;<a href="./search.php?search_id=active_topics&amp;sid=4055f039fb2195c091ebbe428a0eb443">View active topics</a></span>
+		
+	</p>
+	
+
+	<br style="clear: both;" />
+
+	<table class="tablebg" width="100%" cellspacing="1" cellpadding="0" style="margin-top: 5px; border:0;">
+	<tr>
+		<td class="row1" style="border:0;">
+			<p class="breadcrumbs"><a href="./index.php?sid=4055f039fb2195c091ebbe428a0eb443">Board index</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="./viewforum.php?f=3&amp;sid=4055f039fb2195c091ebbe428a0eb443">Forums</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="./viewforum.php?f=1&amp;sid=4055f039fb2195c091ebbe428a0eb443">Music</a></p>
+			<p class="datetime">All times are UTC + 10 hours </p>
+		</td>
+	</tr>
+	</table>
+
+	<br />
+
+<div id="pageheader">
+	<h2><a class="titles" href="./viewtopic.php?f=1&amp;t=1986&amp;start=20&amp;sid=4055f039fb2195c091ebbe428a0eb443">This may or may not be a mix tape…</a></h2>
+
+</div>
+
+<br clear="all" /><br />
+
+<div id="pagecontent">
+
+	<table width="100%" cellspacing="1" style="margin:-5px 0 15px 0;">
+	<tr>
+		<td width="14%" valign="top" nowrap="nowrap">
+		<a class="newtopic" href="./posting.php?mode=post&amp;f=1&amp;sid=4055f039fb2195c091ebbe428a0eb443">New Topic</a>&nbsp;<a class="postreply" href="./posting.php?mode=reply&amp;f=1&amp;t=1986&amp;sid=4055f039fb2195c091ebbe428a0eb443">Post Reply</a>
+		</td>
+		
+			<td class="nav" valign="middle" nowrap="nowrap">&nbsp;Page <strong>2</strong> of <strong>2</strong><br /></td>
+			<td class="gensmall" nowrap="nowrap">&nbsp;[ 29 posts ]&nbsp;</td>
+			<td class="gensmall" width="100%" align="right" nowrap="nowrap"><b><a href="#" onclick="jumpto(); return false;" title="Click to jump to page…">Go to page</a> <a href="./viewtopic.php?f=1&amp;t=1986&amp;sid=4055f039fb2195c091ebbe428a0eb443&amp;start=0">Previous</a>&nbsp;&nbsp;<a href="./viewtopic.php?f=1&amp;t=1986&amp;sid=4055f039fb2195c091ebbe428a0eb443">1</a><span class="page-sep">, </span><strong>2</strong></b></td>
+		
+	</tr>
+	</table>
+
+	<table class="tablebg" width="100%" cellspacing="1">
+	<tr>
+		<td class="cat catnav">
+			<table width="100%" cellspacing="0">
+			<tr>
+				<td class="nav" nowrap="nowrap">&nbsp;
+				
+				</td>
+				<td class="nav" align="right" nowrap="nowrap"><a href="./viewtopic.php?f=1&amp;t=1986&amp;view=previous&amp;sid=4055f039fb2195c091ebbe428a0eb443">Previous topic</a>&nbsp;&nbsp;&nbsp;&bull;&nbsp;&nbsp;&nbsp;<a href="./viewtopic.php?f=1&amp;t=1986&amp;view=next&amp;sid=4055f039fb2195c091ebbe428a0eb443">Next topic</a>&nbsp;</td>
+			</tr>
+			</table>
+		</td>
+	</tr>
+
+	</table>
+
+
+	<table class="tablebg" width="100%" cellspacing="1">
+	
+		<tr>
+			<th>Author</th>
+			<th>Message</th>
+		</tr>
+	<tr class="row1">
+
+			<td valign="middle">
+				<a name="p22985"></a>
+				<span class="postauthor">chchucks</span>
+			</td>
+			<td width="100%" height="25">
+				<table width="100%" cellspacing="0">
+				<tr>
+				
+					<td class="gensmall" width="100%"><div style="float: left;">&nbsp;Post subject: Re: This may or may not be a mix tape…</div><div style="float: right;"><a href="./viewtopic.php?p=22985&amp;sid=4055f039fb2195c091ebbe428a0eb443#p22985"><img src="./styles/subsilver2/imageset/icon_post_target.gif" width="12" height="9" alt="Post" title="Post" /></a>Posted: Wed Jun 06, 2012 1:52 am&nbsp;</div></td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row1">
+
+			<td valign="top" class="profile">
+				<table cellspacing="0" align="center" width="150">
+			
+				<tr>
+					<td><img src="./styles/subsilver2/imageset/en/icon_user_offline.gif" alt="Offline" title="Offline" /></td>
+				</tr>
+			
+				</table>
+
+				<span class="postdetails">
+					<br /><b>Joined:</b> Sun Nov 14, 2010 10:09 am<br /><b>Posts:</b> 62<br /><b>Location:</b> Mars
+				</span>
+
+			</td>
+			<td valign="top">
+				<table width="100%" cellspacing="5">
+				<tr>
+					<td>
+					
+
+						<div class="postbody">so checked the secret information page and i think that Robbie is also Figgy Puddin and Darren is also Secret Circut, Someone needs to screen cap the secret info page so we can tell who's who, i'll take a crack at it later but feel free to try for yourself.</div>
+
+					
+						<span class="postbody"><br />_________________<br /><span style="color: #400040">I'm los</span><span style="color: #400080">t in sp</span><span style="color: #4000BF">ace and slo</span><span style="color: #4000FF">wly dissolving</span></span>
+					<br clear="all" /><br />
+
+						<table width="100%" cellspacing="0">
+						<tr valign="middle">
+							<td class="gensmall" align="right">
+							
+							</td>
+						</tr>
+						</table>
+					</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row1">
+
+			<td class="profile"><a href="#wrapheader">Top</a></td>
+			<td style="padding: 7px 0 0 0;"><div class="gensmall icons" style="float: left;">&nbsp;<a href="./memberlist.php?mode=viewprofile&amp;u=50427&amp;sid=4055f039fb2195c091ebbe428a0eb443"><img src="./styles/subsilver2/imageset/en/icon_user_profile.gif" alt="Profile" title="Profile" /></a> &nbsp;</div> <div class="gensmall" style="float: right;">&nbsp;</div></td>
+	
+		</tr>
+
+	<tr>
+		<td class="spacer" colspan="2" height="1"><img src="images/spacer.gif" alt="" width="1" height="1" /></td>
+	</tr>
+	</table>
+
+	<table class="tablebg" width="100%" cellspacing="1">
+	<tr class="row2">
+
+			<td valign="middle">
+				<a name="p22986"></a>
+				<span class="postauthor">marc206</span>
+			</td>
+			<td width="100%" height="25">
+				<table width="100%" cellspacing="0">
+				<tr>
+				
+					<td class="gensmall" width="100%"><div style="float: left;">&nbsp;Post subject: Re: This may or may not be a mix tape…</div><div style="float: right;"><a href="./viewtopic.php?p=22986&amp;sid=4055f039fb2195c091ebbe428a0eb443#p22986"><img src="./styles/subsilver2/imageset/icon_post_target.gif" width="12" height="9" alt="Post" title="Post" /></a>Posted: Wed Jun 06, 2012 1:38 pm&nbsp;</div></td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row2">
+
+			<td valign="top" class="profile">
+				<table cellspacing="0" align="center" width="150">
+			
+				<tr>
+					<td><img src="./styles/subsilver2/imageset/en/icon_user_offline.gif" alt="Offline" title="Offline" /></td>
+				</tr>
+			
+				</table>
+
+				<span class="postdetails">
+					<br /><b>Joined:</b> Mon Apr 23, 2012 1:36 am<br /><b>Posts:</b> 28
+				</span>
+
+			</td>
+			<td valign="top">
+				<table width="100%" cellspacing="5">
+				<tr>
+					<td>
+					
+
+						<div class="postbody">Already done. See post on previous page.<br /><div class="quotetitle"><b>Quote:</b></div><div class="quotecontent">There's a &quot;Secret Information&quot; page on the pinchyandfriends site which you can use to work out that there are actually two Avalanches mixes there:<br />1. &quot;Sleepy Bedtime Mix For Young Ones by Henry Chinaski&quot; is by Robbie Chater<br />2.&quot;Miracle Device by Lord Fitness&quot; is by Darren Seltman</div></div>
+
+					<br clear="all" /><br />
+
+						<table width="100%" cellspacing="0">
+						<tr valign="middle">
+							<td class="gensmall" align="right">
+							
+							</td>
+						</tr>
+						</table>
+					</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row2">
+
+			<td class="profile"><a href="#wrapheader">Top</a></td>
+			<td style="padding: 7px 0 0 0;"><div class="gensmall icons" style="float: left;">&nbsp;<a href="./memberlist.php?mode=viewprofile&amp;u=50751&amp;sid=4055f039fb2195c091ebbe428a0eb443"><img src="./styles/subsilver2/imageset/en/icon_user_profile.gif" alt="Profile" title="Profile" /></a> &nbsp;</div> <div class="gensmall" style="float: right;">&nbsp;</div></td>
+	
+		</tr>
+
+	<tr>
+		<td class="spacer" colspan="2" height="1"><img src="images/spacer.gif" alt="" width="1" height="1" /></td>
+	</tr>
+	</table>
+
+	<table class="tablebg" width="100%" cellspacing="1">
+	<tr class="row1">
+
+			<td valign="middle">
+				<a name="p22993"></a>
+				<span class="postauthor">MaxGoun</span>
+			</td>
+			<td width="100%" height="25">
+				<table width="100%" cellspacing="0">
+				<tr>
+				
+					<td class="gensmall" width="100%"><div style="float: left;">&nbsp;Post subject: Re: This may or may not be a mix tape…</div><div style="float: right;"><a href="./viewtopic.php?p=22993&amp;sid=4055f039fb2195c091ebbe428a0eb443#p22993"><img src="./styles/subsilver2/imageset/icon_post_target.gif" width="12" height="9" alt="Post" title="Post" /></a>Posted: Sat Jun 23, 2012 4:39 am&nbsp;</div></td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row1">
+
+			<td valign="top" class="profile">
+				<table cellspacing="0" align="center" width="150">
+			
+				<tr>
+					<td><img src="./styles/subsilver2/imageset/en/icon_user_offline.gif" alt="Offline" title="Offline" /></td>
+				</tr>
+			
+				</table>
+
+				<span class="postdetails">
+					<br /><b>Joined:</b> Sun May 15, 2005 2:53 am<br /><b>Posts:</b> 150<br /><b>Location:</b> massilia
+				</span>
+
+			</td>
+			<td valign="top">
+				<table width="100%" cellspacing="5">
+				<tr>
+					<td>
+					
+
+						<div class="postbody"><div class="quotetitle"><b>Quote:</b></div><div class="quotecontent">Darren is also Secret Circut</div><br />dunno about it but i do surely love this mix as well as the abracadabra one: both full ov quirky stuff (that &quot;future woman&quot;sample izza killer dope)<br /> <img src="./images/smilies/icon_cool.gif" alt="8)" title="Cool" /></div>
+
+					<br clear="all" /><br />
+
+						<table width="100%" cellspacing="0">
+						<tr valign="middle">
+							<td class="gensmall" align="right">
+							
+							</td>
+						</tr>
+						</table>
+					</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row1">
+
+			<td class="profile"><a href="#wrapheader">Top</a></td>
+			<td style="padding: 7px 0 0 0;"><div class="gensmall icons" style="float: left;">&nbsp;<a href="./memberlist.php?mode=viewprofile&amp;u=15&amp;sid=4055f039fb2195c091ebbe428a0eb443"><img src="./styles/subsilver2/imageset/en/icon_user_profile.gif" alt="Profile" title="Profile" /></a> &nbsp;</div> <div class="gensmall" style="float: right;">&nbsp;</div></td>
+	
+		</tr>
+
+	<tr>
+		<td class="spacer" colspan="2" height="1"><img src="images/spacer.gif" alt="" width="1" height="1" /></td>
+	</tr>
+	</table>
+
+	<table class="tablebg" width="100%" cellspacing="1">
+	<tr class="row2">
+
+			<td valign="middle">
+				<a name="p23002"></a>
+				<span class="postauthor">carpet man</span>
+			</td>
+			<td width="100%" height="25">
+				<table width="100%" cellspacing="0">
+				<tr>
+				
+					<td class="gensmall" width="100%"><div style="float: left;">&nbsp;Post subject: Re: This may or may not be a mix tape…</div><div style="float: right;"><a href="./viewtopic.php?p=23002&amp;sid=4055f039fb2195c091ebbe428a0eb443#p23002"><img src="./styles/subsilver2/imageset/icon_post_target.gif" width="12" height="9" alt="Post" title="Post" /></a>Posted: Tue Jul 03, 2012 3:58 pm&nbsp;</div></td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row2">
+
+			<td valign="top" class="profile">
+				<table cellspacing="0" align="center" width="150">
+			
+				<tr>
+					<td><img src="./styles/subsilver2/imageset/en/icon_user_offline.gif" alt="Offline" title="Offline" /></td>
+				</tr>
+			
+				</table>
+
+				<span class="postdetails">
+					<br /><b>Joined:</b> Mon Jun 18, 2007 2:41 pm<br /><b>Posts:</b> 18<br /><b>Location:</b> Melbourne
+				</span>
+
+			</td>
+			<td valign="top">
+				<table width="100%" cellspacing="5">
+				<tr>
+					<td>
+					
+
+						<div class="postbody">Here we go again... Another conspiracy to add to the mix.<br /><br />In the recently updated mixes on Pinchy and Friends - Cool Gays by Cool Gaze's final track is &quot;A track that may or may not be the Avalanches&quot; Avalanchesk and not anything I've heard before. As the site has obvious connections to the Avs I would say it's a real possibility of being a an Avs track.. that or it's just there to keep the heads banging against the wall.<br /><br />Thoughts?</div>
+
+					<br clear="all" /><br />
+
+						<table width="100%" cellspacing="0">
+						<tr valign="middle">
+							<td class="gensmall" align="right">
+							
+							</td>
+						</tr>
+						</table>
+					</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row2">
+
+			<td class="profile"><a href="#wrapheader">Top</a></td>
+			<td style="padding: 7px 0 0 0;"><div class="gensmall icons" style="float: left;">&nbsp;<a href="./memberlist.php?mode=viewprofile&amp;u=3036&amp;sid=4055f039fb2195c091ebbe428a0eb443"><img src="./styles/subsilver2/imageset/en/icon_user_profile.gif" alt="Profile" title="Profile" /></a> &nbsp;</div> <div class="gensmall" style="float: right;">&nbsp;</div></td>
+	
+		</tr>
+
+	<tr>
+		<td class="spacer" colspan="2" height="1"><img src="images/spacer.gif" alt="" width="1" height="1" /></td>
+	</tr>
+	</table>
+
+	<table class="tablebg" width="100%" cellspacing="1">
+	<tr class="row1">
+
+			<td valign="middle">
+				<a name="p23003"></a>
+				<span class="postauthor">only_sleeping</span>
+			</td>
+			<td width="100%" height="25">
+				<table width="100%" cellspacing="0">
+				<tr>
+				
+					<td class="gensmall" width="100%"><div style="float: left;">&nbsp;Post subject: Re: This may or may not be a mix tape…</div><div style="float: right;"><a href="./viewtopic.php?p=23003&amp;sid=4055f039fb2195c091ebbe428a0eb443#p23003"><img src="./styles/subsilver2/imageset/icon_post_target.gif" width="12" height="9" alt="Post" title="Post" /></a>Posted: Wed Jul 04, 2012 2:50 am&nbsp;</div></td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row1">
+
+			<td valign="top" class="profile">
+				<table cellspacing="0" align="center" width="150">
+			
+				<tr>
+					<td><img src="./styles/subsilver2/imageset/en/icon_user_offline.gif" alt="Offline" title="Offline" /></td>
+				</tr>
+			
+				</table>
+
+				<span class="postdetails">
+					<br /><b>Joined:</b> Mon May 16, 2005 3:12 am<br /><b>Posts:</b> 105
+				</span>
+
+			</td>
+			<td valign="top">
+				<table width="100%" cellspacing="5">
+				<tr>
+					<td>
+					
+
+						<div class="postbody">sounds <em>very</em> avalanches. i like it. a lot.</div>
+
+					
+						<span class="postbody"><br />_________________<br />droppin' science like galileo dropped an orange</span>
+					<br clear="all" /><br />
+
+						<table width="100%" cellspacing="0">
+						<tr valign="middle">
+							<td class="gensmall" align="right">
+							
+							</td>
+						</tr>
+						</table>
+					</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row1">
+
+			<td class="profile"><a href="#wrapheader">Top</a></td>
+			<td style="padding: 7px 0 0 0;"><div class="gensmall icons" style="float: left;">&nbsp;<a href="./memberlist.php?mode=viewprofile&amp;u=20&amp;sid=4055f039fb2195c091ebbe428a0eb443"><img src="./styles/subsilver2/imageset/en/icon_user_profile.gif" alt="Profile" title="Profile" /></a> &nbsp;</div> <div class="gensmall" style="float: right;">&nbsp;</div></td>
+	
+		</tr>
+
+	<tr>
+		<td class="spacer" colspan="2" height="1"><img src="images/spacer.gif" alt="" width="1" height="1" /></td>
+	</tr>
+	</table>
+
+	<table class="tablebg" width="100%" cellspacing="1">
+	<tr class="row2">
+
+			<td valign="middle">
+				<a name="p23006"></a>
+				<span class="postauthor">marc206</span>
+			</td>
+			<td width="100%" height="25">
+				<table width="100%" cellspacing="0">
+				<tr>
+				
+					<td class="gensmall" width="100%"><div style="float: left;">&nbsp;Post subject: Re: This may or may not be a mix tape…</div><div style="float: right;"><a href="./viewtopic.php?p=23006&amp;sid=4055f039fb2195c091ebbe428a0eb443#p23006"><img src="./styles/subsilver2/imageset/icon_post_target.gif" width="12" height="9" alt="Post" title="Post" /></a>Posted: Thu Jul 05, 2012 6:09 pm&nbsp;</div></td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row2">
+
+			<td valign="top" class="profile">
+				<table cellspacing="0" align="center" width="150">
+			
+				<tr>
+					<td><img src="./styles/subsilver2/imageset/en/icon_user_offline.gif" alt="Offline" title="Offline" /></td>
+				</tr>
+			
+				</table>
+
+				<span class="postdetails">
+					<br /><b>Joined:</b> Mon Apr 23, 2012 1:36 am<br /><b>Posts:</b> 28
+				</span>
+
+			</td>
+			<td valign="top">
+				<table width="100%" cellspacing="5">
+				<tr>
+					<td>
+					
+
+						<div class="postbody">According to the &quot;Secret Information Page&quot;, this mix tape is by Cameron Bird from &quot;Architecture In Helsinki&quot;, a band who are friends with the Avalanches.</div>
+
+					<br clear="all" /><br />
+
+						<table width="100%" cellspacing="0">
+						<tr valign="middle">
+							<td class="gensmall" align="right">
+							
+							</td>
+						</tr>
+						</table>
+					</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row2">
+
+			<td class="profile"><a href="#wrapheader">Top</a></td>
+			<td style="padding: 7px 0 0 0;"><div class="gensmall icons" style="float: left;">&nbsp;<a href="./memberlist.php?mode=viewprofile&amp;u=50751&amp;sid=4055f039fb2195c091ebbe428a0eb443"><img src="./styles/subsilver2/imageset/en/icon_user_profile.gif" alt="Profile" title="Profile" /></a> &nbsp;</div> <div class="gensmall" style="float: right;">&nbsp;</div></td>
+	
+		</tr>
+
+	<tr>
+		<td class="spacer" colspan="2" height="1"><img src="images/spacer.gif" alt="" width="1" height="1" /></td>
+	</tr>
+	</table>
+
+	<table class="tablebg" width="100%" cellspacing="1">
+	<tr class="row1">
+
+			<td valign="middle">
+				<a name="p23015"></a>
+				<span class="postauthor">Hank</span>
+			</td>
+			<td width="100%" height="25">
+				<table width="100%" cellspacing="0">
+				<tr>
+				
+					<td class="gensmall" width="100%"><div style="float: left;">&nbsp;Post subject: Re: This may or may not be a mix tape…</div><div style="float: right;"><a href="./viewtopic.php?p=23015&amp;sid=4055f039fb2195c091ebbe428a0eb443#p23015"><img src="./styles/subsilver2/imageset/icon_post_target.gif" width="12" height="9" alt="Post" title="Post" /></a>Posted: Mon Jul 09, 2012 6:41 pm&nbsp;</div></td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row1">
+
+			<td valign="top" class="profile">
+				<table cellspacing="0" align="center" width="150">
+			
+				<tr>
+					<td><img src="./styles/subsilver2/imageset/en/icon_user_offline.gif" alt="Offline" title="Offline" /></td>
+				</tr>
+			
+				</table>
+
+				<span class="postdetails">
+					<br /><b>Joined:</b> Mon Jun 06, 2011 4:12 pm<br /><b>Posts:</b> 6
+				</span>
+
+			</td>
+			<td valign="top">
+				<table width="100%" cellspacing="5">
+				<tr>
+					<td>
+					
+
+						<div class="postbody">Hi Gang, <br /><br />If i had to take an educated guess (and I am doing just that) I'd say that last minute or so of Cameron's mix is indeed a scrap/demo/sketch/idea/snippet/thingo by The Avalanches. still just heresay, mind. <br /><br /><br />toodeloo<br />H!</div>
+
+					<br clear="all" /><br />
+
+						<table width="100%" cellspacing="0">
+						<tr valign="middle">
+							<td class="gensmall" align="right">
+							
+							</td>
+						</tr>
+						</table>
+					</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row1">
+
+			<td class="profile"><a href="#wrapheader">Top</a></td>
+			<td style="padding: 7px 0 0 0;"><div class="gensmall icons" style="float: left;">&nbsp;<a href="./memberlist.php?mode=viewprofile&amp;u=50696&amp;sid=4055f039fb2195c091ebbe428a0eb443"><img src="./styles/subsilver2/imageset/en/icon_user_profile.gif" alt="Profile" title="Profile" /></a> &nbsp;</div> <div class="gensmall" style="float: right;">&nbsp;</div></td>
+	
+		</tr>
+
+	<tr>
+		<td class="spacer" colspan="2" height="1"><img src="images/spacer.gif" alt="" width="1" height="1" /></td>
+	</tr>
+	</table>
+
+	<table class="tablebg" width="100%" cellspacing="1">
+	<tr class="row2">
+
+			<td valign="middle">
+				<a name="p23112"></a>
+				<span class="postauthor">q-1</span>
+			</td>
+			<td width="100%" height="25">
+				<table width="100%" cellspacing="0">
+				<tr>
+				
+					<td class="gensmall" width="100%"><div style="float: left;">&nbsp;Post subject: Re: This may or may not be a mix tape…</div><div style="float: right;"><a href="./viewtopic.php?p=23112&amp;sid=4055f039fb2195c091ebbe428a0eb443#p23112"><img src="./styles/subsilver2/imageset/icon_post_target.gif" width="12" height="9" alt="Post" title="Post" /></a>Posted: Mon Aug 20, 2012 11:22 am&nbsp;</div></td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row2">
+
+			<td valign="top" class="profile">
+				<table cellspacing="0" align="center" width="150">
+			
+				<tr>
+					<td><img src="./styles/subsilver2/imageset/en/icon_user_offline.gif" alt="Offline" title="Offline" /></td>
+				</tr>
+			
+				</table>
+
+				<span class="postdetails">
+					<br /><b>Joined:</b> Mon Aug 20, 2012 11:01 am<br /><b>Posts:</b> 1
+				</span>
+
+			</td>
+			<td valign="top">
+				<table width="100%" cellspacing="5">
+				<tr>
+					<td>
+					
+
+						<div class="postbody">update to tracklist:<br /><br />1. Jean-Michel Bernard - Aristurtle (speech sample from Michel Gondry’s &quot;The Science of Sleep&quot;)<br />2. Astrud Gilberto - Meditation<br />3. The Free Design - Don't Turn Away<br />4. The Four Freshmen - More (Mondo Cane theme) [1964]<br />5. Pat Kirby &amp; Luiz Bonfa - Oba Oba<br />6. The Free Design - Kites Are Fun<br />7. Astrud Gilberto / Walter Wanderley - So Nice (Summer Samba)<br />8. The Four Freshmen - Misty [1964]<br />9. The Free Design - Michelle<br />10. ??A?? - Harlem Nocturne<br />11. Mia Farrow - Lullaby (Rosemary's Baby Theme)<br />12. ??A?? - My Funny Valentine<br />13. ??? - ???(Maria)<br />14. Robert Wyatt - At Last I Am Free<br />15. Vashti Bunyan - Diamond Day<br />16. Joanna Newsom - The Sprout﻿ and the Bean<br />17. Linda Perhacs - Parellelograms<br />18. The Beach Boys - I Went To Sleep<br />19. The Beach Boys - Mt. Vernon and Fairway (A Fairy Tale)<br /><br />try and fill in the missing bits, if you think you can.</div>
+
+					<br clear="all" /><br />
+
+						<table width="100%" cellspacing="0">
+						<tr valign="middle">
+							<td class="gensmall" align="right">
+							
+							</td>
+						</tr>
+						</table>
+					</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row2">
+
+			<td class="profile"><a href="#wrapheader">Top</a></td>
+			<td style="padding: 7px 0 0 0;"><div class="gensmall icons" style="float: left;">&nbsp;<a href="./memberlist.php?mode=viewprofile&amp;u=50832&amp;sid=4055f039fb2195c091ebbe428a0eb443"><img src="./styles/subsilver2/imageset/en/icon_user_profile.gif" alt="Profile" title="Profile" /></a> &nbsp;</div> <div class="gensmall" style="float: right;">&nbsp;</div></td>
+	
+		</tr>
+
+	<tr>
+		<td class="spacer" colspan="2" height="1"><img src="images/spacer.gif" alt="" width="1" height="1" /></td>
+	</tr>
+	</table>
+
+	<table class="tablebg" width="100%" cellspacing="1">
+	<tr class="row1">
+
+			<td valign="middle">
+				<a name="p24028"></a>
+				<span class="postauthor">purpletextbook</span>
+			</td>
+			<td width="100%" height="25">
+				<table width="100%" cellspacing="0">
+				<tr>
+				
+					<td class="gensmall" width="100%"><div style="float: left;">&nbsp;Post subject: Re: This may or may not be a mix tape…</div><div style="float: right;"><a href="./viewtopic.php?p=24028&amp;sid=4055f039fb2195c091ebbe428a0eb443#p24028"><img src="./styles/subsilver2/imageset/icon_post_target.gif" width="12" height="9" alt="Post" title="Post" /></a>Posted: Sat Apr 27, 2013 9:21 pm&nbsp;</div></td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row1">
+
+			<td valign="top" class="profile">
+				<table cellspacing="0" align="center" width="150">
+			
+				<tr>
+					<td><img src="./styles/subsilver2/imageset/en/icon_user_offline.gif" alt="Offline" title="Offline" /></td>
+				</tr>
+			
+				</table>
+
+				<span class="postdetails">
+					<br /><b>Joined:</b> Sat Jun 04, 2011 3:51 pm<br /><b>Posts:</b> 6
+				</span>
+
+			</td>
+			<td valign="top">
+				<table width="100%" cellspacing="5">
+				<tr>
+					<td>
+					
+
+						<div class="postbody"><div class="quotetitle"><b>Quote:</b></div><div class="quotecontent">10. ??A?? - Harlem Nocturne<br />12. ??A?? - My Funny Valentine<br /></div><br /><br />Can't be certain, I think the versions of those two being used are performed by <span style="color: #40FF80">The Eddie Thomas Singers</span>:<br /><br /><!-- m --><a class="postlink" href="http://www.discogs.com/Eddie-Thomas-Singers-Eddie-Thomas-Singers/release/2831720">http://www.discogs.com/Eddie-Thomas-Sin ... se/2831720</a><!-- m --><br /><br />I checked out a version of &quot;Summertime&quot; by them and the voices seem spot-on.</div>
+
+					<br clear="all" /><br />
+
+						<table width="100%" cellspacing="0">
+						<tr valign="middle">
+							<td class="gensmall" align="right">
+							
+							</td>
+						</tr>
+						</table>
+					</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row1">
+
+			<td class="profile"><a href="#wrapheader">Top</a></td>
+			<td style="padding: 7px 0 0 0;"><div class="gensmall icons" style="float: left;">&nbsp;<a href="./memberlist.php?mode=viewprofile&amp;u=50692&amp;sid=4055f039fb2195c091ebbe428a0eb443"><img src="./styles/subsilver2/imageset/en/icon_user_profile.gif" alt="Profile" title="Profile" /></a> &nbsp;</div> <div class="gensmall" style="float: right;">&nbsp;</div></td>
+	
+		</tr>
+
+	<tr>
+		<td class="spacer" colspan="2" height="1"><img src="images/spacer.gif" alt="" width="1" height="1" /></td>
+	</tr>
+	</table>
+
+	<table width="100%" cellspacing="1" class="tablebg">
+	<tr align="center">
+		<td class="cat"><form name="viewtopic" method="post" action="./viewtopic.php?f=1&amp;t=1986&amp;start=20&amp;sid=4055f039fb2195c091ebbe428a0eb443"><span class="gensmall">Display posts from previous:</span> <select name="st" id="st"><option value="0" selected="selected">All posts</option><option value="1">1 day</option><option value="7">7 days</option><option value="14">2 weeks</option><option value="30">1 month</option><option value="90">3 months</option><option value="180">6 months</option><option value="365">1 year</option></select>&nbsp;<span class="gensmall">Sort by</span> <select name="sk" id="sk"><option value="a">Author</option><option value="t" selected="selected">Post time</option><option value="s">Subject</option></select> <select name="sd" id="sd"><option value="a" selected="selected">Ascending</option><option value="d">Descending</option></select>&nbsp;<input class="btnlite" type="submit" value="Go" name="sort" /></form></td>
+	</tr>
+	</table>
+	
+
+	<table width="100%" cellspacing="1" style="margin:13px 0 0 0;">
+	<tr>
+		<td width="14%" valign="middle" nowrap="nowrap">
+		<a class="newtopic" href="./posting.php?mode=post&amp;f=1&amp;sid=4055f039fb2195c091ebbe428a0eb443">New Topic</a>&nbsp;<a class="postreply" href="./posting.php?mode=reply&amp;f=1&amp;t=1986&amp;sid=4055f039fb2195c091ebbe428a0eb443">Post Reply</a>
+		</td>
+		
+			<td class="nav" valign="middle" nowrap="nowrap">&nbsp;Page <strong>2</strong> of <strong>2</strong><br /></td>
+			<td class="gensmall" nowrap="nowrap">&nbsp;[ 29 posts ]&nbsp;</td>
+			<td class="gensmall" width="100%" align="right" nowrap="nowrap"><b><a href="#" onclick="jumpto(); return false;" title="Click to jump to page…">Go to page</a> <a href="./viewtopic.php?f=1&amp;t=1986&amp;sid=4055f039fb2195c091ebbe428a0eb443&amp;start=0">Previous</a>&nbsp;&nbsp;<a href="./viewtopic.php?f=1&amp;t=1986&amp;sid=4055f039fb2195c091ebbe428a0eb443">1</a><span class="page-sep">, </span><strong>2</strong></b></td>
+		
+	</tr>
+	</table>
+
+</div>
+
+<div id="pagefooter"></div>
+
+<br clear="all" />
+<table class="tablebg" width="100%" cellspacing="1" cellpadding="0" style="margin-top: 5px; border:0;">
+	<tr>
+		<td class="row1" style="border:0;">
+			<p class="breadcrumbs"><a href="./index.php?sid=4055f039fb2195c091ebbe428a0eb443">Board index</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="./viewforum.php?f=3&amp;sid=4055f039fb2195c091ebbe428a0eb443">Forums</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="./viewforum.php?f=1&amp;sid=4055f039fb2195c091ebbe428a0eb443">Music</a></p>
+			<p class="datetime">All times are UTC + 10 hours </p>
+		</td>
+	</tr>
+	</table>
+	<br clear="all" />
+
+	<table class="tablebg" width="100%" cellspacing="1">
+	<tr>
+		<td class="cat"><h4>Who is online</h4></td>
+	</tr>
+	<tr>
+		<td class="row1"><p class="gensmall">Users browsing this forum: No registered users and 10 guests</p></td>
+	</tr>
+	</table>
+
+
+<br clear="all" />
+
+<table width="100%" cellspacing="1">
+<tr>
+	<td width="40%" valign="top" nowrap="nowrap" align="left"></td>
+	<td align="right" valign="top" nowrap="nowrap"><span class="gensmall">You <strong>cannot</strong> post new topics in this forum<br />You <strong>cannot</strong> reply to topics in this forum<br />You <strong>cannot</strong> edit your posts in this forum<br />You <strong>cannot</strong> delete your posts in this forum<br /></span></td>
+</tr>
+</table>
+
+<br clear="all" />
+
+<table width="100%" cellspacing="0">
+<tr>
+	<td><form method="post" name="search" action="./search.php?t=1986&amp;sid=4055f039fb2195c091ebbe428a0eb443"><span class="gensmall">Search for:</span> <input class="post" type="text" name="keywords" size="20" /> <input class="btnlite" type="submit" value="Go" /></form></td>
+	<td align="right">
+	<form method="post" name="jumpbox" action="./viewforum.php?sid=4055f039fb2195c091ebbe428a0eb443" onsubmit="if(document.jumpbox.f.value == -1){return false;}">
+
+	<table cellspacing="0" cellpadding="0" border="0">
+	<tr>
+		<td nowrap="nowrap"><span class="gensmall">Jump to:</span>&nbsp;<select name="f" onchange="if(this.options[this.selectedIndex].value != -1){ document.forms['jumpbox'].submit() }">
+
+		
+			<option value="-1">Select a forum</option>
+		<option value="-1">------------------</option>
+			<option value="3">Forums</option>
+		
+			<option value="1" selected="selected">&nbsp; &nbsp;Music</option>
+		
+			<option value="2">&nbsp; &nbsp;General</option>
+		
+
+		</select>&nbsp;<input class="btnlite" type="submit" value="Go" /></td>
+	</tr>
+	</table>
+
+	</form>
+</td>
+</tr>
+</table>
+
+<img src="./cron.php?cron_type=tidy_sessions&amp;sid=4055f039fb2195c091ebbe428a0eb443" width="1" height="1" alt="cron" />
+</div>
+
+<div id="wrapfooter">
+	
+</div>
+
+</body>
+</html>

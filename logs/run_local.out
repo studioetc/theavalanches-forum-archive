@@ -37,3 +37,6 @@ run_local.sh: harvest pid 16161, delay 2.0s, log /Users/onesteppplusgmai.com/Dev
 2026-06-09T09:17:08Z [shard 0] 624/8134 got=550 skip=73 miss=1 fail=0
 2026-06-09T09:18:48Z [shard 0] 649/8134 got=575 skip=73 miss=1 fail=0
 2026-06-09T09:20:24Z [shard 0] 674/8134 got=600 skip=73 miss=1 fail=0
+2026-06-09T09:22:01Z [shard 0] 699/8134 got=625 skip=73 miss=1 fail=0
+2026-06-09T09:23:43Z [shard 0] 724/8134 got=650 skip=73 miss=1 fail=0
+2026-06-09T09:25:26Z [shard 0] 749/8134 got=675 skip=73 miss=1 fail=0

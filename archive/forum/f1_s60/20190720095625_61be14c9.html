@@ -1,0 +1,1681 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-gb" xml:lang="en-gb">
+<head>
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta http-equiv="content-language" content="en-gb" />
+<meta http-equiv="content-style-type" content="text/css" />
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta name="copyright" content="The Avalanches" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+
+<title>www.theavalanches.com &bull; View topic - Sample page</title>
+
+
+
+<link rel="stylesheet" href="./styles/subsilver2/theme/stylesheet.css" type="text/css" />
+<!--[if lte IE 6]>
+<link rel="stylesheet" type="text/css" href="/styles/theavalanches/theme/ie6.css" />
+<![endif]-->
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+
+<script type="text/javascript">
+// <![CDATA[
+
+
+function popup(url, width, height, name)
+{
+	if (!name)
+	{
+		name = '_popup';
+	}
+
+	window.open(url.replace(/&amp;/g, '&'), name, 'height=' + height + ',resizable=yes,scrollbars=yes,width=' + width);
+	return false;
+}
+
+function jumpto()
+{
+	var page = prompt('Enter the page number you wish to go to:', '4');
+	var per_page = '20';
+	var base_url = './viewtopic.php?f=1&amp;t=710&amp;sid=8a81cc3375d59942e597144facb9fbe8';
+
+	if (page !== null && !isNaN(page) && page == Math.floor(page) && page > 0)
+	{
+		if (base_url.indexOf('?') == -1)
+		{
+			document.location.href = base_url + '?start=' + ((page - 1) * per_page);
+		}
+		else
+		{
+			document.location.href = base_url.replace(/&amp;/g, '&') + '&start=' + ((page - 1) * per_page);
+		}
+	}
+}
+
+/**
+* Find a member
+*/
+function find_username(url)
+{
+	popup(url, 760, 570, '_usersearch');
+	return false;
+}
+
+/**
+* Mark/unmark checklist
+* id = ID of parent container, name = name prefix, state = state [true/false]
+*/
+function marklist(id, name, state)
+{
+	var parent = document.getElementById(id);
+	if (!parent)
+	{
+		eval('parent = document.' + id);
+	}
+
+	if (!parent)
+	{
+		return;
+	}
+
+	var rb = parent.getElementsByTagName('input');
+	
+	for (var r = 0; r < rb.length; r++)
+	{
+		if (rb[r].name.substr(0, name.length) == name)
+		{
+			rb[r].checked = state;
+		}
+	}
+}
+
+
+
+// ]]>
+</script>
+</head>
+<body class="ltr">
+
+<a name="top"></a>
+
+<div id="wrapheader">
+
+	<div id="logodesc">
+		<table width="100%" cellspacing="0">
+		<tr>
+			<td width="100%" align="center">
+<a class="logo" href="./index.php?sid=8a81cc3375d59942e597144facb9fbe8"><img src="http://www.theavalanches.com/images/forum/butterfly.png" alt="The Avalanches" /></a>
+        <div id="external-links">
+          <a class="facebook" href="http://www.facebook.com/theavalanches" title="Facebook" target="_blank">Facebook</a>
+          <a class="soundcloud" href="https://soundcloud.com/theavalanches/" title="SoundCloud" target="_blank">SoundCloud</a>
+          <a class="twitter" href="http://twitter.com/theavalanches" title="Twitter" target="_blank">Twitter</a>
+          <a class="instagram" href="https://www.instagram.com/theavalanches/" title="Instagram" target="_blank">Instagram</a>
+          <a class="youtube" href="http://www.youtube.com/user/avalanchesofficial" title="YouTube" target="_blank">YouTube</a>
+          <a class="lastfm" href="http://www.last.fm/music/The+Avalanches" title="Last.fm" target="_blank">Last.fm</a>
+        </div>
+  <br />
+
+</td>
+		</tr>
+		</table>
+	</div>
+
+	<div id="menubar">
+		<table width="100%" cellspacing="0">
+		<tr>
+			<td class="genmed">
+				<a href="./ucp.php?mode=login&amp;sid=8a81cc3375d59942e597144facb9fbe8"Login</a>&nbsp;
+			</td>
+			<td class="genmed" align="right">
+				<a href="./faq.php?sid=8a81cc3375d59942e597144facb9fbe8">FAQ</a>
+				&nbsp;&nbsp;&bull;&nbsp;&nbsp;&nbsp;<a href="./search.php?sid=8a81cc3375d59942e597144facb9fbe8">Search</a>
+			</td>
+		</tr>
+		</table>
+	</div>
+
+	<div id="datebar">
+		<table width="100%" cellspacing="0">
+		<tr>
+			<td class="gensmall"></td>
+			<td class="gensmall" align="right">It is currently Sat Jul 20, 2019 7:56 pm<br /></td>
+		</tr>
+		</table>
+	</div>
+
+</div>
+
+<div id="wrapcentre">
+
+	
+	<p class="searchbar">
+		<span style="float: left;"><a href="./search.php?search_id=unanswered&amp;sid=8a81cc3375d59942e597144facb9fbe8">View unanswered posts</a>&nbsp;&nbsp;&nbsp;&bull;&nbsp;&nbsp;&nbsp;<a href="./search.php?search_id=active_topics&amp;sid=8a81cc3375d59942e597144facb9fbe8">View active topics</a></span>
+		
+	</p>
+	
+
+	<br style="clear: both;" />
+
+	<table class="tablebg" width="100%" cellspacing="1" cellpadding="0" style="margin-top: 5px; border:0;">
+	<tr>
+		<td class="row1" style="border:0;">
+			<p class="breadcrumbs"><a href="./index.php?sid=8a81cc3375d59942e597144facb9fbe8">Board index</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="./viewforum.php?f=3&amp;sid=8a81cc3375d59942e597144facb9fbe8">Forums</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="./viewforum.php?f=1&amp;sid=8a81cc3375d59942e597144facb9fbe8">Music</a></p>
+			<p class="datetime">All times are UTC + 10 hours </p>
+		</td>
+	</tr>
+	</table>
+
+	<br />
+
+<div id="pageheader">
+	<h2><a class="titles" href="./viewtopic.php?f=1&amp;t=710&amp;start=60&amp;sid=8a81cc3375d59942e597144facb9fbe8">Sample page</a></h2>
+
+</div>
+
+<br clear="all" /><br />
+
+<div id="pagecontent">
+
+	<table width="100%" cellspacing="1" style="margin:-5px 0 15px 0;">
+	<tr>
+		<td width="14%" valign="top" nowrap="nowrap">
+		<a class="newtopic" href="./posting.php?mode=post&amp;f=1&amp;sid=8a81cc3375d59942e597144facb9fbe8">New Topic</a>&nbsp;<a class="postreply" href="./posting.php?mode=reply&amp;f=1&amp;t=710&amp;sid=8a81cc3375d59942e597144facb9fbe8">Post Reply</a>
+		</td>
+		
+			<td class="nav" valign="middle" nowrap="nowrap">&nbsp;Page <strong>4</strong> of <strong>5</strong><br /></td>
+			<td class="gensmall" nowrap="nowrap">&nbsp;[ 88 posts ]&nbsp;</td>
+			<td class="gensmall" width="100%" align="right" nowrap="nowrap"><b><a href="#" onclick="jumpto(); return false;" title="Click to jump to page…">Go to page</a> <a href="./viewtopic.php?f=1&amp;t=710&amp;sid=8a81cc3375d59942e597144facb9fbe8&amp;start=40">Previous</a>&nbsp;&nbsp;<a href="./viewtopic.php?f=1&amp;t=710&amp;sid=8a81cc3375d59942e597144facb9fbe8">1</a><span class="page-sep">, </span><a href="./viewtopic.php?f=1&amp;t=710&amp;sid=8a81cc3375d59942e597144facb9fbe8&amp;start=20">2</a><span class="page-sep">, </span><a href="./viewtopic.php?f=1&amp;t=710&amp;sid=8a81cc3375d59942e597144facb9fbe8&amp;start=40">3</a><span class="page-sep">, </span><strong>4</strong><span class="page-sep">, </span><a href="./viewtopic.php?f=1&amp;t=710&amp;sid=8a81cc3375d59942e597144facb9fbe8&amp;start=80">5</a> &nbsp;<a href="./viewtopic.php?f=1&amp;t=710&amp;sid=8a81cc3375d59942e597144facb9fbe8&amp;start=80">Next</a></b></td>
+		
+	</tr>
+	</table>
+
+	<table class="tablebg" width="100%" cellspacing="1">
+	<tr>
+		<td class="cat catnav">
+			<table width="100%" cellspacing="0">
+			<tr>
+				<td class="nav" nowrap="nowrap">&nbsp;
+				
+				</td>
+				<td class="nav" align="right" nowrap="nowrap"><a href="./viewtopic.php?f=1&amp;t=710&amp;view=previous&amp;sid=8a81cc3375d59942e597144facb9fbe8">Previous topic</a>&nbsp;&nbsp;&nbsp;&bull;&nbsp;&nbsp;&nbsp;<a href="./viewtopic.php?f=1&amp;t=710&amp;view=next&amp;sid=8a81cc3375d59942e597144facb9fbe8">Next topic</a>&nbsp;</td>
+			</tr>
+			</table>
+		</td>
+	</tr>
+
+	</table>
+
+
+	<table class="tablebg" width="100%" cellspacing="1">
+	
+		<tr>
+			<th>Author</th>
+			<th>Message</th>
+		</tr>
+	<tr class="row1">
+
+			<td valign="middle">
+				<a name="p21148"></a>
+				<span class="postauthor">goldfish</span>
+			</td>
+			<td width="100%" height="25">
+				<table width="100%" cellspacing="0">
+				<tr>
+				
+					<td class="gensmall" width="100%"><div style="float: left;">&nbsp;Post subject: </div><div style="float: right;"><a href="./viewtopic.php?p=21148&amp;sid=8a81cc3375d59942e597144facb9fbe8#p21148"><img src="./styles/subsilver2/imageset/icon_post_target.gif" width="12" height="9" alt="Post" title="Post" /></a>Posted: Wed May 05, 2010 7:25 am&nbsp;</div></td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row1">
+
+			<td valign="top" class="profile">
+				<table cellspacing="0" align="center" width="150">
+			
+				<tr>
+					<td><img src="./styles/subsilver2/imageset/en/icon_user_offline.gif" alt="Offline" title="Offline" /></td>
+				</tr>
+			
+				</table>
+
+				<span class="postdetails">
+					<br /><b>Joined:</b> Fri May 13, 2005 11:37 pm<br /><b>Posts:</b> 348
+				</span>
+
+			</td>
+			<td valign="top">
+				<table width="100%" cellspacing="5">
+				<tr>
+					<td>
+					
+
+						<div class="postbody">Oops.  As you were thenâ€¦
+<br />
+<br />Simon</div>
+
+					<br clear="all" /><br />
+
+						<table width="100%" cellspacing="0">
+						<tr valign="middle">
+							<td class="gensmall" align="right">
+							
+							</td>
+						</tr>
+						</table>
+					</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row1">
+
+			<td class="profile"><a href="#wrapheader">Top</a></td>
+			<td style="padding: 7px 0 0 0;"><div class="gensmall icons" style="float: left;">&nbsp;<a href="./memberlist.php?mode=viewprofile&amp;u=8&amp;sid=8a81cc3375d59942e597144facb9fbe8"><img src="./styles/subsilver2/imageset/en/icon_user_profile.gif" alt="Profile" title="Profile" /></a> &nbsp;</div> <div class="gensmall" style="float: right;">&nbsp;</div></td>
+	
+		</tr>
+
+	<tr>
+		<td class="spacer" colspan="2" height="1"><img src="images/spacer.gif" alt="" width="1" height="1" /></td>
+	</tr>
+	</table>
+
+	<table class="tablebg" width="100%" cellspacing="1">
+	<tr class="row2">
+
+			<td valign="middle">
+				<a name="p21396"></a>
+				<span class="postauthor">swedishboy</span>
+			</td>
+			<td width="100%" height="25">
+				<table width="100%" cellspacing="0">
+				<tr>
+				
+					<td class="gensmall" width="100%"><div style="float: left;">&nbsp;Post subject: Etoh Sample.</div><div style="float: right;"><a href="./viewtopic.php?p=21396&amp;sid=8a81cc3375d59942e597144facb9fbe8#p21396"><img src="./styles/subsilver2/imageset/icon_post_target.gif" width="12" height="9" alt="Post" title="Post" /></a>Posted: Thu Jan 20, 2011 3:45 am&nbsp;</div></td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row2">
+
+			<td valign="top" class="profile">
+				<table cellspacing="0" align="center" width="150">
+			
+				<tr>
+					<td><img src="./styles/subsilver2/imageset/en/icon_user_offline.gif" alt="Offline" title="Offline" /></td>
+				</tr>
+			
+				</table>
+
+				<span class="postdetails">
+					<br /><b>Joined:</b> Sun Sep 11, 2005 2:06 am<br /><b>Posts:</b> 7
+				</span>
+
+			</td>
+			<td valign="top">
+				<table width="100%" cellspacing="5">
+				<tr>
+					<td>
+					
+
+						<div class="postbody">The same vocoder sample of Etoh is heard in Mr Scruff's &quot;Chicken In A Box&quot; too.<br /><br /><!-- m --><a class="postlink" href="http://www.youtube.com/watch?feature=player_detailpage&amp;v=YYn-2Q27z8o#t=395s">http://www.youtube.com/watch?feature=pl ... z8o#t=395s</a><!-- m --><br /><br />By the end of the track you can hear it without any other sounds.<br />I think I've had the track once. But can't find it and still don't know what it is.</div>
+
+					<br clear="all" /><br />
+
+						<table width="100%" cellspacing="0">
+						<tr valign="middle">
+							<td class="gensmall" align="right">
+							
+							</td>
+						</tr>
+						</table>
+					</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row2">
+
+			<td class="profile"><a href="#wrapheader">Top</a></td>
+			<td style="padding: 7px 0 0 0;"><div class="gensmall icons" style="float: left;">&nbsp;<a href="./memberlist.php?mode=viewprofile&amp;u=113&amp;sid=8a81cc3375d59942e597144facb9fbe8"><img src="./styles/subsilver2/imageset/en/icon_user_profile.gif" alt="Profile" title="Profile" /></a> &nbsp;</div> <div class="gensmall" style="float: right;">&nbsp;</div></td>
+	
+		</tr>
+
+	<tr>
+		<td class="spacer" colspan="2" height="1"><img src="images/spacer.gif" alt="" width="1" height="1" /></td>
+	</tr>
+	</table>
+
+	<table class="tablebg" width="100%" cellspacing="1">
+	<tr class="row1">
+
+			<td valign="middle">
+				<a name="p21397"></a>
+				<span class="postauthor">swedishboy</span>
+			</td>
+			<td width="100%" height="25">
+				<table width="100%" cellspacing="0">
+				<tr>
+				
+					<td class="gensmall" width="100%"><div style="float: left;">&nbsp;Post subject: spotify list</div><div style="float: right;"><a href="./viewtopic.php?p=21397&amp;sid=8a81cc3375d59942e597144facb9fbe8#p21397"><img src="./styles/subsilver2/imageset/icon_post_target.gif" width="12" height="9" alt="Post" title="Post" /></a>Posted: Thu Jan 20, 2011 3:52 am&nbsp;</div></td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row1">
+
+			<td valign="top" class="profile">
+				<table cellspacing="0" align="center" width="150">
+			
+				<tr>
+					<td><img src="./styles/subsilver2/imageset/en/icon_user_offline.gif" alt="Offline" title="Offline" /></td>
+				</tr>
+			
+				</table>
+
+				<span class="postdetails">
+					<br /><b>Joined:</b> Sun Sep 11, 2005 2:06 am<br /><b>Posts:</b> 7
+				</span>
+
+			</td>
+			<td valign="top">
+				<table width="100%" cellspacing="5">
+				<tr>
+					<td>
+					
+
+						<div class="postbody">oh. and here is a list of the tracks i found so far on Spotify that Avalanches sampled.<br /><br /><!-- m --><a class="postlink" href="http://open.spotify.com/user/coconut_slaying/playlist/7F2dAU4efAc6TCHOHLgSnD">http://open.spotify.com/user/coconut_sl ... TCHOHLgSnD</a><!-- m --><br /><br />it's collaborative in case you think i've missed something.</div>
+
+					<br clear="all" /><br />
+
+						<table width="100%" cellspacing="0">
+						<tr valign="middle">
+							<td class="gensmall" align="right">
+							
+							</td>
+						</tr>
+						</table>
+					</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row1">
+
+			<td class="profile"><a href="#wrapheader">Top</a></td>
+			<td style="padding: 7px 0 0 0;"><div class="gensmall icons" style="float: left;">&nbsp;<a href="./memberlist.php?mode=viewprofile&amp;u=113&amp;sid=8a81cc3375d59942e597144facb9fbe8"><img src="./styles/subsilver2/imageset/en/icon_user_profile.gif" alt="Profile" title="Profile" /></a> &nbsp;</div> <div class="gensmall" style="float: right;">&nbsp;</div></td>
+	
+		</tr>
+
+	<tr>
+		<td class="spacer" colspan="2" height="1"><img src="images/spacer.gif" alt="" width="1" height="1" /></td>
+	</tr>
+	</table>
+
+	<table class="tablebg" width="100%" cellspacing="1">
+	<tr class="row2">
+
+			<td valign="middle">
+				<a name="p21573"></a>
+				<span class="postauthor">MaxGoun</span>
+			</td>
+			<td width="100%" height="25">
+				<table width="100%" cellspacing="0">
+				<tr>
+				
+					<td class="gensmall" width="100%"><div style="float: left;">&nbsp;Post subject: Re: Sample page</div><div style="float: right;"><a href="./viewtopic.php?p=21573&amp;sid=8a81cc3375d59942e597144facb9fbe8#p21573"><img src="./styles/subsilver2/imageset/icon_post_target.gif" width="12" height="9" alt="Post" title="Post" /></a>Posted: Tue Feb 08, 2011 3:14 am&nbsp;</div></td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row2">
+
+			<td valign="top" class="profile">
+				<table cellspacing="0" align="center" width="150">
+			
+				<tr>
+					<td><img src="./styles/subsilver2/imageset/en/icon_user_offline.gif" alt="Offline" title="Offline" /></td>
+				</tr>
+			
+				</table>
+
+				<span class="postdetails">
+					<br /><b>Joined:</b> Sun May 15, 2005 2:53 am<br /><b>Posts:</b> 155<br /><b>Location:</b> massilia
+				</span>
+
+			</td>
+			<td valign="top">
+				<table width="100%" cellspacing="5">
+				<tr>
+					<td>
+					
+
+						<div class="postbody"><div class="quotetitle"><b>Quote:</b></div><div class="quotecontent"><em>oh. and here is a list of the tracks i found so far on Spotify that Avalanches sampled.</em></div><br /> jeez/2hours ov original&amp;varied vibes/makes SILY even more thoughtful,<br />cheers fella <img src="./images/smilies/icon_cool.gif" alt="8)" title="Cool" /></div>
+
+					<br clear="all" /><br />
+
+						<table width="100%" cellspacing="0">
+						<tr valign="middle">
+							<td class="gensmall" align="right">
+							
+							</td>
+						</tr>
+						</table>
+					</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row2">
+
+			<td class="profile"><a href="#wrapheader">Top</a></td>
+			<td style="padding: 7px 0 0 0;"><div class="gensmall icons" style="float: left;">&nbsp;<a href="./memberlist.php?mode=viewprofile&amp;u=15&amp;sid=8a81cc3375d59942e597144facb9fbe8"><img src="./styles/subsilver2/imageset/en/icon_user_profile.gif" alt="Profile" title="Profile" /></a> &nbsp;</div> <div class="gensmall" style="float: right;">&nbsp;</div></td>
+	
+		</tr>
+
+	<tr>
+		<td class="spacer" colspan="2" height="1"><img src="images/spacer.gif" alt="" width="1" height="1" /></td>
+	</tr>
+	</table>
+
+	<table class="tablebg" width="100%" cellspacing="1">
+	<tr class="row1">
+
+			<td valign="middle">
+				<a name="p21987"></a>
+				<span class="postauthor">purpletextbook</span>
+			</td>
+			<td width="100%" height="25">
+				<table width="100%" cellspacing="0">
+				<tr>
+				
+					<td class="gensmall" width="100%"><div style="float: left;">&nbsp;Post subject: Re: Sample page</div><div style="float: right;"><a href="./viewtopic.php?p=21987&amp;sid=8a81cc3375d59942e597144facb9fbe8#p21987"><img src="./styles/subsilver2/imageset/icon_post_target.gif" width="12" height="9" alt="Post" title="Post" /></a>Posted: Sat Jun 04, 2011 3:55 pm&nbsp;</div></td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row1">
+
+			<td valign="top" class="profile">
+				<table cellspacing="0" align="center" width="150">
+			
+				<tr>
+					<td><img src="./styles/subsilver2/imageset/en/icon_user_offline.gif" alt="Offline" title="Offline" /></td>
+				</tr>
+			
+				</table>
+
+				<span class="postdetails">
+					<br /><b>Joined:</b> Sat Jun 04, 2011 3:51 pm<br /><b>Posts:</b> 6
+				</span>
+
+			</td>
+			<td valign="top">
+				<table width="100%" cellspacing="5">
+				<tr>
+					<td>
+					
+
+						<div class="postbody">Some more samples that haven't been mentioned here yet:<br /><br />That buzzing noise at 3:33 in &quot;Summer Crane&quot; is sampled from &quot;Hebrew Melody&quot; by Clara Rockmore.<br /><br />go to 0:21<br /><!-- m --><a class="postlink" href="http://www.youtube.com/watch?v=8w6sRjVYkow">http://www.youtube.com/watch?v=8w6sRjVYkow</a><!-- m --><br /><br /><br />The &quot;Can't you hear it, oh can't you hear it?&quot; vocals from the beginning of  &quot;Two Hearts in 3/4 Time&quot; are sampled from the song &quot;Rosemary&quot; from the soundtrack to the musical How to Succeed in Business Without Really Trying.<br /><br />go to 1:41<br /><!-- m --><a class="postlink" href="http://www.youtube.com/watch?v=fJ_PHxW139A">http://www.youtube.com/watch?v=fJ_PHxW139A</a><!-- m --><br /><br /><br />Those heavy drums at around 2:40 in &quot;Frontier Psychiatrist&quot; may be sampled from &quot;Lover and a Friend&quot; by Eddie Bo.<br /><br />at the beginning<br /><!-- m --><a class="postlink" href="http://www.youtube.com/watch?v=aaMZWBNx5Sc">http://www.youtube.com/watch?v=aaMZWBNx5Sc</a><!-- m --><br /><br /><br />The drums and organ near the end of &quot;Two Hearts in 3/4 Time&quot; are sampled from &quot;Ghost Story&quot; by John Cale.</div>
+
+					<br clear="all" /><br />
+
+						<table width="100%" cellspacing="0">
+						<tr valign="middle">
+							<td class="gensmall" align="right">
+							
+							</td>
+						</tr>
+						</table>
+					</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row1">
+
+			<td class="profile"><a href="#wrapheader">Top</a></td>
+			<td style="padding: 7px 0 0 0;"><div class="gensmall icons" style="float: left;">&nbsp;<a href="./memberlist.php?mode=viewprofile&amp;u=50692&amp;sid=8a81cc3375d59942e597144facb9fbe8"><img src="./styles/subsilver2/imageset/en/icon_user_profile.gif" alt="Profile" title="Profile" /></a> &nbsp;</div> <div class="gensmall" style="float: right;">&nbsp;</div></td>
+	
+		</tr>
+
+	<tr>
+		<td class="spacer" colspan="2" height="1"><img src="images/spacer.gif" alt="" width="1" height="1" /></td>
+	</tr>
+	</table>
+
+	<table class="tablebg" width="100%" cellspacing="1">
+	<tr class="row2">
+
+			<td valign="middle">
+				<a name="p22037"></a>
+				<span class="postauthor">emmafighting</span>
+			</td>
+			<td width="100%" height="25">
+				<table width="100%" cellspacing="0">
+				<tr>
+				
+					<td class="gensmall" width="100%"><div style="float: left;">&nbsp;Post subject: Re: car wash fo sho</div><div style="float: right;"><a href="./viewtopic.php?p=22037&amp;sid=8a81cc3375d59942e597144facb9fbe8#p22037"><img src="./styles/subsilver2/imageset/icon_post_target.gif" width="12" height="9" alt="Post" title="Post" /></a>Posted: Fri Jul 15, 2011 7:44 pm&nbsp;</div></td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row2">
+
+			<td valign="top" class="profile">
+				<table cellspacing="0" align="center" width="150">
+			
+				<tr>
+					<td><img src="./styles/subsilver2/imageset/en/icon_user_offline.gif" alt="Offline" title="Offline" /></td>
+				</tr>
+			
+				</table>
+
+				<span class="postdetails">
+					<br /><b>Joined:</b> Thu Jul 14, 2011 11:17 am<br /><b>Posts:</b> 2
+				</span>
+
+			</td>
+			<td valign="top">
+				<table width="100%" cellspacing="5">
+				<tr>
+					<td>
+					
+
+						<div class="postbody"><div class="quotetitle">B.2.d.E wrote:</div><div class="quotecontent">I got the Carwash LP (1976)...they sample the Richard Pryor Dialogue and part of Daddy Rich throughout the &quot;When I Met You&quot; comp. and also through the &quot;Since I Left You LP&quot;.  The end of &quot;Daddy Rich&quot; is the very first sample you hear in the &quot;Since I Left You LP&quot;</div><br /><strong><a href="http://www.ghdsrettetanginorge.com/" class="postlink">GHD Rettetang Salg</a></strong><br /><br /><a href="http://www.ghdstraightenerssautralia.com/" class="postlink">Ghd Straighteners Australia</a><br /><br /><a href="http://www.vibramshoesscheap.com/" class="postlink">Vibram Shoes</a></div>
+
+					<br clear="all" /><br />
+
+						<table width="100%" cellspacing="0">
+						<tr valign="middle">
+							<td class="gensmall" align="right">
+							
+							</td>
+						</tr>
+						</table>
+					</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row2">
+
+			<td class="profile"><a href="#wrapheader">Top</a></td>
+			<td style="padding: 7px 0 0 0;"><div class="gensmall icons" style="float: left;">&nbsp;<a href="./memberlist.php?mode=viewprofile&amp;u=50705&amp;sid=8a81cc3375d59942e597144facb9fbe8"><img src="./styles/subsilver2/imageset/en/icon_user_profile.gif" alt="Profile" title="Profile" /></a> &nbsp;</div> <div class="gensmall" style="float: right;">&nbsp;</div></td>
+	
+		</tr>
+
+	<tr>
+		<td class="spacer" colspan="2" height="1"><img src="images/spacer.gif" alt="" width="1" height="1" /></td>
+	</tr>
+	</table>
+
+	<table class="tablebg" width="100%" cellspacing="1">
+	<tr class="row1">
+
+			<td valign="middle">
+				<a name="p22052"></a>
+				<span class="postauthor">Kered557</span>
+			</td>
+			<td width="100%" height="25">
+				<table width="100%" cellspacing="0">
+				<tr>
+				
+					<td class="gensmall" width="100%"><div style="float: left;">&nbsp;Post subject: Re: Sample page</div><div style="float: right;"><a href="./viewtopic.php?p=22052&amp;sid=8a81cc3375d59942e597144facb9fbe8#p22052"><img src="./styles/subsilver2/imageset/icon_post_target.gif" width="12" height="9" alt="Post" title="Post" /></a>Posted: Tue Jul 26, 2011 7:48 am&nbsp;</div></td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row1">
+
+			<td valign="top" class="profile">
+				<table cellspacing="0" align="center" width="150">
+			
+				<tr>
+					<td><img src="./styles/subsilver2/imageset/en/icon_user_offline.gif" alt="Offline" title="Offline" /></td>
+				</tr>
+			
+				</table>
+
+				<span class="postdetails">
+					<br /><b>Joined:</b> Sun Nov 14, 2010 3:11 am<br /><b>Posts:</b> 3
+				</span>
+
+			</td>
+			<td valign="top">
+				<table width="100%" cellspacing="5">
+				<tr>
+					<td>
+					
+
+						<div class="postbody">I found this a few months ago, but never got around to posting it...<br /><br />I found one of the main samples used in the &quot;Everyday&quot; B-Side is in the song &quot;Claire&quot; by iO (1995). However, IO wasn't the original, as it was sampled  from &quot;Cala Boca Menino&quot; by Joao Donato (Released 1973). Links below..<br /><br />The Avalanches - Everyday <br /><!-- m --><a class="postlink" href="http://www.youtube.com/watch?v=8yas6kzPYF0">http://www.youtube.com/watch?v=8yas6kzPYF0</a><!-- m --><br /><br />iO - &quot;Claire&quot; (Starts around 0:39)<br /><!-- m --><a class="postlink" href="http://www.youtube.com/watch?v=DkpUAC9din4">http://www.youtube.com/watch?v=DkpUAC9din4</a><!-- m --><br /><br />Joao Donato - &quot;Cala Boca Menino&quot; <br /><!-- m --><a class="postlink" href="http://www.youtube.com/watch?v=s92l7CjtOYU">http://www.youtube.com/watch?v=s92l7CjtOYU</a><!-- m --></div>
+
+					<br clear="all" /><br />
+
+						<table width="100%" cellspacing="0">
+						<tr valign="middle">
+							<td class="gensmall" align="right">
+							
+							</td>
+						</tr>
+						</table>
+					</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row1">
+
+			<td class="profile"><a href="#wrapheader">Top</a></td>
+			<td style="padding: 7px 0 0 0;"><div class="gensmall icons" style="float: left;">&nbsp;<a href="./memberlist.php?mode=viewprofile&amp;u=50426&amp;sid=8a81cc3375d59942e597144facb9fbe8"><img src="./styles/subsilver2/imageset/en/icon_user_profile.gif" alt="Profile" title="Profile" /></a> &nbsp;</div> <div class="gensmall" style="float: right;">&nbsp;</div></td>
+	
+		</tr>
+
+	<tr>
+		<td class="spacer" colspan="2" height="1"><img src="images/spacer.gif" alt="" width="1" height="1" /></td>
+	</tr>
+	</table>
+
+	<table class="tablebg" width="100%" cellspacing="1">
+	<tr class="row2">
+
+			<td valign="middle">
+				<a name="p22054"></a>
+				<span class="postauthor">chchucks</span>
+			</td>
+			<td width="100%" height="25">
+				<table width="100%" cellspacing="0">
+				<tr>
+				
+					<td class="gensmall" width="100%"><div style="float: left;">&nbsp;Post subject: Re: Sample page</div><div style="float: right;"><a href="./viewtopic.php?p=22054&amp;sid=8a81cc3375d59942e597144facb9fbe8#p22054"><img src="./styles/subsilver2/imageset/icon_post_target.gif" width="12" height="9" alt="Post" title="Post" /></a>Posted: Tue Jul 26, 2011 9:17 am&nbsp;</div></td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row2">
+
+			<td valign="top" class="profile">
+				<table cellspacing="0" align="center" width="150">
+			
+				<tr>
+					<td><img src="./styles/subsilver2/imageset/en/icon_user_offline.gif" alt="Offline" title="Offline" /></td>
+				</tr>
+			
+				</table>
+
+				<span class="postdetails">
+					<br /><b>Joined:</b> Sun Nov 14, 2010 10:09 am<br /><b>Posts:</b> 71<br /><b>Location:</b> Mars
+				</span>
+
+			</td>
+			<td valign="top">
+				<table width="100%" cellspacing="5">
+				<tr>
+					<td>
+					
+
+						<div class="postbody">Does anyone know what the sample from <strong>a diffrent feeling</strong> is that kicks in 2 seconds into the song, i have not seen it so far.</div>
+
+					
+						<span class="postbody"><br />_________________<br /><span style="color: #400040">I'm los</span><span style="color: #400080">t in sp</span><span style="color: #4000BF">ace and slo</span><span style="color: #4000FF">wly dissolving</span></span>
+					<br clear="all" /><br />
+
+						<table width="100%" cellspacing="0">
+						<tr valign="middle">
+							<td class="gensmall" align="right">
+							
+							</td>
+						</tr>
+						</table>
+					</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row2">
+
+			<td class="profile"><a href="#wrapheader">Top</a></td>
+			<td style="padding: 7px 0 0 0;"><div class="gensmall icons" style="float: left;">&nbsp;<a href="./memberlist.php?mode=viewprofile&amp;u=50427&amp;sid=8a81cc3375d59942e597144facb9fbe8"><img src="./styles/subsilver2/imageset/en/icon_user_profile.gif" alt="Profile" title="Profile" /></a> &nbsp;</div> <div class="gensmall" style="float: right;">&nbsp;</div></td>
+	
+		</tr>
+
+	<tr>
+		<td class="spacer" colspan="2" height="1"><img src="images/spacer.gif" alt="" width="1" height="1" /></td>
+	</tr>
+	</table>
+
+	<table class="tablebg" width="100%" cellspacing="1">
+	<tr class="row1">
+
+			<td valign="middle">
+				<a name="p22055"></a>
+				<span class="postauthor">Protostar</span>
+			</td>
+			<td width="100%" height="25">
+				<table width="100%" cellspacing="0">
+				<tr>
+				
+					<td class="gensmall" width="100%"><div style="float: left;">&nbsp;Post subject: Re: Sample page</div><div style="float: right;"><a href="./viewtopic.php?p=22055&amp;sid=8a81cc3375d59942e597144facb9fbe8#p22055"><img src="./styles/subsilver2/imageset/icon_post_target.gif" width="12" height="9" alt="Post" title="Post" /></a>Posted: Wed Jul 27, 2011 1:57 am&nbsp;</div></td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row1">
+
+			<td valign="top" class="profile">
+				<table cellspacing="0" align="center" width="150">
+			
+				<tr>
+					<td><img src="./styles/subsilver2/imageset/en/icon_user_offline.gif" alt="Offline" title="Offline" /></td>
+				</tr>
+			
+				</table>
+
+				<span class="postdetails">
+					<br /><b>Joined:</b> Wed Jul 27, 2011 1:56 am<br /><b>Posts:</b> 1
+				</span>
+
+			</td>
+			<td valign="top">
+				<table width="100%" cellspacing="5">
+				<tr>
+					<td>
+					
+
+						<div class="postbody">Anyone know what this string loop is in the beginning of &quot;Little Journey&quot;?</div>
+
+					<br clear="all" /><br />
+
+						<table width="100%" cellspacing="0">
+						<tr valign="middle">
+							<td class="gensmall" align="right">
+							
+							</td>
+						</tr>
+						</table>
+					</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row1">
+
+			<td class="profile"><a href="#wrapheader">Top</a></td>
+			<td style="padding: 7px 0 0 0;"><div class="gensmall icons" style="float: left;">&nbsp;<a href="./memberlist.php?mode=viewprofile&amp;u=50708&amp;sid=8a81cc3375d59942e597144facb9fbe8"><img src="./styles/subsilver2/imageset/en/icon_user_profile.gif" alt="Profile" title="Profile" /></a> &nbsp;</div> <div class="gensmall" style="float: right;">&nbsp;</div></td>
+	
+		</tr>
+
+	<tr>
+		<td class="spacer" colspan="2" height="1"><img src="images/spacer.gif" alt="" width="1" height="1" /></td>
+	</tr>
+	</table>
+
+	<table class="tablebg" width="100%" cellspacing="1">
+	<tr class="row2">
+
+			<td valign="middle">
+				<a name="p22077"></a>
+				<span class="postauthor">denniseatsfood</span>
+			</td>
+			<td width="100%" height="25">
+				<table width="100%" cellspacing="0">
+				<tr>
+				
+					<td class="gensmall" width="100%"><div style="float: left;">&nbsp;Post subject: Re: Sample page</div><div style="float: right;"><a href="./viewtopic.php?p=22077&amp;sid=8a81cc3375d59942e597144facb9fbe8#p22077"><img src="./styles/subsilver2/imageset/icon_post_target.gif" width="12" height="9" alt="Post" title="Post" /></a>Posted: Wed Sep 07, 2011 3:55 pm&nbsp;</div></td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row2">
+
+			<td valign="top" class="profile">
+				<table cellspacing="0" align="center" width="150">
+			
+				<tr>
+					<td><img src="./styles/subsilver2/imageset/en/icon_user_offline.gif" alt="Offline" title="Offline" /></td>
+				</tr>
+			
+				</table>
+
+				<span class="postdetails">
+					<br /><b>Joined:</b> Thu Apr 28, 2011 9:01 am<br /><b>Posts:</b> 2
+				</span>
+
+			</td>
+			<td valign="top">
+				<table width="100%" cellspacing="5">
+				<tr>
+					<td>
+					
+
+						<div class="postbody">Just kidding...</div>
+
+					
+							<br /><br />
+							<span class="gensmall">Last edited by <a href="./memberlist.php?mode=viewprofile&amp;u=50680&amp;sid=8a81cc3375d59942e597144facb9fbe8">denniseatsfood</a> on Thu Sep 08, 2011 9:59 am, edited 1 time in total.</span>
+						<br clear="all" /><br />
+
+						<table width="100%" cellspacing="0">
+						<tr valign="middle">
+							<td class="gensmall" align="right">
+							
+							</td>
+						</tr>
+						</table>
+					</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row2">
+
+			<td class="profile"><a href="#wrapheader">Top</a></td>
+			<td style="padding: 7px 0 0 0;"><div class="gensmall icons" style="float: left;">&nbsp;<a href="./memberlist.php?mode=viewprofile&amp;u=50680&amp;sid=8a81cc3375d59942e597144facb9fbe8"><img src="./styles/subsilver2/imageset/en/icon_user_profile.gif" alt="Profile" title="Profile" /></a> &nbsp;</div> <div class="gensmall" style="float: right;">&nbsp;</div></td>
+	
+		</tr>
+
+	<tr>
+		<td class="spacer" colspan="2" height="1"><img src="images/spacer.gif" alt="" width="1" height="1" /></td>
+	</tr>
+	</table>
+
+	<table class="tablebg" width="100%" cellspacing="1">
+	<tr class="row1">
+
+			<td valign="middle">
+				<a name="p22078"></a>
+				<span class="postauthor">Janiz</span>
+			</td>
+			<td width="100%" height="25">
+				<table width="100%" cellspacing="0">
+				<tr>
+				
+					<td class="gensmall" width="100%"><div style="float: left;">&nbsp;Post subject: Re: Sample page</div><div style="float: right;"><a href="./viewtopic.php?p=22078&amp;sid=8a81cc3375d59942e597144facb9fbe8#p22078"><img src="./styles/subsilver2/imageset/icon_post_target.gif" width="12" height="9" alt="Post" title="Post" /></a>Posted: Wed Sep 07, 2011 7:54 pm&nbsp;</div></td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row1">
+
+			<td valign="top" class="profile">
+				<table cellspacing="0" align="center" width="150">
+			
+				<tr>
+					<td><img src="./styles/subsilver2/imageset/en/icon_user_offline.gif" alt="Offline" title="Offline" /></td>
+				</tr>
+			
+				</table>
+
+				<span class="postdetails">
+					<br /><b>Joined:</b> Thu May 19, 2005 4:02 pm<br /><b>Posts:</b> 21
+				</span>
+
+			</td>
+			<td valign="top">
+				<table width="100%" cellspacing="5">
+				<tr>
+					<td>
+					
+
+						<div class="postbody"><div class="quotetitle">denniseatsfood wrote:</div><div class="quotecontent">Got one, I think!<br /><br /><!-- m --><a class="postlink" href="http://www.youtube.com/watch?v=4LtYaCm5njY">http://www.youtube.com/watch?v=4LtYaCm5njY</a><!-- m --> -- on Stay Another Season</div><br /><br />Hmm, could be that The Avalanches sampled this one, instead of directly sampling Madonna's &quot;Holiday&quot;. I doubt about this &quot;vocal&quot; version, but would be nice to hear  &quot;Holiday Hip Hop Instrumental&quot; (present on 12&quot; single) and to compare.</div>
+
+					<br clear="all" /><br />
+
+						<table width="100%" cellspacing="0">
+						<tr valign="middle">
+							<td class="gensmall" align="right">
+							
+							</td>
+						</tr>
+						</table>
+					</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row1">
+
+			<td class="profile"><a href="#wrapheader">Top</a></td>
+			<td style="padding: 7px 0 0 0;"><div class="gensmall icons" style="float: left;">&nbsp;<a href="./memberlist.php?mode=viewprofile&amp;u=32&amp;sid=8a81cc3375d59942e597144facb9fbe8"><img src="./styles/subsilver2/imageset/en/icon_user_profile.gif" alt="Profile" title="Profile" /></a> &nbsp;</div> <div class="gensmall" style="float: right;">&nbsp;</div></td>
+	
+		</tr>
+
+	<tr>
+		<td class="spacer" colspan="2" height="1"><img src="images/spacer.gif" alt="" width="1" height="1" /></td>
+	</tr>
+	</table>
+
+	<table class="tablebg" width="100%" cellspacing="1">
+	<tr class="row2">
+
+			<td valign="middle">
+				<a name="p22079"></a>
+				<span class="postauthor">denniseatsfood</span>
+			</td>
+			<td width="100%" height="25">
+				<table width="100%" cellspacing="0">
+				<tr>
+				
+					<td class="gensmall" width="100%"><div style="float: left;">&nbsp;Post subject: Re: Sample page</div><div style="float: right;"><a href="./viewtopic.php?p=22079&amp;sid=8a81cc3375d59942e597144facb9fbe8#p22079"><img src="./styles/subsilver2/imageset/icon_post_target.gif" width="12" height="9" alt="Post" title="Post" /></a>Posted: Thu Sep 08, 2011 9:59 am&nbsp;</div></td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row2">
+
+			<td valign="top" class="profile">
+				<table cellspacing="0" align="center" width="150">
+			
+				<tr>
+					<td><img src="./styles/subsilver2/imageset/en/icon_user_offline.gif" alt="Offline" title="Offline" /></td>
+				</tr>
+			
+				</table>
+
+				<span class="postdetails">
+					<br /><b>Joined:</b> Thu Apr 28, 2011 9:01 am<br /><b>Posts:</b> 2
+				</span>
+
+			</td>
+			<td valign="top">
+				<table width="100%" cellspacing="5">
+				<tr>
+					<td>
+					
+
+						<div class="postbody"><div class="quotetitle">Janiz wrote:</div><div class="quotecontent"><div class="quotetitle">denniseatsfood wrote:</div><div class="quotecontent">Got one, I think!<br /><br /><!-- m --><a class="postlink" href="http://www.youtube.com/watch?v=4LtYaCm5njY">http://www.youtube.com/watch?v=4LtYaCm5njY</a><!-- m --> -- on Stay Another Season</div><br /><br />Hmm, could be that The Avalanches sampled this one, instead of directly sampling Madonna's &quot;Holiday&quot;. I doubt about this &quot;vocal&quot; version, but would be nice to hear  &quot;Holiday Hip Hop Instrumental&quot; (present on 12&quot; single) and to compare.</div><br /><br />I didn't even know that bass riff was actually from Madonna's Holiday (I don't listen to very much Madonna at all...).. I think they would've sampled Holiday though, not this song, haha. <img src="./images/smilies/icon_redface.gif" alt=":oops:" title="Embarassed" /></div>
+
+					<br clear="all" /><br />
+
+						<table width="100%" cellspacing="0">
+						<tr valign="middle">
+							<td class="gensmall" align="right">
+							
+							</td>
+						</tr>
+						</table>
+					</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row2">
+
+			<td class="profile"><a href="#wrapheader">Top</a></td>
+			<td style="padding: 7px 0 0 0;"><div class="gensmall icons" style="float: left;">&nbsp;<a href="./memberlist.php?mode=viewprofile&amp;u=50680&amp;sid=8a81cc3375d59942e597144facb9fbe8"><img src="./styles/subsilver2/imageset/en/icon_user_profile.gif" alt="Profile" title="Profile" /></a> &nbsp;</div> <div class="gensmall" style="float: right;">&nbsp;</div></td>
+	
+		</tr>
+
+	<tr>
+		<td class="spacer" colspan="2" height="1"><img src="images/spacer.gif" alt="" width="1" height="1" /></td>
+	</tr>
+	</table>
+
+	<table class="tablebg" width="100%" cellspacing="1">
+	<tr class="row1">
+
+			<td valign="middle">
+				<a name="p22412"></a>
+				<span class="postauthor">anton2492</span>
+			</td>
+			<td width="100%" height="25">
+				<table width="100%" cellspacing="0">
+				<tr>
+				
+					<td class="gensmall" width="100%"><div style="float: left;">&nbsp;Post subject: Re: Sample page</div><div style="float: right;"><a href="./viewtopic.php?p=22412&amp;sid=8a81cc3375d59942e597144facb9fbe8#p22412"><img src="./styles/subsilver2/imageset/icon_post_target.gif" width="12" height="9" alt="Post" title="Post" /></a>Posted: Tue Dec 06, 2011 10:45 pm&nbsp;</div></td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row1">
+
+			<td valign="top" class="profile">
+				<table cellspacing="0" align="center" width="150">
+			
+				<tr>
+					<td><img src="./styles/subsilver2/imageset/en/icon_user_offline.gif" alt="Offline" title="Offline" /></td>
+				</tr>
+			
+				</table>
+
+				<span class="postdetails">
+					<br /><b>Joined:</b> Tue Dec 06, 2011 10:39 pm<br /><b>Posts:</b> 1
+				</span>
+
+			</td>
+			<td valign="top">
+				<table width="100%" cellspacing="5">
+				<tr>
+					<td>
+					
+
+						<div class="postbody">Could anybody <span style="font-size: 150%; line-height: normal"><span style="color: #FFFFBF">PLEASE</span> </span>find the <span style="text-decoration: underline"><span style="font-size: 200%; line-height: normal"><span style="color: #8040FF">bassline</span></span></span> from <strong><span style="font-size: 200%; line-height: normal"><span style="color: #0040FF">&quot;A Different Feeling&quot;</span></span></strong>? It's just otherworldly and it's driving me nuts 'cause I'm not as good at finding original sources as you guys xD Thank you...</div>
+
+					<br clear="all" /><br />
+
+						<table width="100%" cellspacing="0">
+						<tr valign="middle">
+							<td class="gensmall" align="right">
+							
+							</td>
+						</tr>
+						</table>
+					</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row1">
+
+			<td class="profile"><a href="#wrapheader">Top</a></td>
+			<td style="padding: 7px 0 0 0;"><div class="gensmall icons" style="float: left;">&nbsp;<a href="./memberlist.php?mode=viewprofile&amp;u=50727&amp;sid=8a81cc3375d59942e597144facb9fbe8"><img src="./styles/subsilver2/imageset/en/icon_user_profile.gif" alt="Profile" title="Profile" /></a> &nbsp;</div> <div class="gensmall" style="float: right;">&nbsp;</div></td>
+	
+		</tr>
+
+	<tr>
+		<td class="spacer" colspan="2" height="1"><img src="images/spacer.gif" alt="" width="1" height="1" /></td>
+	</tr>
+	</table>
+
+	<table class="tablebg" width="100%" cellspacing="1">
+	<tr class="row2">
+
+			<td valign="middle">
+				<a name="p22432"></a>
+				<span class="postauthor">Grieg</span>
+			</td>
+			<td width="100%" height="25">
+				<table width="100%" cellspacing="0">
+				<tr>
+				
+					<td class="gensmall" width="100%"><div style="float: left;">&nbsp;Post subject: Re: Sample page</div><div style="float: right;"><a href="./viewtopic.php?p=22432&amp;sid=8a81cc3375d59942e597144facb9fbe8#p22432"><img src="./styles/subsilver2/imageset/icon_post_target.gif" width="12" height="9" alt="Post" title="Post" /></a>Posted: Thu Dec 22, 2011 3:43 am&nbsp;</div></td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row2">
+
+			<td valign="top" class="profile">
+				<table cellspacing="0" align="center" width="150">
+			
+				<tr>
+					<td><img src="./styles/subsilver2/imageset/en/icon_user_offline.gif" alt="Offline" title="Offline" /></td>
+				</tr>
+			
+				</table>
+
+				<span class="postdetails">
+					<br /><b>Joined:</b> Thu Dec 22, 2011 3:31 am<br /><b>Posts:</b> 3
+				</span>
+
+			</td>
+			<td valign="top">
+				<table width="100%" cellspacing="5">
+				<tr>
+					<td>
+					
+
+						<div class="postbody">Aunt Theresa, Please Tell Me a Story.<br />Hey Guys i've found a great sample for you! which I don't think has been found before.<br />download this: <br /><!-- m --><a class="postlink" href="http://wayoutjunk.blogspot.com/2006/11/aunt-theresa-please-tell-me-story.html">http://wayoutjunk.blogspot.com/2006/11/ ... story.html</a><!-- m --><br />track 4 &quot;The Piece of Wood That Talked&quot; is where the whole &quot;sometimes a parrot..&quot; section comes from in Frontier Psychiatrist.. I think &quot;he was as white as a sheet&quot; might be on there somewhere as well. <img src="./images/smilies/icon_biggrin.gif" alt=":D" title="Very Happy" /></div>
+
+					<br clear="all" /><br />
+
+						<table width="100%" cellspacing="0">
+						<tr valign="middle">
+							<td class="gensmall" align="right">
+							
+							</td>
+						</tr>
+						</table>
+					</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row2">
+
+			<td class="profile"><a href="#wrapheader">Top</a></td>
+			<td style="padding: 7px 0 0 0;"><div class="gensmall icons" style="float: left;">&nbsp;<a href="./memberlist.php?mode=viewprofile&amp;u=50730&amp;sid=8a81cc3375d59942e597144facb9fbe8"><img src="./styles/subsilver2/imageset/en/icon_user_profile.gif" alt="Profile" title="Profile" /></a> &nbsp;</div> <div class="gensmall" style="float: right;">&nbsp;</div></td>
+	
+		</tr>
+
+	<tr>
+		<td class="spacer" colspan="2" height="1"><img src="images/spacer.gif" alt="" width="1" height="1" /></td>
+	</tr>
+	</table>
+
+	<table class="tablebg" width="100%" cellspacing="1">
+	<tr class="row1">
+
+			<td valign="middle">
+				<a name="p22433"></a>
+				<span class="postauthor">britter</span>
+			</td>
+			<td width="100%" height="25">
+				<table width="100%" cellspacing="0">
+				<tr>
+				
+					<td class="gensmall" width="100%"><div style="float: left;">&nbsp;Post subject: Re: Sample page</div><div style="float: right;"><a href="./viewtopic.php?p=22433&amp;sid=8a81cc3375d59942e597144facb9fbe8#p22433"><img src="./styles/subsilver2/imageset/icon_post_target.gif" width="12" height="9" alt="Post" title="Post" /></a>Posted: Thu Dec 22, 2011 7:59 am&nbsp;</div></td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row1">
+
+			<td valign="top" class="profile">
+				<table cellspacing="0" align="center" width="150">
+			
+				<tr>
+					<td><img src="./styles/subsilver2/imageset/en/icon_user_offline.gif" alt="Offline" title="Offline" /></td>
+				</tr>
+			
+				</table>
+
+				<span class="postdetails">
+					<br /><b>Joined:</b> Thu Dec 22, 2011 7:53 am<br /><b>Posts:</b> 2
+				</span>
+
+			</td>
+			<td valign="top">
+				<table width="100%" cellspacing="5">
+				<tr>
+					<td>
+					
+
+						<div class="postbody">&quot;He was white as a sheet&quot; is at 2:49 in the first track, &quot;The Leopard.&quot;<br />&quot;Did I ever tell you the story about...&quot; is at 0:04 in the fifth track, &quot;Lost Mittens.&quot;<br />Good find.</div>
+
+					<br clear="all" /><br />
+
+						<table width="100%" cellspacing="0">
+						<tr valign="middle">
+							<td class="gensmall" align="right">
+							
+							</td>
+						</tr>
+						</table>
+					</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row1">
+
+			<td class="profile"><a href="#wrapheader">Top</a></td>
+			<td style="padding: 7px 0 0 0;"><div class="gensmall icons" style="float: left;">&nbsp;<a href="./memberlist.php?mode=viewprofile&amp;u=50731&amp;sid=8a81cc3375d59942e597144facb9fbe8"><img src="./styles/subsilver2/imageset/en/icon_user_profile.gif" alt="Profile" title="Profile" /></a> &nbsp;</div> <div class="gensmall" style="float: right;">&nbsp;</div></td>
+	
+		</tr>
+
+	<tr>
+		<td class="spacer" colspan="2" height="1"><img src="images/spacer.gif" alt="" width="1" height="1" /></td>
+	</tr>
+	</table>
+
+	<table class="tablebg" width="100%" cellspacing="1">
+	<tr class="row2">
+
+			<td valign="middle">
+				<a name="p22434"></a>
+				<span class="postauthor">jjand j</span>
+			</td>
+			<td width="100%" height="25">
+				<table width="100%" cellspacing="0">
+				<tr>
+				
+					<td class="gensmall" width="100%"><div style="float: left;">&nbsp;Post subject: Re: Sample page</div><div style="float: right;"><a href="./viewtopic.php?p=22434&amp;sid=8a81cc3375d59942e597144facb9fbe8#p22434"><img src="./styles/subsilver2/imageset/icon_post_target.gif" width="12" height="9" alt="Post" title="Post" /></a>Posted: Thu Dec 22, 2011 4:26 pm&nbsp;</div></td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row2">
+
+			<td valign="top" class="profile">
+				<table cellspacing="0" align="center" width="150">
+			
+				<tr>
+					<td><img src="./styles/subsilver2/imageset/en/icon_user_offline.gif" alt="Offline" title="Offline" /></td>
+				</tr>
+			
+				</table>
+
+				<span class="postdetails">
+					<br /><b>Joined:</b> Sat Jun 04, 2011 12:36 pm<br /><b>Posts:</b> 15
+				</span>
+
+			</td>
+			<td valign="top">
+				<table width="100%" cellspacing="5">
+				<tr>
+					<td>
+					
+
+						<div class="postbody"><div class="quotetitle">Grieg wrote:</div><div class="quotecontent">Aunt Theresa, Please Tell Me a Story.<br />Hey Guys i've found a great sample for you! which I don't think has been found before.<br />download this: <br /><!-- m --><a class="postlink" href="http://wayoutjunk.blogspot.com/2006/11/aunt-theresa-please-tell-me-story.html">http://wayoutjunk.blogspot.com/2006/11/ ... story.html</a><!-- m --><br />track 4 &quot;The Piece of Wood That Talked&quot; is where the whole &quot;sometimes a parrot..&quot; section comes from in Frontier Psychiatrist.. I think &quot;he was as white as a sheet&quot; might be on there somewhere as well. <img src="./images/smilies/icon_biggrin.gif" alt=":D" title="Very Happy" /></div><br /><br />how the FUCK did you find that? wow.</div>
+
+					<br clear="all" /><br />
+
+						<table width="100%" cellspacing="0">
+						<tr valign="middle">
+							<td class="gensmall" align="right">
+							
+							</td>
+						</tr>
+						</table>
+					</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row2">
+
+			<td class="profile"><a href="#wrapheader">Top</a></td>
+			<td style="padding: 7px 0 0 0;"><div class="gensmall icons" style="float: left;">&nbsp;<a href="./memberlist.php?mode=viewprofile&amp;u=50690&amp;sid=8a81cc3375d59942e597144facb9fbe8"><img src="./styles/subsilver2/imageset/en/icon_user_profile.gif" alt="Profile" title="Profile" /></a> &nbsp;</div> <div class="gensmall" style="float: right;">&nbsp;</div></td>
+	
+		</tr>
+
+	<tr>
+		<td class="spacer" colspan="2" height="1"><img src="images/spacer.gif" alt="" width="1" height="1" /></td>
+	</tr>
+	</table>
+
+	<table class="tablebg" width="100%" cellspacing="1">
+	<tr class="row1">
+
+			<td valign="middle">
+				<a name="p22436"></a>
+				<span class="postauthor">Grieg</span>
+			</td>
+			<td width="100%" height="25">
+				<table width="100%" cellspacing="0">
+				<tr>
+				
+					<td class="gensmall" width="100%"><div style="float: left;">&nbsp;Post subject: Re: Sample page</div><div style="float: right;"><a href="./viewtopic.php?p=22436&amp;sid=8a81cc3375d59942e597144facb9fbe8#p22436"><img src="./styles/subsilver2/imageset/icon_post_target.gif" width="12" height="9" alt="Post" title="Post" /></a>Posted: Fri Dec 23, 2011 1:18 am&nbsp;</div></td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row1">
+
+			<td valign="top" class="profile">
+				<table cellspacing="0" align="center" width="150">
+			
+				<tr>
+					<td><img src="./styles/subsilver2/imageset/en/icon_user_offline.gif" alt="Offline" title="Offline" /></td>
+				</tr>
+			
+				</table>
+
+				<span class="postdetails">
+					<br /><b>Joined:</b> Thu Dec 22, 2011 3:31 am<br /><b>Posts:</b> 3
+				</span>
+
+			</td>
+			<td valign="top">
+				<table width="100%" cellspacing="5">
+				<tr>
+					<td>
+					
+
+						<div class="postbody">I'd heard a different record by her that I found in a charity/junk shop and I recognized the voice ,so I did a little online search for more aunt theresa recs. As soon as I saw the tracklist I knew it was it,  ha!</div>
+
+					<br clear="all" /><br />
+
+						<table width="100%" cellspacing="0">
+						<tr valign="middle">
+							<td class="gensmall" align="right">
+							
+							</td>
+						</tr>
+						</table>
+					</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row1">
+
+			<td class="profile"><a href="#wrapheader">Top</a></td>
+			<td style="padding: 7px 0 0 0;"><div class="gensmall icons" style="float: left;">&nbsp;<a href="./memberlist.php?mode=viewprofile&amp;u=50730&amp;sid=8a81cc3375d59942e597144facb9fbe8"><img src="./styles/subsilver2/imageset/en/icon_user_profile.gif" alt="Profile" title="Profile" /></a> &nbsp;</div> <div class="gensmall" style="float: right;">&nbsp;</div></td>
+	
+		</tr>
+
+	<tr>
+		<td class="spacer" colspan="2" height="1"><img src="images/spacer.gif" alt="" width="1" height="1" /></td>
+	</tr>
+	</table>
+
+	<table class="tablebg" width="100%" cellspacing="1">
+	<tr class="row2">
+
+			<td valign="middle">
+				<a name="p22437"></a>
+				<span class="postauthor">DJdriftR</span>
+			</td>
+			<td width="100%" height="25">
+				<table width="100%" cellspacing="0">
+				<tr>
+				
+					<td class="gensmall" width="100%"><div style="float: left;">&nbsp;Post subject: Re: Sample page</div><div style="float: right;"><a href="./viewtopic.php?p=22437&amp;sid=8a81cc3375d59942e597144facb9fbe8#p22437"><img src="./styles/subsilver2/imageset/icon_post_target.gif" width="12" height="9" alt="Post" title="Post" /></a>Posted: Sat Dec 24, 2011 7:33 am&nbsp;</div></td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row2">
+
+			<td valign="top" class="profile">
+				<table cellspacing="0" align="center" width="150">
+			
+				<tr>
+					<td><img src="./styles/subsilver2/imageset/en/icon_user_offline.gif" alt="Offline" title="Offline" /></td>
+				</tr>
+			
+				</table>
+
+				<span class="postdetails">
+					<br /><b>Joined:</b> Mon May 21, 2007 10:46 pm<br /><b>Posts:</b> 34<br /><b>Location:</b> Australia
+				</span>
+
+			</td>
+			<td valign="top">
+				<table width="100%" cellspacing="5">
+				<tr>
+					<td>
+					
+
+						<div class="postbody">That is soo cool... Have the biggest smile right now! <br /><br />Great find!!<br /><br /> <img src="./images/smilies/icon_biggrin.gif" alt=":D" title="Very Happy" /></div>
+
+					
+						<span class="postbody"><br />_________________<br /><a href="http://www.soundcloud.com/h_powell" class="postlink">http://www.soundcloud.com/h_powell</a></span>
+					<br clear="all" /><br />
+
+						<table width="100%" cellspacing="0">
+						<tr valign="middle">
+							<td class="gensmall" align="right">
+							
+							</td>
+						</tr>
+						</table>
+					</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row2">
+
+			<td class="profile"><a href="#wrapheader">Top</a></td>
+			<td style="padding: 7px 0 0 0;"><div class="gensmall icons" style="float: left;">&nbsp;<a href="./memberlist.php?mode=viewprofile&amp;u=2565&amp;sid=8a81cc3375d59942e597144facb9fbe8"><img src="./styles/subsilver2/imageset/en/icon_user_profile.gif" alt="Profile" title="Profile" /></a> &nbsp;</div> <div class="gensmall" style="float: right;">&nbsp;</div></td>
+	
+		</tr>
+
+	<tr>
+		<td class="spacer" colspan="2" height="1"><img src="images/spacer.gif" alt="" width="1" height="1" /></td>
+	</tr>
+	</table>
+
+	<table class="tablebg" width="100%" cellspacing="1">
+	<tr class="row1">
+
+			<td valign="middle">
+				<a name="p22443"></a>
+				<span class="postauthor">jacqueschristo</span>
+			</td>
+			<td width="100%" height="25">
+				<table width="100%" cellspacing="0">
+				<tr>
+				
+					<td class="gensmall" width="100%"><div style="float: left;">&nbsp;Post subject: Re: Sample page</div><div style="float: right;"><a href="./viewtopic.php?p=22443&amp;sid=8a81cc3375d59942e597144facb9fbe8#p22443"><img src="./styles/subsilver2/imageset/icon_post_target.gif" width="12" height="9" alt="Post" title="Post" /></a>Posted: Thu Jan 05, 2012 2:50 am&nbsp;</div></td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row1">
+
+			<td valign="top" class="profile">
+				<table cellspacing="0" align="center" width="150">
+			
+				<tr>
+					<td><img src="./styles/subsilver2/imageset/en/icon_user_offline.gif" alt="Offline" title="Offline" /></td>
+				</tr>
+			
+				</table>
+
+				<span class="postdetails">
+					<br /><b>Joined:</b> Thu Jan 05, 2012 2:48 am<br /><b>Posts:</b> 1
+				</span>
+
+			</td>
+			<td valign="top">
+				<table width="100%" cellspacing="5">
+				<tr>
+					<td>
+					
+
+						<div class="postbody">Man. That's fantastic. Thanks.</div>
+
+					<br clear="all" /><br />
+
+						<table width="100%" cellspacing="0">
+						<tr valign="middle">
+							<td class="gensmall" align="right">
+							
+							</td>
+						</tr>
+						</table>
+					</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row1">
+
+			<td class="profile"><a href="#wrapheader">Top</a></td>
+			<td style="padding: 7px 0 0 0;"><div class="gensmall icons" style="float: left;">&nbsp;<a href="./memberlist.php?mode=viewprofile&amp;u=50736&amp;sid=8a81cc3375d59942e597144facb9fbe8"><img src="./styles/subsilver2/imageset/en/icon_user_profile.gif" alt="Profile" title="Profile" /></a> &nbsp;</div> <div class="gensmall" style="float: right;">&nbsp;</div></td>
+	
+		</tr>
+
+	<tr>
+		<td class="spacer" colspan="2" height="1"><img src="images/spacer.gif" alt="" width="1" height="1" /></td>
+	</tr>
+	</table>
+
+	<table class="tablebg" width="100%" cellspacing="1">
+	<tr class="row2">
+
+			<td valign="middle">
+				<a name="p22904"></a>
+				<span class="postauthor">purpletextbook</span>
+			</td>
+			<td width="100%" height="25">
+				<table width="100%" cellspacing="0">
+				<tr>
+				
+					<td class="gensmall" width="100%"><div style="float: left;">&nbsp;Post subject: Re: Sample page</div><div style="float: right;"><a href="./viewtopic.php?p=22904&amp;sid=8a81cc3375d59942e597144facb9fbe8#p22904"><img src="./styles/subsilver2/imageset/icon_post_target.gif" width="12" height="9" alt="Post" title="Post" /></a>Posted: Sat Feb 25, 2012 12:04 pm&nbsp;</div></td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row2">
+
+			<td valign="top" class="profile">
+				<table cellspacing="0" align="center" width="150">
+			
+				<tr>
+					<td><img src="./styles/subsilver2/imageset/en/icon_user_offline.gif" alt="Offline" title="Offline" /></td>
+				</tr>
+			
+				</table>
+
+				<span class="postdetails">
+					<br /><b>Joined:</b> Sat Jun 04, 2011 3:51 pm<br /><b>Posts:</b> 6
+				</span>
+
+			</td>
+			<td valign="top">
+				<table width="100%" cellspacing="5">
+				<tr>
+					<td>
+					
+
+						<div class="postbody">The opening vocal sample on &quot;With My Baby&quot; about electronic organs is taken from &quot;Fanfare: Toccata in D Minor&quot; by Virgil Fox, from his live album <em>Bach Live at Fillmore East</em>.</div>
+
+					<br clear="all" /><br />
+
+						<table width="100%" cellspacing="0">
+						<tr valign="middle">
+							<td class="gensmall" align="right">
+							
+							</td>
+						</tr>
+						</table>
+					</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row2">
+
+			<td class="profile"><a href="#wrapheader">Top</a></td>
+			<td style="padding: 7px 0 0 0;"><div class="gensmall icons" style="float: left;">&nbsp;<a href="./memberlist.php?mode=viewprofile&amp;u=50692&amp;sid=8a81cc3375d59942e597144facb9fbe8"><img src="./styles/subsilver2/imageset/en/icon_user_profile.gif" alt="Profile" title="Profile" /></a> &nbsp;</div> <div class="gensmall" style="float: right;">&nbsp;</div></td>
+	
+		</tr>
+
+	<tr>
+		<td class="spacer" colspan="2" height="1"><img src="images/spacer.gif" alt="" width="1" height="1" /></td>
+	</tr>
+	</table>
+
+	<table width="100%" cellspacing="1" class="tablebg">
+	<tr align="center">
+		<td class="cat"><form name="viewtopic" method="post" action="./viewtopic.php?f=1&amp;t=710&amp;start=60&amp;sid=8a81cc3375d59942e597144facb9fbe8"><span class="gensmall">Display posts from previous:</span> <select name="st" id="st"><option value="0" selected="selected">All posts</option><option value="1">1 day</option><option value="7">7 days</option><option value="14">2 weeks</option><option value="30">1 month</option><option value="90">3 months</option><option value="180">6 months</option><option value="365">1 year</option></select>&nbsp;<span class="gensmall">Sort by</span> <select name="sk" id="sk"><option value="a">Author</option><option value="t" selected="selected">Post time</option><option value="s">Subject</option></select> <select name="sd" id="sd"><option value="a" selected="selected">Ascending</option><option value="d">Descending</option></select>&nbsp;<input class="btnlite" type="submit" value="Go" name="sort" /></form></td>
+	</tr>
+	</table>
+	
+
+	<table width="100%" cellspacing="1" style="margin:13px 0 0 0;">
+	<tr>
+		<td width="14%" valign="middle" nowrap="nowrap">
+		<a class="newtopic" href="./posting.php?mode=post&amp;f=1&amp;sid=8a81cc3375d59942e597144facb9fbe8">New Topic</a>&nbsp;<a class="postreply" href="./posting.php?mode=reply&amp;f=1&amp;t=710&amp;sid=8a81cc3375d59942e597144facb9fbe8">Post Reply</a>
+		</td>
+		
+			<td class="nav" valign="middle" nowrap="nowrap">&nbsp;Page <strong>4</strong> of <strong>5</strong><br /></td>
+			<td class="gensmall" nowrap="nowrap">&nbsp;[ 88 posts ]&nbsp;</td>
+			<td class="gensmall" width="100%" align="right" nowrap="nowrap"><b><a href="#" onclick="jumpto(); return false;" title="Click to jump to page…">Go to page</a> <a href="./viewtopic.php?f=1&amp;t=710&amp;sid=8a81cc3375d59942e597144facb9fbe8&amp;start=40">Previous</a>&nbsp;&nbsp;<a href="./viewtopic.php?f=1&amp;t=710&amp;sid=8a81cc3375d59942e597144facb9fbe8">1</a><span class="page-sep">, </span><a href="./viewtopic.php?f=1&amp;t=710&amp;sid=8a81cc3375d59942e597144facb9fbe8&amp;start=20">2</a><span class="page-sep">, </span><a href="./viewtopic.php?f=1&amp;t=710&amp;sid=8a81cc3375d59942e597144facb9fbe8&amp;start=40">3</a><span class="page-sep">, </span><strong>4</strong><span class="page-sep">, </span><a href="./viewtopic.php?f=1&amp;t=710&amp;sid=8a81cc3375d59942e597144facb9fbe8&amp;start=80">5</a> &nbsp;<a href="./viewtopic.php?f=1&amp;t=710&amp;sid=8a81cc3375d59942e597144facb9fbe8&amp;start=80">Next</a></b></td>
+		
+	</tr>
+	</table>
+
+</div>
+
+<div id="pagefooter"></div>
+
+<br clear="all" />
+<table class="tablebg" width="100%" cellspacing="1" cellpadding="0" style="margin-top: 5px; border:0;">
+	<tr>
+		<td class="row1" style="border:0;">
+			<p class="breadcrumbs"><a href="./index.php?sid=8a81cc3375d59942e597144facb9fbe8">Board index</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="./viewforum.php?f=3&amp;sid=8a81cc3375d59942e597144facb9fbe8">Forums</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="./viewforum.php?f=1&amp;sid=8a81cc3375d59942e597144facb9fbe8">Music</a></p>
+			<p class="datetime">All times are UTC + 10 hours </p>
+		</td>
+	</tr>
+	</table>
+	<br clear="all" />
+
+	<table class="tablebg" width="100%" cellspacing="1">
+	<tr>
+		<td class="cat"><h4>Who is online</h4></td>
+	</tr>
+	<tr>
+		<td class="row1"><p class="gensmall">Users browsing this forum: No registered users and 7 guests</p></td>
+	</tr>
+	</table>
+
+
+<br clear="all" />
+
+<table width="100%" cellspacing="1">
+<tr>
+	<td width="40%" valign="top" nowrap="nowrap" align="left"></td>
+	<td align="right" valign="top" nowrap="nowrap"><span class="gensmall">You <strong>cannot</strong> post new topics in this forum<br />You <strong>cannot</strong> reply to topics in this forum<br />You <strong>cannot</strong> edit your posts in this forum<br />You <strong>cannot</strong> delete your posts in this forum<br /></span></td>
+</tr>
+</table>
+
+<br clear="all" />
+
+<table width="100%" cellspacing="0">
+<tr>
+	<td><form method="post" name="search" action="./search.php?t=710&amp;sid=8a81cc3375d59942e597144facb9fbe8"><span class="gensmall">Search for:</span> <input class="post" type="text" name="keywords" size="20" /> <input class="btnlite" type="submit" value="Go" /></form></td>
+	<td align="right">
+	<form method="post" name="jumpbox" action="./viewforum.php?sid=8a81cc3375d59942e597144facb9fbe8" onsubmit="if(document.jumpbox.f.value == -1){return false;}">
+
+	<table cellspacing="0" cellpadding="0" border="0">
+	<tr>
+		<td nowrap="nowrap"><span class="gensmall">Jump to:</span>&nbsp;<select name="f" onchange="if(this.options[this.selectedIndex].value != -1){ document.forms['jumpbox'].submit() }">
+
+		
+			<option value="-1">Select a forum</option>
+		<option value="-1">------------------</option>
+			<option value="3">Forums</option>
+		
+			<option value="1" selected="selected">&nbsp; &nbsp;Music</option>
+		
+			<option value="2">&nbsp; &nbsp;General</option>
+		
+
+		</select>&nbsp;<input class="btnlite" type="submit" value="Go" /></td>
+	</tr>
+	</table>
+
+	</form>
+</td>
+</tr>
+</table>
+
+<img src="./cron.php?cron_type=tidy_search&amp;sid=8a81cc3375d59942e597144facb9fbe8" width="1" height="1" alt="cron" />
+</div>
+
+<div id="wrapfooter">
+	
+</div>
+
+</body>
+</html>
