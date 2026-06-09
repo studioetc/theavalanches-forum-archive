@@ -345,3 +345,7 @@
 2026-06-09T14:57:49Z [shard 0] 1825/2502 got=1825 skip=0 miss=0 fail=0
 2026-06-09T14:59:31Z [shard 0] 1850/2502 got=1850 skip=0 miss=0 fail=0
 2026-06-09T15:01:18Z [shard 0] 1875/2502 got=1875 skip=0 miss=0 fail=0
+2026-06-09T15:02:55Z [shard 0] 1900/2502 got=1900 skip=0 miss=0 fail=0
+2026-06-09T15:04:39Z [shard 0] 1925/2502 got=1925 skip=0 miss=0 fail=0
+2026-06-09T15:06:13Z   throttled (URLError [Errno 61] Connection refused) try 1/4, sleep 5s
+2026-06-09T15:06:20Z [shard 0] 1950/2502 got=1950 skip=0 miss=0 fail=0
