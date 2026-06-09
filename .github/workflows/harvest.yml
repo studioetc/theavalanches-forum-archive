@@ -1,26 +1,31 @@
 name: harvest
 
-# Pulls the Wayback corpus into the repo. Runs entirely on GitHub's runners.
-# 8 parallel shards fetch their slice; one collect job merges + commits once
-# (so parallel jobs never race on git push). Resumable: already-committed files
-# are skipped, so re-running continues where a throttled run left off.
+# Pulls the Wayback corpus into the repo, entirely on GitHub's runners.
+# archive.org firewall-blocks an IP for ~1h after ~60 req/min, so we go SERIAL:
+# max-parallel 1 (one shard/IP at a time) at ~24 req/min. Each shard commits its
+# own results incrementally (safe because shards never run concurrently), so a
+# cancelled/blocked run loses nothing — re-run and it resumes (saved files skipped).
 
 on:
   workflow_dispatch:
     inputs:
       delay:
-        description: "Seconds between requests per shard (politeness)"
+        description: "Seconds between requests (politeness; >=2.5 recommended)"
         required: false
-        default: "1.7"
+        default: "2.5"
 
 permissions:
   contents: write
+
+concurrency:
+  group: harvest
+  cancel-in-progress: false
 
 jobs:
   harvest:
     runs-on: ubuntu-latest
     strategy:
-      max-parallel: 4          # be polite to Wayback globally (~4 * 1/1.7s)
+      max-parallel: 1          # CRITICAL: one shard at a time, no bursting
       fail-fast: false
       matrix:
         shard: [0, 1, 2, 3, 4, 5, 6, 7]
@@ -32,15 +37,24 @@ jobs:
       - name: Harvest shard ${{ matrix.shard }}
         run: |
           python3 scraper/harvest.py --shard ${{ matrix.shard }} --num-shards 8 --delay ${{ inputs.delay }}
-      - name: Upload shard artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: archive-shard-${{ matrix.shard }}
-          path: archive/
-          if-no-files-found: ignore
-          retention-days: 3
+        continue-on-error: true     # an IP-block abort shouldn't fail the whole matrix
+      - name: Commit shard ${{ matrix.shard }} results
+        if: always()
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add archive
+          if git diff --cached --quiet; then
+            echo "shard ${{ matrix.shard }}: no new files"; exit 0
+          fi
+          git commit -m "harvest: shard ${{ matrix.shard }} pages"
+          for try in 1 2 3 4 5; do
+            git pull --rebase origin main && git push && exit 0
+            echo "push retry $try"; sleep 5
+          done
+          echo "push failed after retries"; exit 1
 
-  collect:
+  verify:
     needs: harvest
     if: always()
     runs-on: ubuntu-latest
@@ -49,29 +63,16 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Download all shard artifacts
-        uses: actions/download-artifact@v4
-        with:
-          path: _shards
-      - name: Merge shards into archive/
-        run: |
-          mkdir -p archive
-          if [ -d _shards ]; then
-            for d in _shards/archive-shard-*; do
-              [ -d "$d" ] && cp -rn "$d"/. archive/ || true
-            done
-          fi
-          rm -rf _shards
       - name: Build coverage report
         run: python3 scraper/verify.py
-      - name: Commit results
+      - name: Commit coverage report
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add archive manifests/coverage_report.md
-          if git diff --cached --quiet; then
-            echo "No changes to commit."
-          else
-            git commit -m "harvest: add/update archived pages + coverage report"
-            git push
-          fi
+          git add manifests/coverage_report.md
+          if git diff --cached --quiet; then echo "no change"; exit 0; fi
+          git commit -m "verify: coverage report"
+          for try in 1 2 3 4 5; do
+            git pull --rebase origin main && git push && exit 0
+            sleep 5
+          done
