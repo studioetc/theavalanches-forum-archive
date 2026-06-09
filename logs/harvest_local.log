@@ -278,3 +278,6 @@
 2026-06-09T13:05:37Z [shard 0] 150/2502 got=150 skip=0 miss=0 fail=0
 2026-06-09T13:07:17Z [shard 0] 175/2502 got=175 skip=0 miss=0 fail=0
 2026-06-09T13:08:56Z [shard 0] 200/2502 got=200 skip=0 miss=0 fail=0
+2026-06-09T13:10:38Z [shard 0] 225/2502 got=225 skip=0 miss=0 fail=0
+2026-06-09T13:12:17Z [shard 0] 250/2502 got=250 skip=0 miss=0 fail=0
+2026-06-09T13:14:03Z [shard 0] 275/2502 got=275 skip=0 miss=0 fail=0
