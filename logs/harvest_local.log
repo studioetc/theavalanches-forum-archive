@@ -252,3 +252,6 @@
 2026-06-09T12:20:45Z [shard 0] 3399/8134 got=3325 skip=73 miss=1 fail=0
 2026-06-09T12:22:27Z [shard 0] 3424/8134 got=3350 skip=73 miss=1 fail=0
 2026-06-09T12:24:04Z [shard 0] 3449/8134 got=3375 skip=73 miss=1 fail=0
+2026-06-09T12:25:47Z [shard 0] 3474/8134 got=3400 skip=73 miss=1 fail=0
+2026-06-09T12:27:27Z [shard 0] 3499/8134 got=3425 skip=73 miss=1 fail=0
+2026-06-09T12:29:10Z [shard 0] 3524/8134 got=3450 skip=73 miss=1 fail=0

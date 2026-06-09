@@ -2,9 +2,9 @@
   "pid": 16161,
   "running": true,
   "started_at": "2026-06-09T08:40:20Z",
-  "last_update": "2026-06-09T12:25:08Z",
-  "files_on_disk": 3464,
+  "last_update": "2026-06-09T12:30:16Z",
+  "files_on_disk": 3539,
   "targets_total": 8134,
-  "last_log_line": "2026-06-09T12:24:04Z [shard 0] 3449/8134 got=3375 skip=73 miss=1 fail=0",
+  "last_log_line": "2026-06-09T12:29:10Z [shard 0] 3524/8134 got=3450 skip=73 miss=1 fail=0",
   "state": "progressing"
 }
