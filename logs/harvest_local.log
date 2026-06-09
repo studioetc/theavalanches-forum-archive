@@ -372,3 +372,4 @@
 2026-06-09T15:40:33Z [shard 0] 2450/2502 got=2450 skip=0 miss=0 fail=0
 2026-06-09T15:42:11Z [shard 0] 2475/2502 got=2475 skip=0 miss=0 fail=0
 2026-06-09T15:43:56Z [shard 0] 2500/2502 got=2500 skip=0 miss=0 fail=0
+2026-06-09T15:44:06Z [shard 0] DONE got=2502 skip=0 miss=0 fail=0 of 2502
