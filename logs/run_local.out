@@ -14,3 +14,10 @@ run_local.sh: harvest pid 16161, delay 2.0s, log /Users/onesteppplusgmai.com/Dev
 2026-06-09T08:48:34Z   throttled (URLError [Errno 61] Connection refused) try 2/4, sleep 8s
 2026-06-09T08:49:08Z   throttled (URLError [Errno 61] Connection refused) try 1/4, sleep 6s
 2026-06-09T08:49:27Z [shard 0] 143/8134 got=125 skip=18 miss=0 fail=0
+2026-06-09T08:51:05Z [shard 0] 172/8134 got=150 skip=22 miss=0 fail=0
+2026-06-09T08:52:46Z [shard 0] 200/8134 got=175 skip=25 miss=0 fail=0
+2026-06-09T08:53:05Z   throttled (URLError [Errno 61] Connection refused) try 1/4, sleep 6s
+2026-06-09T08:53:18Z   throttled (URLError [Errno 61] Connection refused) try 1/4, sleep 7s
+2026-06-09T08:53:38Z   throttled (URLError [Errno 61] Connection refused) try 1/4, sleep 6s
+2026-06-09T08:54:03Z   throttled (URLError [Errno 61] Connection refused) try 1/4, sleep 6s
+2026-06-09T08:54:40Z [shard 0] 229/8134 got=200 skip=29 miss=0 fail=0
