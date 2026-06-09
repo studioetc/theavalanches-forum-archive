@@ -195,3 +195,21 @@
 2026-06-09T11:39:18Z [shard 0] 2799/8134 got=2725 skip=73 miss=1 fail=0
 2026-06-09T11:41:01Z [shard 0] 2824/8134 got=2750 skip=73 miss=1 fail=0
 2026-06-09T11:42:42Z [shard 0] 2849/8134 got=2775 skip=73 miss=1 fail=0
+2026-06-09T11:44:13Z   note: 20050319223502 redirected -> https://web.archive.org/web/20050311094347id_/http://www.theavalanches
+2026-06-09T11:44:16Z [shard 0] 2874/8134 got=2800 skip=73 miss=1 fail=0
+2026-06-09T11:44:30Z   note: 20050530195920 redirected -> https://web.archive.org/web/20050608014447id_/http://www.theavalanches
+2026-06-09T11:45:34Z   note: 20051231155310 redirected -> https://web.archive.org/web/20060103190435id_/http://www.theavalanches
+2026-06-09T11:45:49Z   throttled (URLError [Errno 61] Connection refused) try 1/4, sleep 4s
+2026-06-09T11:45:55Z   note: 20060101111712 redirected -> https://web.archive.org/web/20060103190435id_/http://www.theavalanches
+2026-06-09T11:45:58Z   throttled (URLError [Errno 61] Connection refused) try 1/4, sleep 6s
+2026-06-09T11:46:06Z   note: 20060102201611 redirected -> https://web.archive.org/web/20060103190435id_/http://www.theavalanches
+2026-06-09T11:46:06Z [shard 0] 2899/8134 got=2825 skip=73 miss=1 fail=0
+2026-06-09T11:46:21Z   note: 20060118203435 redirected -> https://web.archive.org/web/20060103190435id_/http://www.theavalanches
+2026-06-09T11:46:32Z   note: 20060207005214 redirected -> https://web.archive.org/web/20060103190435id_/http://www.theavalanches
+2026-06-09T11:46:52Z   note: 20060430024737 redirected -> https://web.archive.org/web/20060423211600id_/http://www.theavalanches
+2026-06-09T11:47:04Z   throttled (URLError [Errno 61] Connection refused) try 1/4, sleep 5s
+2026-06-09T11:47:10Z   note: 20060707232646 redirected -> https://web.archive.org/web/20060718185956id_/http://www.theavalanches
+2026-06-09T11:47:46Z   note: 20060831140615 redirected -> https://web.archive.org/web/20060828141824id_/http://www.theavalanches
+2026-06-09T11:47:50Z [shard 0] 2924/8134 got=2850 skip=73 miss=1 fail=0
+2026-06-09T11:48:12Z   note: 20061101181641 redirected -> https://web.archive.org/web/20061104204903id_/http://www.theavalanches
+2026-06-09T11:48:42Z   note: 20061230180203 redirected -> https://web.archive.org/web/20061130194538id_/http://www.theavalanches
