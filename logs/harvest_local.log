@@ -87,3 +87,51 @@
 2026-06-09T10:01:25Z   note: 20070720083715 redirected -> https://web.archive.org/web/20071024134005id_/http://theavalanches.com
 2026-06-09T10:01:28Z   throttled (URLError [Errno 61] Connection refused) try 1/4, sleep 4s
 2026-06-09T10:01:34Z   note: 20070819231023 redirected -> https://web.archive.org/web/20071024134005id_/http://theavalanches.com
+2026-06-09T10:01:42Z   throttled (URLError [Errno 61] Connection refused) try 1/4, sleep 6s
+2026-06-09T10:02:03Z   throttled (URLError [Errno 61] Connection refused) try 1/4, sleep 6s
+2026-06-09T10:02:11Z   note: 20080224012352 redirected -> https://web.archive.org/web/20080225034220id_/http://www.theavalanches
+2026-06-09T10:02:30Z   note: 20080606162136 redirected -> https://web.archive.org/web/20080602160835id_/http://www.theavalanches
+2026-06-09T10:02:36Z   note: 20080701064634 redirected -> https://web.archive.org/web/20080602160835id_/http://www.theavalanches
+2026-06-09T10:02:40Z   note: 20080702074317 redirected -> https://web.archive.org/web/20080602160835id_/http://www.theavalanches
+2026-06-09T10:02:46Z   note: 20080703111347 redirected -> https://web.archive.org/web/20080602160835id_/http://www.theavalanches
+2026-06-09T10:02:49Z   throttled (URLError [Errno 61] Connection refused) try 1/4, sleep 5s
+2026-06-09T10:02:55Z   note: 20080704115138 redirected -> https://web.archive.org/web/20080602160835id_/http://www.theavalanches
+2026-06-09T10:02:59Z   note: 20080705122914 redirected -> https://web.archive.org/web/20080602160835id_/http://www.theavalanches
+2026-06-09T10:03:03Z   throttled (URLError [Errno 61] Connection refused) try 1/4, sleep 7s
+2026-06-09T10:03:11Z   note: 20080706141820 redirected -> https://web.archive.org/web/20080602160835id_/http://www.theavalanches
+2026-06-09T10:03:16Z   note: 20080710111354 redirected -> https://web.archive.org/web/20080602160835id_/http://www.theavalanches
+2026-06-09T10:03:19Z   throttled (URLError [Errno 61] Connection refused) try 1/4, sleep 6s
+2026-06-09T10:03:28Z   note: 20080712201542 redirected -> https://web.archive.org/web/20080819000055id_/http://www.theavalanches
+2026-06-09T10:03:33Z   note: 20080714171140 redirected -> https://web.archive.org/web/20080819000055id_/http://www.theavalanches
+2026-06-09T10:03:33Z [shard 0] 1324/8134 got=1250 skip=73 miss=1 fail=0
+2026-06-09T10:03:38Z   note: 20080718031032 redirected -> https://web.archive.org/web/20080819000055id_/http://www.theavalanches
+2026-06-09T10:03:42Z   note: 20080721064436 redirected -> https://web.archive.org/web/20080819000055id_/http://www.theavalanches
+2026-06-09T10:03:47Z   note: 20080805025648 redirected -> https://web.archive.org/web/20080819000055id_/http://www.theavalanches
+2026-06-09T10:03:50Z   throttled (URLError [Errno 61] Connection refused) try 1/4, sleep 6s
+2026-06-09T10:03:58Z   note: 20080806053153 redirected -> https://web.archive.org/web/20080819000055id_/http://www.theavalanches
+2026-06-09T10:04:03Z   note: 20080807084551 redirected -> https://web.archive.org/web/20080819000055id_/http://www.theavalanches
+2026-06-09T10:04:07Z   throttled (URLError [Errno 61] Connection refused) try 1/4, sleep 6s
+2026-06-09T10:04:15Z   note: 20080808094223 redirected -> https://web.archive.org/web/20080819000055id_/http://www.theavalanches
+2026-06-09T10:04:21Z   note: 20080810142359 redirected -> https://web.archive.org/web/20080819000055id_/http://www.theavalanches
+2026-06-09T10:04:24Z   throttled (URLError [Errno 61] Connection refused) try 1/4, sleep 6s
+2026-06-09T10:04:34Z   note: 20080811144542 redirected -> https://web.archive.org/web/20080819000055id_/http://www.theavalanches
+2026-06-09T10:04:37Z   note: 20080813033746 redirected -> https://web.archive.org/web/20080819000055id_/http://www.theavalanches
+2026-06-09T10:04:42Z   note: 20080814062531 redirected -> https://web.archive.org/web/20080819000055id_/http://www.theavalanches
+2026-06-09T10:04:46Z   note: 20080815091416 redirected -> https://web.archive.org/web/20080819000055id_/http://www.theavalanches
+2026-06-09T10:04:51Z   note: 20080816191609 redirected -> https://web.archive.org/web/20080819000055id_/http://www.theavalanches
+2026-06-09T10:04:53Z   throttled (URLError [Errno 61] Connection refused) try 1/4, sleep 6s
+2026-06-09T10:05:01Z   note: 20080817203350 redirected -> https://web.archive.org/web/20080819000055id_/http://www.theavalanches
+2026-06-09T10:05:09Z   note: 20080820034744 redirected -> https://web.archive.org/web/20080821035451id_/http://www.theavalanches
+2026-06-09T10:05:12Z   throttled (URLError [Errno 61] Connection refused) try 1/4, sleep 5s
+2026-06-09T10:05:22Z   note: 20080822071406 redirected -> https://web.archive.org/web/20080821035451id_/http://www.theavalanches
+2026-06-09T10:05:27Z   note: 20080823171443 redirected -> https://web.archive.org/web/20080821035451id_/http://www.theavalanches
+2026-06-09T10:05:30Z   throttled (URLError [Errno 61] Connection refused) try 1/4, sleep 5s
+2026-06-09T10:05:37Z   note: 20080826071826 redirected -> https://web.archive.org/web/20080821035451id_/http://www.theavalanches
+2026-06-09T10:05:41Z   note: 20080827141541 redirected -> https://web.archive.org/web/20080821035451id_/http://www.theavalanches
+2026-06-09T10:05:45Z   note: 20080908080256 redirected -> https://web.archive.org/web/20080911154845id_/http://www.theavalanches
+2026-06-09T10:05:49Z   note: 20080909093714 redirected -> https://web.archive.org/web/20080911154845id_/http://www.theavalanches
+2026-06-09T10:05:54Z   note: 20080910142139 redirected -> https://web.archive.org/web/20080911154845id_/http://www.theavalanches
+2026-06-09T10:05:56Z   throttled (URLError [Errno 61] Connection refused) try 1/4, sleep 6s
+2026-06-09T10:06:10Z   note: 20080912162705 redirected -> https://web.archive.org/web/20080911154845id_/http://www.theavalanches
+2026-06-09T10:06:10Z [shard 0] 1349/8134 got=1275 skip=73 miss=1 fail=0
+2026-06-09T10:06:26Z   note: 20081221225457 redirected -> https://web.archive.org/web/20081219163200id_/http://www.theavalanches

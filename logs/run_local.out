@@ -87,3 +87,4 @@ run_local.sh: harvest pid 16161, delay 2.0s, log /Users/onesteppplusgmai.com/Dev
 2026-06-09T10:01:25Z   note: 20070720083715 redirected -> https://web.archive.org/web/20071024134005id_/http://theavalanches.com
 2026-06-09T10:01:28Z   throttled (URLError [Errno 61] Connection refused) try 1/4, sleep 4s
 2026-06-09T10:01:34Z   note: 20070819231023 redirected -> https://web.archive.org/web/20071024134005id_/http://theavalanches.com
+2026-06-09T10:01:42Z   throttled (URLError [Errno 61] Connection refused) try 1/4, sleep 6s
