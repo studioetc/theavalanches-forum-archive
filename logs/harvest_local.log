@@ -324,3 +324,6 @@
 2026-06-09T14:22:47Z [shard 0] 1300/2502 got=1300 skip=0 miss=0 fail=0
 2026-06-09T14:24:27Z [shard 0] 1325/2502 got=1325 skip=0 miss=0 fail=0
 2026-06-09T14:26:05Z [shard 0] 1350/2502 got=1350 skip=0 miss=0 fail=0
+2026-06-09T14:27:43Z [shard 0] 1375/2502 got=1375 skip=0 miss=0 fail=0
+2026-06-09T14:29:20Z [shard 0] 1400/2502 got=1400 skip=0 miss=0 fail=0
+2026-06-09T14:31:03Z [shard 0] 1425/2502 got=1425 skip=0 miss=0 fail=0
