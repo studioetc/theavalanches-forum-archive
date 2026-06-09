@@ -2,9 +2,9 @@
   "pid": 16161,
   "running": true,
   "started_at": "2026-06-09T08:40:20Z",
-  "last_update": "2026-06-09T09:56:32Z",
-  "files_on_disk": 1234,
+  "last_update": "2026-06-09T10:01:39Z",
+  "files_on_disk": 1305,
   "targets_total": 8134,
-  "last_log_line": "2026-06-09T09:56:14Z   note: 20081221225132 redirected -> https://web.archive.org/web/20081219163240id_/http://www.theavalanches",
+  "last_log_line": "2026-06-09T10:01:34Z   note: 20070819231023 redirected -> https://web.archive.org/web/20071024134005id_/http://theavalanches.com",
   "state": "progressing"
 }
