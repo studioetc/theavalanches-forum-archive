@@ -1,0 +1,77 @@
+name: harvest
+
+# Pulls the Wayback corpus into the repo. Runs entirely on GitHub's runners.
+# 8 parallel shards fetch their slice; one collect job merges + commits once
+# (so parallel jobs never race on git push). Resumable: already-committed files
+# are skipped, so re-running continues where a throttled run left off.
+
+on:
+  workflow_dispatch:
+    inputs:
+      delay:
+        description: "Seconds between requests per shard (politeness)"
+        required: false
+        default: "1.7"
+
+permissions:
+  contents: write
+
+jobs:
+  harvest:
+    runs-on: ubuntu-latest
+    strategy:
+      max-parallel: 4          # be polite to Wayback globally (~4 * 1/1.7s)
+      fail-fast: false
+      matrix:
+        shard: [0, 1, 2, 3, 4, 5, 6, 7]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Harvest shard ${{ matrix.shard }}
+        run: |
+          python3 scraper/harvest.py --shard ${{ matrix.shard }} --num-shards 8 --delay ${{ inputs.delay }}
+      - name: Upload shard artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: archive-shard-${{ matrix.shard }}
+          path: archive/
+          if-no-files-found: ignore
+          retention-days: 3
+
+  collect:
+    needs: harvest
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Download all shard artifacts
+        uses: actions/download-artifact@v4
+        with:
+          path: _shards
+      - name: Merge shards into archive/
+        run: |
+          mkdir -p archive
+          if [ -d _shards ]; then
+            for d in _shards/archive-shard-*; do
+              [ -d "$d" ] && cp -rn "$d"/. archive/ || true
+            done
+          fi
+          rm -rf _shards
+      - name: Build coverage report
+        run: python3 scraper/verify.py
+      - name: Commit results
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add archive manifests/coverage_report.md
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "harvest: add/update archived pages + coverage report"
+            git push
+          fi
